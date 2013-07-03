@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Application Content Layout -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentTop="true"
+    	android:orientation="vertical"
+    	tools:context=".MainActivity" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/okazje_do_wypicia" />
+
+    <TextView
+        android:id="@+id/textview_current_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="{dzisiaj}" />
+
+    <TextView
+        android:id="@+id/textview_occasion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:text="{okazja}"
+        android:background="@drawable/yellow_post_it"
+        android:clickable="true"
+        android:onClick="onClickOccasion" 
+	/>
+        
+    </LinearLayout>
+    
+	<!--
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		ads:adUnitId="a151a9eb3337bdc"
+		ads:adSize="BANNER"		
+		ads:loadAdOnCreate="true"
+	/>
+	-->
+		
+</RelativeLayout>
