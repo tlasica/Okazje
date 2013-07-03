@@ -2,9 +2,9 @@ package pl.tlasica.okazje;
 
 import java.util.Calendar;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.View;
@@ -29,10 +29,8 @@ public class MainActivity extends Activity {
         occasionsDict = new Occasions();
     }
 
-    @Override
+	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
 

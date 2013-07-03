@@ -4,6 +4,6 @@
     <string name="app_name">Okazje</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="okazje_do_wypicia">Okazje do wypicia na dzień</string>
+    <string name="okazje_do_wypicia">Okazje do wypicia na dziś</string>
 
 </resources>

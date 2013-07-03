@@ -45,7 +45,7 @@ public class Occasions {
 		add("Dzień Niepodległości Białorusi");
 		add("W roku 1519 Karniszyn uzyskał prawa miejskie");
 		add("W 1921 w Lublinie odbył się ślub Bolesława Bieruta");
-		add("W 1961 urodził się 30-milionowy obywatel Warszawy");
+		add("W 1961 urodził się 30-milionowy obywatel Polski");
 		add("W 1995 Marian Dziurowicz został prezesem PZPN");
 		add("W 1996 odbyła się premiera filmu \"Dzień Niepodległości\"");
 		add("W 1757 urodził się Jan Paweł Woronicz");
@@ -91,7 +91,36 @@ public class Occasions {
 		add("W 907 Węgrzy pokonali wojska bawarskie pod Bratysławą");
 		add("W 1687 Isaac Newto opublikował swoje wiekopomne dzieło");
 		add("W 1946 w Paryżu zaprezentowano publicznie kostium bikini");
-		add("W 1996 w Szkocji urodziła się owca Dolly");	
+		add("W 1996 w Szkocji urodziła się owca Dolly");
+		setDay(706);
+		add("Imieniny Zuzanny");
+		add("Imieniny Teresy");
+		add("Imieniny Dominika i Chociebora");
+		add("Dzień Jana Husa w Czechach");
+		add("Światowy Dzień Pocałunku");
+		add("Święto Niepodległości Malawi");
+		add("W 1921 założono klub piłkarski Tur Turek");
+		add("W 1883 w Chropaczowie uruchomiono KWK Śląsk");
+		add("W 1950 utworzono województwo Opolskie");
+		add("W 1189 Ryszard I Lwie Serce został królem Anglii");
+		add("W 1785 Dolar został przyjęty jako waluta narodowa USA");
+		add("W 1974 Polska zajęła 3. miejsce w mistrzostwach świata w RFN");
+		add("W 1944 odbyła się premiera flimu \"Forrest Gump\"");
+		add("W 1946 urodził się Sylwester Stallone");
+		add("W 1954 urodził się Grzegorz Skawiński");
+		setDay(707);
+		add("Imieniny Edelburga i Gościwita");
+		add("Imieniny Ilidii i Ilidiusza");
+		add("Imieniny Wilibalda");
+		add("Dzień Przemysłu w Tanzanii");
+		add("Święto Niepodległości Wysp Salomona");
+		add("W Japonii obchodzone jest święto Tanabata");
+		add("W 1136 wydano Bullę Gnieźnieńską");
+		add("W 2000 wystartowała MTV Polska");
+		add("W 1456 Joanna d'Arc została pośmiertnie oczyszczona z zarzutu herezji");
+		add("W 1874 urodził się Władysław Grabski");
+		add("W 1983 urodził się Krzysztof Lijewski");
+		
 	}
 	
 	public static int dateToDayNum(Calendar cal) {		
