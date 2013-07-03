@@ -73,6 +73,25 @@ public class Occasions {
 		add("W 2012 Iwane Merabiszwili został premierem Gruzji");
 		add("W 1917 urodził się Manolete, hiszpański matador");
 		add("W 1974 urodził się Denis Pankratow, rosyjski pływak");
+		setDay(705);
+		add("Imieniny Przybywoja i Trofima");
+		add("Imieniny Antoniego");
+		add("Imieniny Bartłomieja");
+		add("Imieniny Cyryla");
+		add("Święto Niepodległości Algierii");
+		add("Święto Niepodległości Wenezueli");
+		add("Święto Niepodległości Republiki Zielonego Przylądka");
+		add("Dzień słowiańskich misjonarzy Cyryla i Metodego");
+		add("Dzień Jedności w Zambii");
+		add("W 1600 wydano akt fundacyjny Akademii Zamojskiej");
+		add("W 1848 w Cieszynie ukazało się czasopismo \"Nowiny dla Ludu Wiejskiego\"");
+		add("W 1921 zakończyło się III Powstanie Śląskie");
+		add("W 1931 na lotnisku w Gliwicach wylądował sterowiec Graf Zeppelin");
+		add("W 1993 wszedł w życie podatek VAT");
+		add("W 907 Węgrzy pokonali wojska bawarskie pod Bratysławą");
+		add("W 1687 Isaac Newto opublikował swoje wiekopomne dzieło");
+		add("W 1946 w Paryżu zaprezentowano publicznie kostium bikini");
+		add("W 1996 w Szkocji urodziła się owca Dolly");	
 	}
 	
 	public static int dateToDayNum(Calendar cal) {		
