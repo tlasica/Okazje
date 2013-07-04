@@ -108,6 +108,7 @@ public class Occasions {
 		add("W 1944 odbyła się premiera flimu \"Forrest Gump\"");
 		add("W 1946 urodził się Sylwester Stallone");
 		add("W 1954 urodził się Grzegorz Skawiński");
+
 		setDay(707);
 		add("Imieniny Edelburga i Gościwita");
 		add("Imieniny Ilidii i Ilidiusza");
@@ -120,7 +121,80 @@ public class Occasions {
 		add("W 1456 Joanna d'Arc została pośmiertnie oczyszczona z zarzutu herezji");
 		add("W 1874 urodził się Władysław Grabski");
 		add("W 1983 urodził się Krzysztof Lijewski");
+	
+		setDay(708);
+		add("Imieniny Chwalimira i Falibora");
+		add("Imieniny Hadriany i Hadriana");
+		add("Imieniny Prokopa");
+		add("W 1280 Przemków uzyskał prawa miejskie");
+		add("W 1357 Łeba uzyskała prawa miejskie");
+		add("W 1659 zwycięstwo wojsk polsko-kozacko-tatarskich nad rosyjskimi w bitwie pod Konotopem");
+		add("W 975 Edward Męczennik został królem Anglii.");
+		add("W 1497 Vasco da Gama wyruszył w poszukiwaniu drogi morskiej do Indii.");
+		add("W 1714 brytyjski parlament powołał Komisję Długości Geograficznej.");
+		add("W 1889 wkazało się pierwsze wydanie The Wall Street Journal.");
+		add("W 1963 założono klub piłkarski PAS Teheran.");
+		add("W 1979 została odkryta Adrastea, księżyc Jowisza.");
+		add("W 1997 Węgry, Czechy i Polska zostały zaproszone do NATO.");
+		add("W 2007 w Seattle został zaprezentowany Boeing 787 Dreamliner.");
+		add("W 1621 urodził się Jean de La Fontaine, francuski pisarz");
+		add("1838 urodził się Ferdinand von Zeppelin, niemiecki konstruktor sterowców");
+		add("1847 urodził się František Křižík, czeski wynalazca");
+		add("W 1892 urodził się Nikołaj Polikarpow, rosyjski konstruktor lotniczy");
+		add("W 1978 urodził się Robert Burneika, litewski kulturysta");
+
+		setDay(709);
+		add("Imieniny Barbary");
+		add("Imieniny Wszebąda");
+		add("Imieniny Zenony i Zenona");
+		add("Imieniny Brykcjusza");
+		add("Święno Niepodległości Argentyny");
+		add("Dzień Partenitu na Ukrainie i Krymie");
+		add("W 1521 na Wawelu został zawieszony dzwon Zygmunt");
+		add("W 1807 utworzono Wolne Miasto Gdańsk");
+		add("W 1922 otwarto schronisko PTTK na Stożku");
+		add("W 1923 założono klub piłkarski Szczakowianka Jaworzno");
+		add("W 2007 Andrzej Lepper został zdymisjonowany po aferze gruntowej");
+		add("W 455 Awitus został cesarzem rzymskim");
+		add("W 1877 rozpoczął się 1. turniej tenisowy na Wimbledonie");
+		add("W 1971 przyjęto flagę Kataru");
+		add("W 2007 po 89 latach w Buenos Aires spadł śnieg");
+
+		setDay(710);
+		add("Imieniny Alma i Amalberga");
+		add("Imieniny Racimira, Rufina i Rzędziwoja");
+		add("Imieniny Sekundy");
+		add("Imieniny Witalisa i Zacheusza");
+		add("Święto Niepodległości Wysp Bahama");
+		add("Święto Sił Zbronjnych na Mauritiusie");
+		add("W 1649 rozpoczęła się obrona Zbaraża");
+		add("W 1863 zwycięstwo powstańców w bitwie pod Ossą");
+		add("W 1865 założono we Wrocławiu ogród zoologiczny");
+		add("W 2008 na Politechnice Wrocławskiej uruchomiono polski superkomputer Nova");
+		add("W 1922 Muhammad VI został bejem Tunisu");
+		add("W 1994 Aleksandar Lukaszenka został prezydentem Białorusi");
+		add("W 1509 urodził się Jan Kalwin");
+		add("W 1856 urodził się Nikola Tesla, serbski fizyk");
+		add("W 1925 urodził się Edmund Niziurski");
 		
+		setDay(711);
+		add("Imieniny Pelagii i Pelagiusza");
+		add("Imieniny Sieprawa");
+		add("Imieniny Wyczesława");
+		add("Imieniny Zybarta, Zyberta, Zybrachta i Zygberta");
+		add("Dzień Gospelu w Kiribati");
+		add("Święto Niepodległości Mongolii");
+		add("Światowy Dzień Ludności");
+		add("W 1928 zaprezentowano pierwszą partię 52 ciężarówek Ursus");
+		add("W 1988 rozpoczęła się wizyta przywódcy ZSRR Michaiła Gorbaczowa");
+		add("W 1997 założono klub piłkarski Podbeskidzie Bielsko-Biała");
+		add("W 1776 James Cook wyruszył w swoją trzecią wyprawę");
+		add("W 1893 japończyk Kōkichi Mikimoto uzyskał pierwszą perłę hodowlaną");
+		add("W 1899 założono włoską firmę motoryzacyjną FIAT");
+		add("W 1941 rozpoczęto seryjną produkcję cywilnej wersji VW Garbusa");
+		add("W 1996 Andrzej Gołota stoczył 1. walkę z Riddickiem Bowe");
+		add("W 2006 Microsoft zakończył wsparcie dla Windows 98");
+		add("W 1942 urodził się Tomasz Stańko, polski trębacz jazzowy");
 	}
 	
 	public static int dateToDayNum(Calendar cal) {		
