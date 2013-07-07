@@ -195,6 +195,99 @@ public class Occasions {
 		add("W 1996 Andrzej Gołota stoczył 1. walkę z Riddickiem Bowe");
 		add("W 2006 Microsoft zakończył wsparcie dla Windows 98");
 		add("W 1942 urodził się Tomasz Stańko, polski trębacz jazzowy");
+		
+		setDay(712);
+		add("Imieniny Bruna i Brunona");
+		add("Imieniny Himisława i Imisława");
+		add("Imieniny Tatomira");
+		add("Imieniny Marcjanny");
+		add("Dzień Oranżystów w Irlandii Północnej");
+		add("Święto Niepodległości Kiribati");
+		add("Święto Niepodległości - Wyspy Św. Tomasza i Książeca");
+		add("W 1580 ukazało się pierwsze wydanie Biblii w języku słowiańskim");
+		add("W 1894 ukazał się pierwszy numer pisma socjalistycznego \"Robotnik\"");
+		add("W 1925 otwarto schronisko \"Murowaniec\" w Tatrach");
+		add("W 1589 założono Carycyn (obecnie Wołgograd)");
+		add("W 1870 opatentowano celuloid");
+		add("W 1962 w Londynie odbył się pierwszy koncert The Rolling Stones");
+		add("W 2011 Neptun zakończył pierwszy pełny o bieg wokół Słońca od czasu odkrycia w 1846");
+		add("W 100 pne urodził się Juliusz Cezar");
+		add("W 1774 urodził się Jozef Dekret-Matejovie, słowacki leśnik");
+		add("W 1867 urodził się Karoly Kaan, węgierski leśnik");
+		add("W 1971 urodził się Liroy, polski raper i producent");
+		
+		setDay(713);
+		add("Imieniny Joela");
+		add("Imieniny Świerada i Trofima");
+		add("Święto Narodowe Czarnogóry");
+		add("W 1429 Mława otrzymała prawa miejskie");
+		add("W 1521 Kraków po raz pierwszy usłyszał głos dzwonu Zygmunt");
+		add("W 1930 banderę z żaglowca STS Lwów przekazano na Dar Pomorza");
+		add("W 1945 założono klub sportowy Huragan Morąg");
+		add("W 1968 w Legnicy zlikwidowano komunikację tramwajową");
+		add("W 1990 sformowano jednostkę do działań specjalnych GROM");
+		add("W 1260 Żmudzini pokonali krzyżaków w bitwie pod Durben");
+		add("W 1772 James Cook wypłynął z Plymouth w drugą podróż dookoła świata");
+		add("W 1832 odkryto źródła Missisipi");
+		add("W 1923 powstał napis HOLLYWOODLAND na wzgórzach niedaleko Los Angeles");
+		add("W 1925 w Czechosłowacji odnaleziono figurkę Wenus z Dolních Věstonic");
+		add("W 1969 została wystrzelona radziecka sonda księżycowa Łuna-15.");
+		add("W 1973 ukazał się debiutancki album brytyjskiej grupy Queen");
+		add("W 1944 urodził się Ernő Rubik, węgierski matematyk");
+		add("W 1951 urodził się Marek Piekarczyk, polski wokalista zespołu TSA");
+		add("W 1986 urodził się Ganbatyn Dżarglanczuluun, mongolski łyżwiarz szybki");
+		
+		setDay(714);
+		add("Imieniny Bonawentury");
+		add("Imieniny Donalda");
+		add("Imieniny Heraklesa");
+		add("Dzień Zdobycia Bastylii we Francji");
+		add("Swięto Narodowe Iraku");
+		add("W 1893 we Wrocławiu uruchomiono pierwszą linię tramwaju elektrycznego");
+		add("W 1894 we Lwowie odbył się pierwszy mecz piłkarski na ziemiach polskich");
+		add("W 1795 Marsylianka została ogłoszona hymnem Francji");
+		add("W 1789 zdobycie i zburzenie Bastylii rozpoczęło Rewolucję Francuską");
+		add("W 1832 w USA zwolniono handel opium z podatków federalnych.");
+		add("W 1867 Alfred Nobel po raz pierwszy publicznie zaprezentował dynamit");
+		add("W 1881 rewolwerowiec Billy Kid został zastrzelony przez Pata Garretta");
+		add("W 1976 zakończono budowę linii kolejowej łączącej Tanzanię z Zambią");
+		add("W 1862 urodził się Gustav Klimt");
+		add("W 1971 urodził się Howard Webb, angielski sędzia piłkarski");
+		
+		setDay(715);
+		add("Imieniny Antiocha i Cyriaka");
+		add("Imieniny Pompiliusza");
+		add("Imieniny Henryka");
+		add("Imieniny Anny");
+		add("Światowy Dzień bez Telefonu Komórkowego");
+		add("W 1410 armia polsko-litewska zbiła okrutnie krzyżaków pod Grunwaldem");
+		add("W 1899 Józef Piłsudski ożenił się z Marią Juszkiewicz");
+		add("W 1924 liczna mieszkańców Katowic przekroczyła 100 tys.");
+		add("W 1960 odbyła się premiera filmu \"Krzyżacy\"");
+		add("W 1969 ogłoszono amnestię");
+		add("W 1995 rozpoczął się pierwszy Przystanek Woodstock");
+		add("W 1783 we Francji został wypróbowany pierwszy statek parowy");
+		add("W 1873 został założony w Glasgow klub piłkarski Rangers FC");
+		add("W 1969 Tu-144 jako pierwszy komercyjny samolot przekroczył prędkość 2 machów");
+		add("W 1988 premiera filmu \"Szklana Pułapka\"");
+		add("W 1606 urodził się Rembrandt Harmenszoon van Rijn");
+		add("W 1993 urodził się Jaka Hvala, słoweński skoczek narciarski");
+
+		setDay(716);
+		add("Imieniny Atenogenesa");
+		add("Imieniny Carmen");
+		add("Imieniny Dzierżysława i Dzirżysława");
+		add("Imieniny Fausta i Stefana");
+		add("W 1903 rozpoczęto budowę szlaku \"Orla Perć\"");
+		add("W 1922 podspiano akt przyłączenia Górnego Śląska do Polski");
+		add("W 622 rozpoczął bieg kalendarz muzułmański");
+		add("W 1909 poowstała firma Audi");
+		add("W 1935 w Oklahoma City zainstalowano pierwsze na świecie parkometry");
+		add("W 1990 ukraiński parlament ogłosił deklarację suwerenności");
+		add("W 1872 urodził się Roald Amundsen");
+		add("W 1928 urodził się Andrzej Zawada, polski himalaista");
+		add("W 1957 urodził się Włodzimierz Smolarek, polski piłkarz");
+		
 	}
 	
 	public static int dateToDayNum(Calendar cal) {		
