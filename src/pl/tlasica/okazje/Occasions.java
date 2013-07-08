@@ -15,27 +15,50 @@ public class Occasions {
 	private SparseArray<List<String>>	 	occasions;
 	List<String>							currDayOccasions;
 	Random									random;
+	List<String>							NO_OCCASIONS = new ArrayList<String>();
+	private int 							lastOccasionIndex = 0;
 	
 	public Occasions() {
 		occasions = new SparseArray< List<String> >();
 		random = new Random( Calendar.getInstance().getTimeInMillis() );
 		initData();
+		NO_OCCASIONS.add("Brak okazji to też okazja!");
+		NO_OCCASIONS.add("Za update aplikacji!");
+		currDayNum = 0;
 	}
 	
 	public String getRandomOccasion(Calendar cal) {
 		int num = Occasions.dateToDayNum(cal);
-		Log.d(TAG, "get random for" + String.valueOf( num ));
-		List<String> chooseFrom = occasions.get( num );
-		if ( chooseFrom != null ) {
-			int pos = random.nextInt( chooseFrom.size() );
-			return chooseFrom.get( pos );
+		if (currDayNum != num) {
+			prepareDayForBrowsing( num );
+			lastOccasionIndex = 0;
 		}
-		else {
-			return "Nie ma dobrej okazji... Może by tak nie pić?";
+		String occ = currDayOccasions.get( lastOccasionIndex );
+		nextOccasion();
+		return occ;
+	}
+	
+	private void prepareDayForBrowsing(int num) {
+		Log.d(TAG, "prepare random for " + String.valueOf( num ));
+		currDayNum = num;
+		currDayOccasions = occasions.get( num );
+		if (currDayOccasions == null) {
+			currDayOccasions = NO_OCCASIONS;
+		}
+		java.util.Collections.shuffle( currDayOccasions );			
+	}
+	
+	private void nextOccasion() {
+		lastOccasionIndex++;
+		if (lastOccasionIndex>=currDayOccasions.size()) {
+			lastOccasionIndex = 0;
 		}
 	}
 	
+	
 	private void initData() {
+		Log.i("OCCASIONS INIT", "Start");
+		
 		setDay(703);
 		add("Imieniny Heliodora");
 		add("Imieniny Tryfona");
@@ -51,6 +74,7 @@ public class Occasions {
 		add("W 1757 urodził się Jan Paweł Woronicz");
 		add("W 1883 urodził się Franz Kafka");
 		add("W 1928 urodził się jan Machulski");
+		
 		setDay(704);
 		add("Imieniny Aggeusza i Anatazego");
 		add("Imieniny Hiacynta i Innocentego");
@@ -73,6 +97,7 @@ public class Occasions {
 		add("W 2012 Iwane Merabiszwili został premierem Gruzji");
 		add("W 1917 urodził się Manolete, hiszpański matador");
 		add("W 1974 urodził się Denis Pankratow, rosyjski pływak");
+		
 		setDay(705);
 		add("Imieniny Przybywoja i Trofima");
 		add("Imieniny Antoniego");
@@ -92,6 +117,7 @@ public class Occasions {
 		add("W 1687 Isaac Newto opublikował swoje wiekopomne dzieło");
 		add("W 1946 w Paryżu zaprezentowano publicznie kostium bikini");
 		add("W 1996 w Szkocji urodziła się owca Dolly");
+		
 		setDay(706);
 		add("Imieniny Zuzanny");
 		add("Imieniny Teresy");
@@ -288,6 +314,155 @@ public class Occasions {
 		add("W 1928 urodził się Andrzej Zawada, polski himalaista");
 		add("W 1957 urodził się Włodzimierz Smolarek, polski piłkarz");
 		
+		setDay(717);
+		add("Imieniny Akwilina");
+		add("Imieniny Dzierżykraja");
+		add("Imieniny Januarii");
+		add("Imieniny Sekundy]");
+		add("Imieniny Teodozego i Teodozjusza");
+		add("Dzień Konstytucji w Korei Południowej");
+		add("Urodziny Króla Lesotho");
+		add("W 1952 do Gdańska wjechał pierwszy pociąg");
+		add("W 1986 ostatnia w historii Polski amnestia więźniów politycznych");
+		add("W 1695 założono Bank of Scotland");
+		add("W 1821 Hiszpania sprzedała Florydę Stanom Zjednoczonym");
+		add("W 1955 w Anaheim otwarto pierwszy Disneyland");
+		add("W 1995 uruchomiono system GPS");
+		add("W 1937 urodził się Stanisław Tym");
+		add("W 1958 urodził się Helmut Krieger, polski kulomiot");
+
+		setDay(718);
+		add("Imieniny Dziwigora");
+		add("Imieniny Prymitywa");
+		add("Imieniny Symforoza");
+		add("Imieniny Drogomiła i Drogomira");
+		add("Międzynarodowy Dzień Nelsona Mandeli");
+		add("Święto Proklamowania Pierwszej Konstytucji w Urugwaju");
+		add("W 1362 Koło otrzymało prawa miejskie");
+		add("W 1897 otwarto schronisko PTTK na Szyndzielni");
+		add("W 2003 wyłączono na zawsze ostatni pracujący komputer Odra 1305");
+		add("W 1325 władca Azteków Tenoch założył stolicę Tenochtitlan");
+		add("W 1898 Maria Skłodowska-Curie z mężem poinformowali o odkryciu Polonu");
+		add("W 1968 powstała korporacja Intel");
+		add("W 1872 urodził się Julius Fucik, czeski kompozytor");
+		add("W 1958 urodziła się Renata Beger");
+		
+		setDay(719);
+		add("Mjanna - Dzień Męczenników");
+		add("Imieniny Epafrasa");
+		add("Imieniny Symmacha");
+		add("Imieniny Zdziesuła");
+		add("W 1569 książę pruski Albrecht złożył hołd lenny królowi Polski");
+		add("W 64 zakończył się wielki pożar Rzymu");
+		add("W 1900 w Paryżu otwarto pierwszą linię metra");
+		add("W 1908 założono Feyenoord Rotterdam");
+		add("W 1949 Laos uzyskał niepodległość");
+		add("W 1954 ukazał się debiutancki singiel Elvisa Presleya");
+		add("W 1922 urodził się Tuanku Jaafar, malezyjski dyplomata i król Malezji");
+		add("W 1934 urodził się Janusz Christa, rysownik i autor komiksów ");
+		
+		setDay(720);
+		add("Imieniny Ansegiza");
+		add("Imieniny Modesta");
+		add("Imieniny Heliasza, Eliasza i Flawiana");
+		add("Imieniny Sewera i Stosława");
+		add("Dzień Przyjaźni w Argentynie");
+		add("Święto Niepodległości w Kolumbi");
+		add("Starosłowiańskie Święto Peruna");
+		add("W 1949 w Krakowie otwarto Powszechny Dom Towarowy");
+		add("W 1968 oddano do użytku zbiornik wodny w Solinie");
+		add("W 1985 uruchomiono komunikację trolejbusową w Słupsku");
+		add("W 514 Św. Hormizdas został papieżem");
+		add("W 802 do Akwizgranu przyprowadzono słonia albinosa");
+		add("W 1969 lądownik Apollo 11 wylądował na Księżycu");
+		add("W 1304 urodził się Francesco Petrarka");
+
+		setDay(721);
+		add("Imieniny Arbogasta");
+		add("Imieniny Praksedy");
+		add("Imieniny Zotyka");
+		add("Święto Niepodległości w Belgii");
+		add("Święto Wyzwolenia w Guam");
+		add("w 1807 proklamowano Wolne Miasto Gdańsk");
+		add("W 1954 ruszyła pierwsza turbina EC Żerań");
+		add("W 1973 pierwsza wolna sobota");
+		add("W 1873 Jesse James dokonał swojego pierwszego napadu na pociąg");
+		add("W 1964 jwiat moreli japońskiej został kwiatem państwowym Tajwanu");
+		add("W 1990 odbył się konkurs The Wall Live In Berlin");
+		add("Bo ciepło. Ewentualnie dlatego że leje.");
+
+		setDay(722);
+		add("Imieniny Benona i Benony");
+		add("Imieniny Menelausa i Nicefora");
+		add("Imieniny Platona");
+		add("W Europie Dzień aproksymacji Pi");
+		add("Święto Rewolucji w Gambii");
+		add("W 1897 w Warszawie rozpoczęło pracę pogotowie ratunkowe");
+		add("W 1949 w Warszawie oddano do użytku trasę W-Z");
+		add("W 1944 we Lwowie AK rozpoczęło akcję \"Burza\"");
+		add("W 1955 oddano do użytku Pałac Kultury i Nauki w Warszawie");
+		add("W 1973 uruchomiono linię produkcyjną Fiata 126p");
+		add("W 1983 rozwiązano WRON i zniesiono stan wojenny");
+		add("W 1927 założono klub piłkarski AS Roma");
+		add("W 2005 Jelena Isinbajewa osiągnęła 5m w skoku o tyczce");
+		add("W 1878 urodził się Janusz Korczak, polski pedagog");
+		add("W 1930 urodził się Leoncjusz Ciuciura, polski kompozytor");
+
+		setDay(723);
+		add("W starożytnym Rzymie obchodzono Neptunalia");
+		add("Święto Rewolucji Lipcowej w Egipcie");
+		add("Święto Konstytucji w Fidżi");
+		add("Święto Rewolucji w Libii");
+		add("Dzień Włóczykija w Polsce");
+		add("Imieniny Olimpiusza");
+		add("W 1973 wydano pierwszą pocztówkę o tematyce górskiej");
+		add("W 1945 założono klub sportowy Polonia Świdnica");
+		add("W 1902 odkryto kometę 26P/Grigg-Skjellerup");
+		add("W 1903 w USA sprzedano pierwszego Forda");
+		add("W 1985 zaprezentowano komputer Amiga 1000");
+		add("W 2010 powstał boysbend \"One Direction\"");
+		add("W 1989 urodził się Daniel Radcliffe, brytyjski aktor");
+
+		setDay(724);
+		add("Imieniny Gleba");
+		add("Imieniny Segolena");
+		add("Święto Policji w Polsce");
+		add("W 1400 odbyły sie pierwsze wykłady w Collegium Maius UJ");
+		add("W 1625 mianowano pierwszego Naczelnego Pocztmistrza Wrocławia");
+		add("W 1978 premiera filmu \"Wodzirej\"");
+		add("W 1993 ukazało się ostatnie wydanie Świata Młodych");
+		add("W 1701 założono Detroit w Michigan");
+		add("W 1837 na Słowacji spadł meteoryt Divina");
+		add("W 1888 Jonh Boyd Dunlop opatentował oponę");
+		add("W 1944 urodził się Krzysztof Pośpiech, polski dyrygent");
+		
+		setDay(725);
+		add("Imieniny Olimpii");
+		add("Dzień Św.Jakuba w Hiszpanii");
+		add("Rocznica Aneksji Guanacaste na Kostaryce");
+		add("Dzień Bezpiecznego Kierowcy w Polsce");
+		add("Święto Republiki w Tunezji");
+		add("W 1510 Florian Ungier założył pierwszą drukarnię w Polsce");
+		add("W 1966 otwarto Muzemu Budownictwa Ludowego w Sanoku");
+		add("W 1567 Hiszpanie zalożyli Caracas");
+		add("W 1893 w Grecji otwarto Kanał Koryncki");
+		add("W 1917 powstał japoński koncern Nikon");
+		add("W 1980 został wydany album \"Back in Black\" AC/DC");
+		add("W 1952 urodził się Effi Eitam, izraelski polityk");
+		
+		setDay(726);
+		add("Imieniny Sancji i Symeona");
+		add("Święto Rewolucji na Kubie");
+		add("Nowy Rok w kalendarzu Majów");
+		add("Święto Niepodległości w Liberii i na Malediwach");
+		add("W 1974 premiera 1. odcinka serialu \"Janosik\"");
+		add("W 811 Bułgarzy pokonali wojska Bizancjum w bitwie na przełęczy Wyrbica");
+		add("W 1973 premiera filmu \"Wejście Smoka\"");
+		add("W 1846 urodził się Texas Jack Omohundro, amerykański kowboj");
+		add("W 1925 urodził się Zdenek Smetana, czeski twórca filmów animowanych");
+		
+		Log.i("OCCASIONS INIT", "Stop");
+
 	}
 	
 	public static int dateToDayNum(Calendar cal) {		
