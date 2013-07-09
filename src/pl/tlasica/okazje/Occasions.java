@@ -22,7 +22,6 @@ public class Occasions {
 		occasions = new SparseArray< List<String> >();
 		random = new Random( Calendar.getInstance().getTimeInMillis() );
 		initData();
-		NO_OCCASIONS.add("Brak okazji to też okazja!");
 		NO_OCCASIONS.add("Za update aplikacji!");
 		currDayNum = 0;
 	}
@@ -460,6 +459,74 @@ public class Occasions {
 		add("W 1973 premiera filmu \"Wejście Smoka\"");
 		add("W 1846 urodził się Texas Jack Omohundro, amerykański kowboj");
 		add("W 1925 urodził się Zdenek Smetana, czeski twórca filmów animowanych");
+
+		setDay(727);
+		add("Imieniny Antuza");
+		add("Imieniny Liliozy");
+		add("Imieniny Wszebora");
+		add("Dzień Zwycięstwa w Korei Północnej");
+		add("2. Dzień Święta Rewolucji na Kubie");
+		add("W 1692 Białystok uzyskał prawa miejskie");
+		add("W 1939 podniesienie bandery na \"MS Chrobry\"");
+		add("W 1054 król Szkocji Makbet został pokonany przez Siwarda z Northumbrii");
+		add("W 1694 powstał Bank of england");
+		add("W 1940 miał miejsce debiut ekranowy Królika Bugsa");
+		add("W 1983 Madonna wydała debiutancki album");
+		
+		setDay(728);
+		add("Imieniny Achacjusza i Achacego");
+		add("Światowy Dzień Wirusowego Zapalenia Wątroby (wypada nie pić)");
+		add("Święto Niepodległości w Peru");
+		add("Rocznica Upadku Faszyzmu w San Marino");
+		add("W 1243 powstała diecezja chełmińska");
+		add("W 1971 powstał klub piłkarski Miedź Legnica");
+		add("W 1950 uruchomiono komunikację trolejbusową w Krasnodarze");
+		add("W 1993 Andora została przyjęta do ONZ");
+
+		setDay(729);
+		add("Imieniny Beatrycze");
+		add("Imieniny Cirzpiboga i Cirzpisława");
+		add("Imieniny Prospera");
+		add("Imieniny Simplycego i Symplicjusza");
+		add("Święto narodowe Wysp Owczych");
+		add("W 1423 Łódź otrzymała prawa miejskie, w tym prawo targów w środy");
+		add("W 1683 Jan III Sobieski wyruszył pod Wiedeń");
+		add("W 1921 w Prószkowie pod Opolem zanotowano +40,2c");
+		add("W 1973 premiera filmu \"Wniebowzięci\"");
+		add("W 1095 Koloman I Uczony został królem Węgier");
+		add("W 1958 w Waszyngtonie utworzono NASA");
+		
+		setDay(730);
+		add("Imieniny Ingeborgi");
+		add("Imieniny Swojsława i Ubysława");
+		add("Święto Tronu w Maroko");
+		add("Międzynarodowy Dzień Koleżeństwa");
+		add("Święto Niepodległości w Vanuatu");
+		add("W 1535 wojska polskie rozpoczęły oblężenie Staroduba");
+		add("W 1882 otwarto Dworzec Tatrzański w Zakopanem");
+		add("W 762 Kalif Al-Mansur założył Bagdad");
+		add("W 1619 w Jamestown wybuchł \"strajk polskich rzemieślników\", 1. strajk w Ameryce");
+		add("W 1733 w Bostonie powstała pierwsza amerykańska loża masońska");
+		add("W 1976 polscy siatkarze pokonali ZSSR 3:2 w finale turnieju olimpijskiego w Montrealu");
+		add("W 1980 Władysław Kozakiewicz wykonał słynny gest");
+		add("W 2003 w Meksyku wyprodukowano ostatniego VV Garbusa");
+		add("W 1863 urodził się Arnold Schwarzenegger");
+		add("W 1974 urodził iśe Jacek Dukaj");
+		
+		setDay(731);
+		add("Imieniny Beata (tak, tak)");
+		add("Dzień Flagi na Hawajach");
+		add("Dzień Skarbowości w Polsce");
+		add("U Celtów wigilia Lughnasadh");
+		add("W 1932 w Gdyni po raz pierwszy obchodzono Święto Morza");
+		add("W 1959 wydano zarządzenie, wg którego poniedziałek stał się \"dniem bezmięsnym\"");
+		add("W 1993 założono Polski Związek Golfa");
+		add("W 1928 Halina Konopacka zdobyła 1. w historii medal olimpijski dla Polski");
+		add("W 1992 Gruzja została przyjęta do ONZ");
+		add("W 2006 Fidel Castro Ruz przekazał tymczasowo władzę bratu");
+		add("W 1704 urodził się Gabriel Cramer, szwajcarski matematyk");
+		add("W 1973 urodził się Ebenezer Dorkutso Dougbatey, ghanijski piłkarz");
+		
 		
 		Log.i("OCCASIONS INIT", "Stop");
 
