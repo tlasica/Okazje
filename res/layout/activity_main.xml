@@ -50,7 +50,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
-		ads:adUnitId="a151a9eb3337bdc"
+		ads:adUnitId="a151dc40dba3360"
 		ads:adSize="BANNER"		
 		ads:loadAdOnCreate="true"
 		ads:testDevices="A9A32839D5C3A3E567C5D00C21437288"
