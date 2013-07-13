@@ -173,7 +173,7 @@ public class Occasions {
 		add("Imieniny Wszebąda");
 		add("Imieniny Zenony i Zenona");
 		add("Imieniny Brykcjusza");
-		add("Święno Niepodległości Argentyny");
+		add("Święto Niepodległości Argentyny");
 		add("Dzień Partenitu na Ukrainie i Krymie");
 		add("W 1521 na Wawelu został zawieszony dzwon Zygmunt");
 		add("W 1807 utworzono Wolne Miasto Gdańsk");
@@ -191,7 +191,7 @@ public class Occasions {
 		add("Imieniny Sekundy");
 		add("Imieniny Witalisa i Zacheusza");
 		add("Święto Niepodległości Wysp Bahama");
-		add("Święto Sił Zbronjnych na Mauritiusie");
+		add("Święto Sił Zbrojnych na Mauritiusie");
 		add("W 1649 rozpoczęła się obrona Zbaraża");
 		add("W 1863 zwycięstwo powstańców w bitwie pod Ossą");
 		add("W 1865 założono we Wrocławiu ogród zoologiczny");
@@ -201,6 +201,7 @@ public class Occasions {
 		add("W 1509 urodził się Jan Kalwin");
 		add("W 1856 urodził się Nikola Tesla, serbski fizyk");
 		add("W 1925 urodził się Edmund Niziurski");
+		add("W 2013 ukazała się wersja 1.0 aplikacji Okazje");
 		
 		setDay(711);
 		add("Imieniny Pelagii i Pelagiusza");

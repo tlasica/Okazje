@@ -13,6 +13,7 @@
     	tools:context=".MainActivity" >
     
     <TextView
+        android:id="@+id/textview_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -28,24 +29,36 @@
         android:textSize="26sp"
         android:text="{dzisiaj}" />
 
+    <LinearLayout
+        android:id="@+id/layout_card"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/yellow_post_it"
+    >
+    
     <TextView
         android:id="@+id/textview_occasion"
         android:layout_gravity="center"
-        android:layout_width="220dp"
-        android:layout_height="240dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:textSize="26sp"
         android:text="{okazja}"
         android:textColor="@android:color/black"
         android:clickable="true"
         android:onClick="onClickOccasion"
-        android:background="@drawable/yellow_post_it"
 	/>
-        
+    
+    </LinearLayout>
     </LinearLayout>
     
+    
+   
 	<com.google.ads.AdView android:id="@+id/adView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -55,5 +68,5 @@
 		ads:loadAdOnCreate="true"
 		ads:testDevices="A9A32839D5C3A3E567C5D00C21437288"
 	/>
-		
+			
 </RelativeLayout>
