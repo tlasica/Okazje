@@ -61,26 +61,25 @@ public class MainActivity extends Activity {
         Log.d("DISPLAY", metrics.toString() );
         int xSize = Math.min(metrics.heightPixels, metrics.widthPixels);
         int ySize = Math.max(metrics.heightPixels, metrics.widthPixels);
+        Log.d("DISPLAY", "xSize=" + xSize);
+        Log.d("DISPLAY", "ySize=" + ySize);
 
         // adjust card size to 50% of min(width,height)
         LinearLayout layout = (LinearLayout) findViewById(R.id.layout_card);
         LinearLayout.LayoutParams p = (LinearLayout.LayoutParams) layout.getLayoutParams();
-        p.height = ySize / 2;
+        int cardHeight = Math.round( ySize * 0.56f ); 
+        p.height = cardHeight;
         layout.requestLayout();
         
         //adjust font size
         TextView textLabel = (TextView) findViewById(R.id.textview_label);
         TextView textOccasion = (TextView) findViewById( R.id.textview_occasion);
 
-        float fontSize = 22f;
-    	if (xSize > 700) {
-    		fontSize = 40f;
-    	}
-    	else if (xSize > 500 ) {
-    		fontSize = 30f;
-    	}
-    	textLabel.setTextSize(TypedValue.COMPLEX_UNIT_DIP, fontSize);
-    	textOccasion.setTextSize(TypedValue.COMPLEX_UNIT_DIP, fontSize);                		
+        float fontSize = ySize/24;
+
+        Log.d("DISPLAY", "fontSize=" + fontSize);
+    	textLabel.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
+    	textOccasion.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);                		
 	}
 	
 	private void updateCurrentDate() {
