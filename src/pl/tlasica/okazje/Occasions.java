@@ -383,7 +383,7 @@ public class Occasions {
 		add("Imieniny Zotyka");
 		add("Święto Niepodległości w Belgii");
 		add("Święto Wyzwolenia w Guam");
-		add("w 1807 proklamowano Wolne Miasto Gdańsk");
+		add("W 1807 proklamowano Wolne Miasto Gdańsk");
 		add("W 1954 ruszyła pierwsza turbina EC Żerań");
 		add("W 1973 pierwsza wolna sobota");
 		add("W 1873 Jesse James dokonał swojego pierwszego napadu na pociąg");
@@ -528,11 +528,258 @@ public class Occasions {
 		add("W 1704 urodził się Gabriel Cramer, szwajcarski matematyk");
 		add("W 1973 urodził się Ebenezer Dorkutso Dougbatey, ghanijski piłkarz");
 		
+		addAugust();
 		
 		Log.i("OCCASIONS INIT", "Stop");
 
 	}
 	
+	private void addAugust() {
+		setDay(801);
+		add("Imieniny Eleazara i Etewolda");
+		add("Imieniny Nadziei");
+		add("Imieniny Nemezego i Nemezjusza");
+		add("Imieniny Wiercisława");
+		add("Dzień Wyzwolenia na Barbadosie");
+		add("Święto Armii w Chińskiej Republice Ludowej");
+		add("Dzień Rodziców w Demokratycznej Republice Konga");
+		add("Narodowy Dzień Pamięci Powstania Warszawskiego");
+		add("W 1293 założono miasto Twardogóra");
+		add("W 1827 uruchomiono latarnię morską na Helu");
+		add("W 1834 w Krakowie zakazano w wypasu bydła na Plantach");
+		add("W 1989 zniesiono kartki na mięso");
+		add("W 1498 Krzysztof Kolumb dotarł do Wenezueli");
+		add("W 1861 w The Times opublikowano pierwszą na świecie prognozę pogody");
+		add("W 1793 we Francji wprowadzono system metryczny");
+		add("W 1987 wystartowała MTV Europe");
+		add("W 1972 urodził się Matumona Lundala, angolski piłkarz");
+		
+		setDay(802);
+		add("Imieniny Rutyliusza");
+		add("Święto Dziewicy Los Angeles, patronki Kostaryki");
+		add("Święto Niepodległości Republiki Macedońskiej");
+		add("W 1299 Białogard otrzymał prawa miejskie");
+		add("W 1610 Henry Hudson odkrył Zatokę Hudsona");
+		add("W 1940 sformowano w Anglii Dywizjon 303");
+		add("Marnie z okazjami, warto wypić aby coś się ciekawego wydarzyło");
+
+		setDay(803);
+		add("Imieniny Cyry");
+		add("Imieniny Dalmacego i Eufroniusza");
+		add("Święto Sił Zbrojnych w Gwinei Równikowej");
+		add("Dzień Flagi w Wenezueli");
+		add("W 1873 założono Galicyjskie Towarzystwo Tatrzańskie");
+		add("W 2010 krzyżowcy stawili opór siłom zła pod Pałacem Prezydenckim");
+		add("W 1778 otwarto teatr La Scala w Mediolanie");
+		add("W 1947 uruchomiono komunikację tramwajową w Irkucku");
+		add("W 1941 urodził się Grzegorz Rosiński, polski rysownik");
+		add("W 1974 urodził się Iwan Wyrypajew, rosyjski aktor");
+		
+		setDay(804);
+		add("Imieniny Mironiega");
+		add("Imieniny Pęcisława i Pękosława");
+		add("Imieniny Tertuliana i Tertuliany");
+		add("Święto Rewolucji w Burkina Faso");
+		add("1. dzień festiwalu San Salwador");
+		add("W 1260 Bulla papieska przyznała prawo organizowania jarmarków św. Dominika");
+		add("W 2003 powstał Krajowy Rejestr Długów");
+		add("W 1818 Antoni Malczewski jako pierwszy polak zdobył Mont Blanc");
+		add("W 1881 w Sewilli odnotowano 50 °C");
+		add("W 2009 Boggy Pick na Karaibach został przemianowany na Mount Obama");
+		add("W 1904 urodził się Witold Gombrowicz");
+		
+		setDay(805);
+		add("imieniny Cyriaka");
+		add("Imieniny Memiusza i Nonny");
+		add("Imieniny Wenantego");
+		add("Dzień Niepodległości w Burkina Faso");
+		add("Dzień Zwycięstwa i Dumy Państwowej w Chorwacji");
+		add("Międzynarodowy Dzień Piwa (i Piwowara)");
+		add("W 1358 Będzin uzyskał prawa miejskie");
+		add("W 1923 założono klub piłkarski Concordia Knurów");
+		add("W 1976 powstało Grudziądzkie Towarzystwo Kultury");
+		add("W 1861 w USA zniesiono karę chłosty");
+		add("W 1914 w Cleveland uruchomiono pierwszą elektryczną sygnalizację świetlną");
+		add("W 1957 w Tanzanii spadł meteoryt Ufana");
+		add("W 1461 urodził się Aleksander Jagiellończyk, król Polski");
+		add("W 1921 urodził się Roman Bratny, polski pisarz, ponoć twardy");
+
+		setDay(806);
+		add("Imieniny Felicysyma");
+		add("Imieniny Justa");
+		add("Święto Niepodległości na Jamajce");
+		add("Święto Niepodległości w Boliwii");
+		add("W 1847 na stacje w Katowicach wjechał pierwszy pociąg osobowy");
+		add("W 1919 upadła Węgierska Republika Rad");
+		add("W 1997 Microsoft kupił wart 150mln $ pakiet akcji Apple Computer");
+
+		setDay(807);
+		add("Imieniny Agantangela");
+		add("Imieniny Andromedy");
+		add("Imieniny Dobiemiara");
+		add("Święto Republiki w Wybrzeżu Kości Słoniowej");
+		add("W 1927 otwarto Stadion Miejski w Kaliszu");
+		add("W 1856 do Australii przybyli pierwsi polscy osadnicy");
+		add("W 2006 Apple zakończył stosowanie procesorów PowerPC");
+		add("W 1958 urodził się Bruce Dickinson");
+		add("W 1972 urodziła się Dorota Deląg, siostra Pawła Deląga");
+		
+		setDay(808);
+		add("Imieniny Largusa");
+		add("Imieniny Niezamysła");
+		add("Imieniny Smaragda i Szmaragda");
+		add("Dzień Pokoju w Iraku");
+		add("Dzień Rolników w Tanzanii");
+		add("W 1951 Radzionków uzyskał prawa miejskie");
+		add("W 969 Dżawhar as-Sikilli założył Kair");
+		add("W 1946 w Bułgarii zniesiono monarchię");
+		add("W 1863 urodził się Antoni Kocyan, polski leśnik");
+		
+		setDay(809);
+		add("Imieniny Doroteusza");
+		add("Imieniny Miłorada");
+		add("Narodowy Dzień Kobiet w RPA");
+		add("Święto Niepodległości Singapuru");
+		add("W 1762 Rosjanie opuścili twierdzę Kołobrzeg");
+		add("W 1136 Pomorzanie pod wodzą księcia Racibora zdobyli norweskie miasto Konungahela");
+		add("W 1962 przyjęto flagę Gabonu i hymn Mali");
+		add("W 1669 urodziła się Eudoksja Łopuchina, caryca Rosji");
+		add("W 1939 urodziła się Maria Czubaszek");
+
+		setDay(810);
+		add("Imieniny Prohora");
+		add("Dzień Przewodnika i Ratownika Górskiego w Polsce");
+		add("Święto Niepodległości Ekwadoru");
+		add("W 1848 pierwszy pociąg odjechał z dworca w Poznaniu");
+		add("W 1500 Diogo Diaz odkrył Madagaskar");
+		add("W 2010 urodziła się Urszula Łasica");
+		add("W 1793 otwarto muzeum w paryskim Luwrze");
+		add("W 1899 założono klub piłkarski Viking FK (ciekawe gdzie)");
+		add("W 1965 urodził sie Namdżilyn Bajarsajchan, mongolski bokser");
+
+		setDay(811);
+		add("Imieniny Tyburvji i Tyburcego");
+		add("Imieniny Włosciwoja");
+		add("Święto Niepodległości w Czadzie");
+		add("W 1932 utworzono Białowieski Park Narodowy");
+		add("W 1920 Rada Obrony Państwa ustanowiła Krzyż Walecznych");
+		add("W 3114 pne wg kalendarza Majów rozpoczęła się 5. epoka dziejów ludzkości");
+		add("W 1975 polska wyprawa po raz pierwszy zdobyła Gaszerbrum III (7952 m npm)");
+		add("W 1892 urodził się Władysław Anders");
+		add("W 1950 urodził się Steve Wozniak, współzałożyciel Apple Computer");
+		add("W 1953 urodził się Hulk Hogan");
+		
+		setDay(812);
+		add("Imieniny Bądzsława");
+		add("Imieniny Eunomii");
+		add("Międzynarodowy Dzień Młodzieży");
+		add("Urodziny Królowej Sirikit w Tajlandii");
+		add("Święto Obrony w Zambii");
+		add("Święto Armii w Zimbabwe");
+		add("W 1308 Lidzbark Warmiński uzyskał prawa miejskie");
+		add("W 1896 w Gdańsku wyruszył na trasę pierwszy tramwaj elektryczny");
+		add("W 1943 żołnierze Kedywu AK uprowadzili w Warszawie samochód bankowy ze 105 mln zł");
+		add("W 1833 Chicago uzyskało prawa miasteczka, licząc 350 mieszkańców");
+		add("W 1979 IBM wprowadził na rynek pierwszy model komputera osobistego");
+		
+		setDay(813);
+		add("Imieniny Benilda");
+		add("Imieniny Kasjana i Konkordii");
+		add("Imieniny Sekundyna");
+		add("Święto Wolnego Laosu");
+		add("Międzynarodowy Dzień Osób Leworęcznych");
+		add("Dzień Kobiet w Tunezji");
+		add("W 1923 do portu w Gdyni zawinął pierwszy statek oceaniczny, francuski SS Kentucky");
+		add("W 1976 wprowadzono kartki na cukier");
+		add("W 1923 żaglowiec STS Lwów jako pierwszy pod polską banderą przepłynął równik");
+		add("W 1997 wyemitowano premierowy odcinek serialu South Park");
+		add("W 2008 Boliwia i Libia nawiązały stosunki dyplomatyczne");
+		add("W 1873 urodził się Józef Haller, polski generał i polityk");
+
+		setDay(814);
+		add("Imieniny Dobrowoja");
+		add("Imieniny Machabeusza");
+		add("Święto Niepodległości w Pakistanie");
+		add("Święto Przyłączenia Prowincji Wadi Eddahab w Maroko");
+		add("Dzień Energetyka");
+		add("W 1344 Działdowo otrzymało prawa miejskie");
+		add("W 1919 założono klub piłkarski Ruch Radzionków");
+		add("W 1980 rozpoczęły się strajki na Wybrzeżu");
+		add("W 1040 Makbet zabił króla Szkocji Duncana I i zajął jego miejsce");
+		add("W 1370 Karlowe Wary otrzymały prawa miejskie");
+		add("W 1992 w Ugandzie spadł meteoryt Mbale");
+		add("W 1961 urodził się Maciej Maleńczuk");
+		
+		setDay(815);
+		add("Imieniny Alipiusza");
+		add("Imieniny Trzebiemira");
+		add("Imieniny Napoleona");
+		add("Dzień Niepodległości w Kongo");
+		add("Dzień Wyzwolenia w Korei Południowej i Północnej");
+		add("Święto Wojska Polskiego");
+		add("W 1843 do Szczecina wjechał pierwszy pociąg z Berlina");
+		add("W 1920 Cud nad Wisłą, polska armia zatrzymała bolszewików");
+		add("W 2000 oficjalnie wystartował komunikator Gadu-Gadu");
+		add("W 1914 otwarto Kanał Panamski");
+		add("W 1969 rozpoczął się festiwal Woodstock");
+		add("W 1769 urodził się Napoleon Bonaparte");
+		add("W 1938 urodził się Janusz A. Zajdel");
+		add("W 1976 urodził się Agent Tomek");
+		
+		setDay(816);
+		add("Imieniny Anioła i Arsacjusza");
+		add("Imieniny Diomedesa i Eleuterii");
+		add("Dzień Odrodzenia na Dominikanie");
+		add("W 1794 wprowadzono do obiegu pierwsze polskie bankoty");
+		add("W 1980 w Gdańsku powstał Międzyzakładowy Komitet Strajkowy");
+		add("W 2010 rozpoczęła się budowa II linii metra w Warszawie");
+		add("W 1809 założono Uniwersytet Humboldta w Berlinie");
+		add("W 2005 Pedro Pablo Kuczyński został premierem Peru");
+		add("W 1958 urodziła się Madonna");
+
+		setDay(817);
+		add("Imieniny Jaczewoja");
+		add("Imieniny Liberata");
+		add("Imieniny Rustyka i Rustyki");
+		add("Święto Niepodległości w Gabonie");
+		add("Święto Niepodległości w Indonezji");
+		add("Urodziny Marcusa Garveya, założyciela Ruchu Rastafari");
+		add("W 1988 Polska po raz pierwszy uzyskała połączenie internetowe ze światem");
+		add("W 1991 narodził się polski Internet");
+		add("W 1982 w fabryce Philipsa odbyła się prezentacja płyty kompaktowej");
+		add("W 2008 podczas IO w Pekinie Michael Phelps zdobył 8. złoty medal");
+		add("W 1601 urodził się Pierre de Fermat, francuski matematyk");
+		add("W 1923 urodził się Chaleo Yoovidhya, twórca napoju Red Bull");
+		
+		setDay(818);
+		add("Imieniny Agapita");
+		add("Imieniny Firmina");
+		add("Imieniny Tworzysława i Żyrosława");
+		add("W 1587 Saul Wahl został rzekomo wybrany na króla Polski");
+		add("W 1925 spółka Polskie Radio otrzymała monopol na radiofonię w Polsce");
+		add("W 1587 urodziło się pierwsze w Nowym Świecie dziecko angielskich rodziców");
+		add("W 1786 Reykjavik otrzymał prawa miejskie");
+		add("W 1894 w Ostrawie otwarto pierwszą linię tramwaju parowego");
+		add("W 1993 w Trondheim otwarto jedyny na świecie wyciąg rowerowy");
+		add("W 1685 urodził się Brook Taylor, jeden z szeregu angielskich matematyków");
+		add("W 1937 urodził się Edward Stachura, polski pisarz");
+		add("W 1933 urodził się Roman Polański");
+		add("W 1981 urodził się Lucas Vonlanthen, szwajcarski kombinator norweski");
+		add("");
+
+		setDay(819);
+		add("Imieniny Ezechiela");
+		add("Światowy Dzień Pomocy Humanitarnej ONZ");
+		add("W 1557 Polska wypowiedziała wojnę zakonowi kawalerów mieczowych");
+		add("W 1901 poświęcono Krzyż na Giewoncie");
+		add("W 1908 powstał Łódzki Klub Sportowy");
+		add("W 1956 Legia Warszawa pokonała Wisłę Kraków 12:0");
+		add("Przyjmuje się że w tym właśnie dniu wynaleziono fotografię");
+		add("W 1743 urodziła się Maria Joanna du Barry, francuska kurtyzana");
+		add("W 1883 urodziła się Coco Chanel");
+		
+	}
+
 	public static int dateToDayNum(Calendar cal) {		
 		int day = cal.get(Calendar.DAY_OF_MONTH);
 		int month = cal.get(Calendar.MONTH);
