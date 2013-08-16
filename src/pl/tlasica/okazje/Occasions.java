@@ -511,8 +511,8 @@ public class Occasions {
 		add("W 1976 polscy siatkarze pokonali ZSSR 3:2 w finale turnieju olimpijskiego w Montrealu");
 		add("W 1980 Władysław Kozakiewicz wykonał słynny gest");
 		add("W 2003 w Meksyku wyprodukowano ostatniego VV Garbusa");
-		add("W 1863 urodził się Arnold Schwarzenegger");
-		add("W 1974 urodził iśe Jacek Dukaj");
+		add("W 1963 urodził się Arnold Schwarzenegger");
+		add("W 1974 urodził się Jacek Dukaj");
 		
 		setDay(731);
 		add("Imieniny Beata (tak, tak)");
@@ -529,6 +529,7 @@ public class Occasions {
 		add("W 1973 urodził się Ebenezer Dorkutso Dougbatey, ghanijski piłkarz");
 		
 		addAugust();
+		addSeptember();
 		
 		Log.i("OCCASIONS INIT", "Stop");
 
@@ -778,8 +779,262 @@ public class Occasions {
 		add("W 1743 urodziła się Maria Joanna du Barry, francuska kurtyzana");
 		add("W 1883 urodziła się Coco Chanel");
 		
+		setDay(820);
+		add("Imieniny Filiberta");
+		add("Imieniny Leowigilda");
+		add("Imieniny Świeluba");
+		add("Święto Rewolucji Króla i Ludu w Maroku");
+		add("Dzień św. Stefana na Węgrzech");
+		add("W 1416 Grabów nad Prosną otrzymał prawa miejskie");
+		add("W 1963 w Wojskowej Akademii Technicznej uruchomiono pierwszy polski laser");
+		add("W 1980 Reinhold Messner dokonał pierwszego solowego wejścia na Mount Everest");
+		add("W 1991 Estonia ogłosiła niepodległość od ZSRR");
+		add("W 1086 urodził się Bolesław III Krzywousty");
+		add("W 1847 urodził się Bolesław Prus");
+		add("W 1890 urodził się Howard P. Lovecraft, ten od macek");
+		
+		setDay(821);
+		add("Imieniny Agapiusza");
+		add("Imieniny Męcimira");
+		add("W 1811 w Reszlu została spalona na stosie ostatnia europejska czarownica");
+		add("W 1842 Hobart na Tasmanii otrzymało prawa miejskie");
+		add("W 1972 produkcję Syreny przeniesiono z FSO do FSM");
+		add("W 1789 urodził się Augustin Louis Cauchy, mający ciąg do matematyki");
+		add("W 1891 urodził się Emiliano Mercado del Toro, który zmarł w 2007");
+		add("W 1988 urodził się Robert Lewandowski, polski piłkarz");
+		add("W 1986 urodził się Usain Bolt, jamajski sprinter");
+
+		setDay(822);
+		add("Imieniny Agatonika");
+		add("Imieniny Dalegora i Fabrycjana");
+		add("W 1945 powstało Polskie Stronnictwo Ludowe");
+		add("W 2006 Lech Wałęsa wystąpił z NSZZ Solidarność");
+		add("W 1942 Brazylia wypowiedziała wojnę Niemcom i Włochom");
+		add("W 1997 miała miejsce premiera filmu Sztos");
+		add("W 1932 BBC rozpoczęła eksperymentalną emisję programu telewizyjnego");
+
+		setDay(823);
+		add("Imieniny Archelausa");
+		add("Imieniny Sydonii");
+		add("Imieniny Teonillii");
+		add("W starożytnym Rzymie czczono Vulcanalia");
+		add("Dzień Wyzwolenia w Rumunii");
+		add("Dzień Flagi na Ukrainie");
+		add("W 1879 w Szczecinie uruchomiono komunikację tramwajową");
+		add("W 1924 miała miejsce wielka opozycja Marsa");
+		add("W 686 urodzi się Karol Młot");
+		add("W 1843 urodził się Viktor Lorenc, pierwszy czeski taternik");
+		add("W 1923 urodził się Edgar Frank Codd, normalny informatyk");
+
+		setDay(824);
+		add("Imieniny Audoena");
+		add("Imieniny Cieszymira");
+		add("Imieniny Natanaela");
+		add("Święto Flagi w Liberii");
+		add("W 1675 Jan III Sobieski pokonał tatarów pod Lesienicami");
+		add("W 2001 miała miejsce premiera filmu \"Poranek kojota\"");
+		add("W 410 Goci zdobyli Rzym (pijemy na smutno, to w końcu barbarzyńcy)");
+		add("W 1456 zakończono pierwszy druk Biblii Gutenberga");
+		add("W 1963 w RFN rozpoczął się pierwszy sezon Bundesligi");
+		add("W 1995 oficjalna premiera Windows 95");
+		add("W 1948 urodził się Jean-Michael Jarre");
+
+		setDay(825);
+		add("Imieniny Gaudencjusza i Gaudentego");
+		add("Imieniny Kalasantego");
+		add("Imieniny Peregryna");
+		add("Święto Niepodległości Urugwaju");
+		add("W 1599 wydano drukiem Biblię w tłumaczeniu ks. Jakuba Wujka");
+		add("W 1851 rozpoczął działalność Zakład Karny Racibórz");
+		add("W 1961 rozpoczął się I Festiwal Piosenki w Sopocie");
+		add("W 1994 pod Warszawą spadł meteoryt Baszkówka");
+		add("W 2000 padł pierwszy klaps na planie serialu \"M jak miłość\"");
+		add("W 458 w Indiach w traktacie \"Lokavibhaaga\" pojawił się symbol 0 (zero)");
+		add("W 1609 Galileusz zaprezentował Wenecjanom swój pierwszy teleskop");
+		add("W 1718 założono Nowy Orlean w stanie Luizjana");
+		add("W 1995 odbyła się premiera filmu \"Desperado\"");
+
+
+		setDay(826);
+		add("Imieniny Symplicjusza i Symplicego (żeby nie było łatwo)");
+		add("Imieniny Wiktorianny");
+		add("Dzień Bohaterów w Namibii i na Filipinach");
+		add("W 1923 ukazał się pierwszy numer tygodnika \"Życie Robotnicze\"");
+		add("W 2006 Przegląd Sportowy opublikował Listę Fryzjera");
+		add("W 55 p.n.e Juliusz Cezar wylądował w Brytanii");
+		add("W 1910 urodziła się Matka Teresa z Kalkuty");
+		add("W 1792 Tadeusz Kościuszko otrzymał honorowe obywatelstwo francuskie");
+
+
+		setDay(827);
+
+		add("Imieniny Armadei");
+		add("Imieniny Gebharda i Honorata");
+		add("Imieniny Serapiona");
+		add("W 1492 Jan Olbrach został wybrany na króla Polski");
+		add("W 1595 wojska polskie pod wodzą hetmana Jana Zamoyskiego zdobyły Chocim");
+		add("W 1946 założono Aeroklub Warmińsko-Mazurski");
+		add("W 1971 odbyła się premiera komedii \"Nie lubie poniedziałku\"");
+		add("W 479 p.n.e. Grecy pokonali Persów w bitwie pod Platejami");
+		add("W 1664 powstała Francuska Kompania Wschodnioindyjska");
+		add("W 1820 Josef Naus zdobył Zugspitze (2962m) - najwyższy szczyt w Niemczech");
+		add("W 1859 w Pensylwanii po raz pierwszy wydobyto ropę naftową przy pomocy odwiertu");
+		add("W 1955 wydano po raz pierwszy Ksiegę Rekordów Guinnessa");
+		add("W 2003 Robert Korzeniowski zdobył złoty medal mistrzostw świata w chodzie na 50km");
+		add("W 1471 urodził się Jerzy Brodaty, książę Saksonii");
+		add("W 1858 urodził się Giuseppe Peano, włoski matematyk i logik");
+		add("W 1972 urodził się Dalip Singh Rana, indyjski wrestler");
+
+		setDay(828);
+
+		add("Imieniny Bibiana");
+		add("Imieniny Pelagiusza");
+		add("Dzień Wyzwolenia w Hąkągu");
+		add("Święto Polskiego Lotnictwa");
+		add("W 1927 w Spale odbyły się pierwsze ogólnopolskie dożynki");
+		add("W 1610 polski królewicz Władysław IV Waza został carem Rosji");
+		add("W 1845 ukazało się pierwsze wydanie miesięcznika popularnonaukowego Scientific American");
+		add("W 1903 założono Harley-Davidson Motor Company");
+		add("W 1937 założono Toyota Motor Corporation");
+		add("W 1968 Chińskie Radio Międzynarodowe nadało pierwszą audycję w języku polskim");
+		add("W 1749 urodził się Johann Wolfgang von Goethe, niemiecki poeta");
+
+		setDay(829);
+
+		add("Imieniny Eutymiusza");
+		add("Imieniny Sebbusa");
+		add("Dzień Straży Gminnej");
+		add("Dzień Strażnika Miejskiego");
+		add("W 1833 w Wielkiej Brytanii uchwalono ustawę znoszącą niewolnictwo");
+		add("W 1885 Gottlieb Daimler uzyskał patent na pierwszy motocykl");
+		add("W 1997 Sejm RP przyjął ustawę o ochronie danych osobowych");
+		add("W 1632 urodził się John Locke, angielski filozof ");
+		add("W 1957 urodził się Grzegorz Ciechowski, polski muzyk i wokalista");
+		add("W 1958 urodził się Michael Jackson");
+
+		setDay(830);
+
+		add("Imieniny Adaukta");
+		add("Imieniny Częstowoja");
+		add("Imieniny Damroka");
+		add("Dzień Zwycięstwa w Turcji");
+		add("W 1959 w Tatrach Zachodnich została odkryta jaskinia Śnieżna Studnia");
+		add("W 1835 założono Melbourne");
+		add("W 1992 Michael Schumacher wygrał swój pierwszy wyścig w F1 (Grand Prix Belgii)");
+		add("W 2009 Ali Bongo Ondimba wygrał wybory prezydenckie w Gabonie");
+		add("W 1875 urodził się Otokar Chlup, czeski pedagog");
+		add("W 1971 urodziła się Katarzyna Nosowska, polska piosenkarka że Hey!");
+
+		setDay(831);
+
+		add("Imieniny Optata i Prymiana");
+		add("Imieniny Solidariusza");
+		add("Blog Day!");
+		add("Dzień Solidarności i Wolności w Polsce");
+		add("W 1820 podpisano w Stoczni Gdańskiej porozumienia sierpniowe");
+		add("W 1935 radziecki górnik Aleksiej Stachanow podczas jednej zmiany wykonał 1475% normy");
+		add("W 1993 ostatni rosyjscy żołnierze opuścili Litwę");
+		add("W 1987 ukazał się album Bad Michaela Jacksona");		
 	}
 
+	private void addSeptember() {
+		setDay(901);
+		add("Imieniny Miłodziada");
+		add("Imieniny Witalisa");
+		add("Święto Nauczyciela w Singapurze");
+		add("W 1364 Urban V wydał bullę powołującą do życia Akademię Krakowską");
+		add("W 1964 utworzono Instytut Warzywnictwa im. Emila Chroboczka w Skierniewicach");
+		add("W 2009 Poczta Polska w wyniku komercjalizacji została przekształcona w spółkę akcyjną");
+		add("W 1886 założono szwajcarski klub sportowy Grasshoppers Zurych");
+		add("W 1944 w Rio de Janeiro odsłonięto pomnik Fryderyka Chopina");
+		add("W 1985 odnaleziono wrak Titanica");
+		add("W 1923 urodził się Rocky Marciano, amerykański bokser");
+
+		setDay(902);
+		add("Imieniny Absalona");
+		add("Imieniny Elpidii i Elpidiusza");
+		add("Święto Pracy w Boliwii");
+		add("W 1960 odbyła się premiera filmu historycznego \"Krzyżacy\"");
+		add("W 1974 miała miejsce premiera filmu historycznego \"Potop\"");
+		add("W 1859 rozpoczęła się najsilniejsza w historii burza magnetyczna");
+		add("W 1900 w pruskich szkołach publicznych wprowadzono przedmiot wychowanie seksualne");
+		add("W 1965 urodził się Lennox Lewis, brytyjski bokser");
+		add("W 1966 urodziła się Salma Hayek, meksykańska aktorka");
+
+		setDay(903);
+		add("Imieniny Bazylisa");
+		add("Imieniny Natalisa");
+		add("Dzień Flagi w Australii");
+		add("W 1856 na kanały mazurskie wypłynął pierwszy parowiec – Masovia");
+		add("W 1910 w wielkopolskiej wsi Grzępy spadł meteoryt Grzempach");
+		add("W 1935 w porcie w Gdyni żaglowiec Dar Pomorza zakończył rejs dookoła świata");
+		add("W 1935 wyszedł pierwszy numer tygodnika naukowo-technicznego \"Młody Zawodowiec\"");
+		add("W 301 założono San Marino");
+		add("W 1999 założono Ukraiński Uniwersytet Islamski w Doniecku");
+		add("W 1875 urodził się Ferdinand Porsche, niemiecki konstruktor samochodów");
+		add("W 1941 urodził się Stan Borys, polski wokalista");
+
+		setDay(904);
+		add("Imieniny Felicyty");
+		add("Imieniny Hermiony");
+		add("W 1962 w Katowicach otwarto Dom Handlowy Zenit");
+		add("W 1963 Polska pokonała w Szczecinie Norwegię 9:0");
+		add("W 1997 na antenie TVP1 wyemitowano pierwszy odcinek teleturnieju \"Jaka to melodia?\"");
+		add("W 1781 hiszpańscy osadnicy założyli Los Angeles");
+		add("W 1956 IBM skonstruował pierwszy dysk twardy");
+		add("W 1809 urodzi się Juliusz Słowacki, polski poeta");
+		add("W 1984 urodził się Oscar Boniek García Ramírez, honduraski piłkarz");
+
+
+
+		setDay(905);
+		add("Imieniny Budziboja i Przyboja");
+		add("Imieniny Fereola");
+		add("Imieniny Stronisława i Rozwita");
+		add("Dzień Nauczyciela w Indiach");
+		add("W 1994 na antenie TVP1 wyemitowano pierwszy odcinek serialu \"Moda na sukces\"");
+		add("W 2007 w Tychach zjechał z taśmy milionowy egzemplarz Fiata Panda");
+		add("W 1698 car Piotr I Wielki wprowadził podatek od posiadania brody");
+		add("W 1977 NASA wystrzeliła sondę kosmiczną Voyager 1");
+		add("W 2008 Nikaragua uznała niepodległość Abchazji i Osetii Południowej");
+		add("W 1946 urodził się Freddie Mercury, brytyjski wokalista zespołu Queen");
+
+		setDay(906);
+		add("Imieniny Amoniusza i Bolemira");
+		add("Imieniny Fausta i Mansweta");
+		add("Imieniny Onezyfora");
+		add("Dzień Zjednoczenia w Bułgarii");
+		add("W 1933 założono Okocimski Klub Sportowy Brzesko");
+		add("W 775 p.n.e. chińscy astronomowie odnotowali najstarsze w historii zaćmienie Słońca");
+		add("W 1632 powstała diecezja bagdadzka");
+		add("W 1946 radziecka ekspedycja zdobyła Szczyt Karola Marxa (6726 m n.p.m.)");
+		add("W 1991 Leningrad został przemianowany na Petersburg");
+
+		setDay(907);
+		add("Imieniny Dobrobąda i Domasuła");
+		add("Imieniny Eupsychii");
+		add("Imieniny Gratusa i Pamfila");
+		add("Imieniny Sozonta");
+		add("Dzień Zwycięstwa w Mozambiku");
+		add("W 1896 we Wrocławiu odbył się pierwszy w mieście pokaz filmowy");
+		add("W 1928 rozpoczęła się pierwsza edycja Tour de Pologne");
+		add("W 1989 rozwiązano Zmotoryzowane Odwody Milicji Obywatelskiej (ZOMO)");
+		add("W 1848 w Cesarstwie Austriackim zniesiono poddaństwo");
+		add("W 1939 radio BBC nadało pierwszą audycję w języku polskim");
+		add("W 1983 urodził się Piri Weepu, nowozelandzki rugbysta");
+
+		setDay(908);
+		add("Imieniny Bratumiła");
+		add("Międzynarodowy Dzień Alfabetyzacji (pod patronatem UNESCO)");
+		add("Dzień Dobrej Wiadomości w Polsce");
+		add("W 1977 zostało wyemitowane premierowe wydanie programu popularnonaukowego Sonda");
+		add("W 1100 dokonano wyboru antypapieża Teodoryka");
+		add("W 1930 firma 3M wprowadziła do sprzedaży przezroczystą taśmę klejącą");
+		add("W 1976 urodziła się Anna Barańska, polska himalaistka");
+	
+	}
+	
+	
 	public static int dateToDayNum(Calendar cal) {		
 		int day = cal.get(Calendar.DAY_OF_MONTH);
 		int month = cal.get(Calendar.MONTH);
