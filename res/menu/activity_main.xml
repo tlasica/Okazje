@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_english"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="For English"/>
+    <item
+        android:id="@+id/menu_polish"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="Dla Polaków"/>
+    
+</menu>
