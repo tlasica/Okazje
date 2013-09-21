@@ -1032,6 +1032,244 @@ public class Occasions {
 		add("W 1930 firma 3M wprowadziła do sprzedaży przezroczystą taśmę klejącą");
 		add("W 1976 urodziła się Anna Barańska, polska himalaistka");
 	
+		setDay(909);
+		add("Imieniny Ożanny i Gorgoniusza");
+		add("Imieniny Sobiesąda");
+		add("Rocznica utworzenia Koreańskiej Republiki Ludowo-Demokratycznej");
+		add("Światowy Dzień FAS (warto sprawdzić o co chodzi)");
+		add("W 1698 Polacy pokonali Tatarów w bitwie pod Podhajcami (po raz ostatni w historii)");
+		add("W 1936 powstał Automobilklub Kielecki");
+		add("W 1957 założono Polski Związek Rugby");
+		add("W 1993 utworzono Biebrzański Park Narodowy");
+		add("W 1971 odbyła się premiera 1. odcinka serialu \"Przygody psa Cywila\"");
+		add("W 9 władca Cherusków Arminius pokonał w bitwie w Lesie Teutoburskim trzy rzymskie legiony");
+		add("W 1668 odbyła się premiera komedii \"Skąpiec\" Moliera");
+		add("W 1964 odbyła się premiera francuskiej komedii \"Żandarm z Saint-Tropez\"");
+		add("W 2001 czas uniksowy przekroczył granicę miliarda sekund");
+		add("W 2009 otwarto metro w Dubaju (później niż w Warszawie!)");
+
+		setDay(910);
+		add("Imieniny Anioła");
+		add("Imieniny Dydyma i Datywa");
+		add("Imieniny Pulcherii");
+		add("Święto Św. George'a Caye w Belize");
+		add("Dzień Nauczyciela w ChRL");
+		add("Światowy Dzień Zapobiegania Samobójstwom");
+		add("Dzień Babci i Dziadka w USA");
+		add("W 1526 sejm mazowiecki złożył przysięgę na wierność królowi polskiemu");
+		add("W 1846 amerykanin Elias Howe opatentował maszynę do szycia");
+		add("W 1921 w Berlinie otwarto pierwszy europejski odcinek autostrady");
+		add("W 1972 w Monachium piłkarska reprezentacja Polski pod wodzą K.Górskiego zdobyła złoty medal olimpijski");
+		add("W 1993 wyemitowano premierowy odcinek amerykańskiego serialu Z Archiwum X");
+		add("W 2008 oddano do użytku znajdujący się w pobliżu Genewy Wielki Zderzacz Hadronów");
+		add("W 1938 urodził się Sodnomcerengijn Nacagdordż, mongolski biegacz narciarski");
+
+		setDay(911);
+		add("Imieniny Aiszy");
+		add("Imieniny Naczęsława");
+		add("W 1869 zostało założone warszawskie przedsiębiorstwo cukiernicze Blikle");
+		add("W 1927 Wisła Kraków pokonała TKS Toruń 15–0 i jest to rekord polskiej Ekstraklasy");
+		add("W 1981 powstał zespół Lady Pank");
+		add("W 1942 ustanowiono Order Lwa Finlandii");
+		add("W 1961 powstała międzynarodowa organizacja ekologiczna World Wildlife Fund (WWF)");
+		add("W 1997 amerykańska sonda Mars Global Surveyor osiągnęła orbitę Marsa");
+		add("W 1886 urodził się Jerzy Kossak, polski malarz");
+		add("W 1965 urodził sie Moby, amerykański muzyk");
+		add("Tak, \"tej\" rocznicy nie ma");
+
+		setDay(912);
+		add("Światowy Dzień Zdrowia Jamy Ustnej");
+		add("W 1976 w Płocku odbyły się Dożynki Centralne");
+		add("W 1989 Sejm udzielił wotum zaufania rządowi Tadeusza Mazowieckiego");
+		add("W 490 p.n.e. w bitwa pod Maratonem wojska ateńskie i platejskie pokonały armię króla Persów");
+		add("W 1609 Henry Hudson odkrył ujście dzisiejszej rzeki Hudson.");
+		add("W 1940 odkryto paleolityczne malowidła naskalne w Lascaux we Francji");
+		add("W 1958 zaprezentowano pierwszy układ scalony, zaprojektowany przez Jacka Kilby’ego");
+		add("W 1968 Albania wystąpiła z Układu Warszawskiego");
+		add("W 1921 urodził się Stanisław Lem, polski pisarz i filozof");
+		add("W 1930 urodził się Piotr Skrzynecki, założyciel kabaretu Piwnica pod Baranami");
+		add("W 1957 urodził się Hans Zimmer, niemiecki kompozytor, twórca muzyki filmowej");
+
+
+		setDay(913);
+		add("Imieniny Dobieluta i Eulogii");
+		add("Imieniny Makrobiusza i Morzysława");
+		add("Dzień Programisty (z wyjątkiem lat przestępnych)");
+		add("W 1902 sąd polubowny rozstrzygnął na rzecz Austrii spór z Węgrami o Morskie Oko (zgroza)");
+		add("W 1899 brytyjski geograf Halford John Mackinder dokonał pierwszego wejścia na Mount Kenya");
+		add("W 1916 w Tennessee za zabicie pomocnika tresera została powieszona cyrkowa słonica Mary");
+		add("W 1959 sonda Łuna 2 jako pierwszy ziemski obiekt dotarła na Księżyc");
+		add("W 1985 premiera najlepiej sprzedającej się gry wideo w historii Super Mario Bros");
+		add("W 1766 urodził się Samuel Wilson, amerykański masarz, \"Wuj Sam\"");
+		add("W 1857 urodził się Michał Drzymała, polski chłop, symbol walki o polskość w zaborze pruskim");
+		add("W 1894 urodził się Julian Tuwim, polski poeta (zm. 1953)");
+		add("W 1961 urodził się Dave Mustaine, amerykański wokalista i gitarzysta zespołu Megadeth");
+
+		setDay(914);
+		add("W 1309 zamek w Malborku został siedzibą wielkiego mistrza krzyżackiego");
+		add("W 1922 w Poznaniu założono Wielkopolski Klub Bokserski");
+		add("W 1752 Imperium Brytyjskie przyjęło kalendarz gregoriański.");
+		add("W 1917 Rosja została ogłoszona republiką");
+		add("W 2012 Felix Baumgartner skoczył z 39 kilometrów na ziemię, tym samym bijąc 2 rekordy");
+		add("W 1961 urodził się Tomasz Dziubiński, założyciel wytwórni Metal Mind Productions");
+
+		setDay(915);
+		add("Imieniny Jakerta");
+		add("Imieniny Lolity");
+		add("Europejski Dzień Prostaty");
+		add("Międzynarodowy Dzień Demokracji");
+		add("Dzień Opakowań w Polsce");
+		add("W 1463 w bitwie na Zalewie Wiślanym flota gdańsko-elbląska rozbiła flotę krzyżacką");
+		add("W 1697 odbyła się koronacja Augusta II Mocnego na króla Polski");
+		add("W 1935 Polska po raz 3. z rzędu wygrała balonowy Puchar Gordona Bennetta i zdobyła trofeum na stałe");
+		add("W 1967 miała miejsce premiera filmu Sami swoi");
+		add("W 1993 sstatnie jednostki Armii Rosyjskiej opuściły Legnicę");
+		add("W 1682 pojawiła się Kometa Halleya. Edmund Halley odkrył jej periodyczność i przewidział powrót");
+		add("W 1835 Charles Robert Darwin dopłynął na Galapagos na pokładzie HMS Beagle");
+		add("W 1254 urodził się Marco Polo, wenecki kupiec, podróżnik");
+
+		setDay(916);
+		add("Imieniny Abundancji i Innocencji");
+		add("Imieniny Niniana");
+		add("Święto Niepodległości w Meksyku");
+		add("Dzień Bluesa w Polsce");
+		add("Rozpoczyna się Europejski Tydzień Zrównoważonego Transportu");
+		add("Międzynarodowy Dzień Ochrony Warstwy Ozonowej");
+		add("W 1922 otwarto linię kolejową Reda – Hel");
+		add("W 1928 Feliks Więcek wygrał 1. Tour de Pologne");
+		add("W 1996 uruchomiono sieć telefonii komórkowej Era");
+		add("W 1908 założono amerykańską firmę General Motors");
+		add("W 1945 w USA zaprezentowano prototyp pierwszej elektronicznej maszyny do liczenia ENIAC");
+		add("W 1985 W Kenii odnaleziono szkielet Homo erectusa");
+		add("W 1889 urodziła się Mercédès Jellinek, córka austriackiego pioniera automobilizmu");
+		add("W 1949 urodził się Yoshiho Umeda, działacz opozycji demokratycznej w okresie PRL");
+
+		setDay(917);
+		add("Imieniny Cherubina i Narcyza");
+		add("Angola – Rocznica Urodzin Prezydenta Neto");
+		add("W 1374 król Ludwik Węgierski wydał przywilej koszycki dla polskiej szlachty");
+		add("W 1931 w Stoczni Gdynia odbyło się wodowanie pierwszej samodzielnie zaprojektowanej i wykonanej jednostki");
+		add("W 1971 w Poznaniu odbył się pierwszy występ Kabaretu TEY");
+		add("W 1974 podpisano umowę z Fiatem na opracowanie projektu samochodu FSO Polonez");
+		add("W 1980 powstał Niezależny Samorządny Związek Zawodowy „Solidarność” z Lechem Wałęsą na czele");
+		add("W 1972 wyemitowano pierwszy odcinek amerykańskiego serialu M*A*S*H.");
+		add("W 1991 została udostępniona pierwsza wersja jądra Linuxa");
+		add("W 879 urodził się Karol III Prostak, król zachodniofrankijski");
+		add("W 980 urodził się Avicenna, perski filozof, lekarz, przyrodnik");
+		add("W 1826 urodził się Bernhard Riemann, niemiecki matematyk o całkiem dużym dorobku");
+
+		setDay(918);
+		add("Imieniny Metodego");
+		add("Święto Niepodległości Chile");
+		add("Światowy Dzień Monitoringu Wody");
+		add("W 1351 księstwo płockie zostało przyłączone przez króla Kazimierza III Wielkiego do Polski");
+		add("W 1905 miała miejsce nieudana próba wysadzenia rosyjskiego pomnika zdobycia Warszawy");
+		add("W 1958 w Warszawie rozpoczął się I Festiwal Jazz Jamboree (pod nazwą Jazz 58).");
+		add("W 1975 w Zakładzie nr 2 w Tychach uruchomiono produkcję Fiata 126p");
+		add("W 1851 ukazało się pierwsze wydanie The New York Daily Times");
+		add("W 1987 Jerzy Kukuczka jako drugi himalaista w historii zdobył Koronę Himalajów i Karakorum");
+		add("W 1998 została powołana Internetowa Korporacja ds. Nadawania Nazw i Numerów (ICANN)");
+		add("W 1979 urodził się High Contrast, walijski muzyk");
+
+		setDay(919);
+		add("Międzynarodowy Dzień Mówienia jak Pirat (święto religii Latającego Potwora Spaghetti)");
+		add("W 1783 w Wersalu odbył się pierwszy załogowy lot balonem (leciały baran, kogut i kaczka)");
+		add("W 1888 w belgijskim Spa odbył się pierwszy na świecie konkurs piękności");
+		add("W 1982 miało miejsce pierwsze znane użycie emotikonów :-) i :-(");
+		add("W 1922 urodził się Emil Zátopek, czeski lekkoatleta, biegacz");
+
+		setDay(920);
+		add("Imieniny Miłowuja");
+		add("W 1908 odbyły się pierwsze odnotowane w prasie piłkarskie derby Krakowa");
+		add("W 1969 Waldemar Baszanowski zdobył w Warszawie złoty medal mistrzostw świata w podnoszeniu ciężarów");
+		add("W 2003 odkryto Jaskinię Wiślańską w Beskidzie Śląskim.");
+		add("W 1459 pierwsza znana wzmianka o Bukareszcie, w dokumencie sygnowanym przez Włada Palownika");
+		add("W 1519 portugalski żeglarz Ferdynand Magellan rozpoczął pierwszą w historii wyprawę dookoła świata");
+		add("W 1898 Konstantin Rengarten zakończył trwającą od 15.08.1894 roku pieszą wędrówkę dookoła świata");
+		add("W 1934 urodził się Takayuki Kubota, japoński mistrz sztuk walki (nie walczył w klapkach)");
+		add("W 1975 urodził się Hannibal al-Kaddafi, libijski skandalista");
+
+		setDay(921);
+		add("Imieniny Pacyfika");
+		add("Międzynarodowy Dzień Pokoju");
+		add("Dzień Służby Celnej w Polsce");
+		add("W 1907 w Kartuzach założono Kaszubskie Towarzystwo Ludoznawcze");
+		add("W 1997 odbyły się wybory parlamentarne, w których zwycięstwo odniosła Akcja Wyborcza Solidarność");
+		add("W 1818 powstała pierwsza niemiecka osada na Południowym Kaukazie");
+		add("W 1937 John Ronald Reuel Tolkien wydał Hobbita");
+		add("W 1981 Belize (jako Honduras Brytyjski) uzyskało niepodległość (od Wielkiej Brytanii)");
+		add("W 1964 Malta uzyskała niepodległość (od Wielkiej Brytanii)");
+		add("W 1947 urodził się Stephen King, amerykański pisarz");
+
+		setDay(922);
+		add("Imieniny Emeryty");
+		add("Dzień bez samochodu");
+		add("Światowy Dzień Nosorożca");
+		add("W 1411 Krzyżacy przekazali Rypin w ręce polskie");
+		add("W 1936 dekretem prezydenckim zostały utworzone Junackie Hufce Pracy");
+		add("W 1922 założono Obywatelski Komitet Obrony Przeciwgazowej (OKOP)");
+		add("W 1997 na antenie TVP1 wyemitowano 1. odcinek telenoweli Klan");
+		add("W 1986 miała miejsce premiera komedii filmowej C.K. Dezerterzy");
+		add("W 1332 Bazyli Wielki Komnen został cesarzem Trapezuntu");
+		add("W 1908 Bułgaria proklamowała niepodległość (od Imperium Osmańskiego!)");
+		add("W 1989 miała miejsce premiera 1. odcinka serialu Słoneczny Patrol");
+
+		setDay(923);
+		add("Imieniny Linusa");
+		add("Imieniny Wiercisława");
+		add("Równonoc Jesienna");
+		add("Święto Plonów (Dożynki)");
+		add("W 1699 z terytorium Polski było widoczne całkowite zaćmienie Słońca");
+		add("W 1991 w Poznaniu odbył się pierwszy polski koncert zespołu Deep Purple");
+		add("W 1846 niemiecki astronom Johann Gottfried Galle odkrył planetę Neptun");
+		add("W 1889 w Japonii założono firmę Nintendo (tak, 1889!)");
+		add("W 1962 powstała węgierska grupa rockowa Omega");
+		add("W 480 p.n.e. urodził się Eurypides, grecki dramaturg");
+		add("W 1871 urodził się František Kupka, czeski malarz symboliczny");
+
+		setDay(924);
+		add("Imieniny Armaty");
+		add("Imieniny Pacyfika i Twardomira");
+		add("W 1926 utworzono przedsiębiorstwo Polskie Koleje Państwowe.");
+		add("W 1928 Kościół katolicki w Polsce usunął z przysięgi ślubnej dla kobiet posłuszeństwo mężowi");
+		add("W 1921 w Berlinie oddano do użytku pierwszy europejski odcinek autostrady (AVUS)");
+		add("W 1948 założono japoński koncern motoryzacyjny Honda");
+		add("W 1957 w Barcelonie podczas otwarcia stadion Camp Nou FC Barcelona pokonała Legię Warszawa 4:2");
+		add("W 1991 ukazał się album Nevermind amerykańskiej grupy Nirvana");
+		add("W 1821 urodził się Cyprian Kamil Norwid, polski poeta (zm. 1883)");
+		add("W 1939 urodził się Andrzej Blikle, informatyk, profesor nauk matematycznych, mistrz cukierniczy");
+
+		setDay(925);
+		add("Imieniny Ermenfryda, Galfryda i Irmfryda");
+		add("Dzień Budowlańca");
+		add("Święto Sił Zbrojnych w Mozambiku");
+		add("W 1937 po raz pierwszy odegrano Hejnał Płocka");
+		add("W 1982 Autobiografia zespołu Perfect dotarła do 1. miejsca Listy Przebojów Trójki");
+		add("W 1928 powstało amerykańskie przedsiębiorstwo telekomunikacyjne Motorola");
+		add("W 1976 miała miejsce premiera The Muppet Show");
+		add("W 1976 założono irlandzki zespół rockowy U2");
+
+		setDay(926);
+		add("Imieniny Budziwoja");
+		add("Światowy Dzień Antykoncepcji");
+		add("Ogólnopolski Dzień Aptekarza (kup coś na kaca)");
+		add("W 1909 odbył się pierwszy pokaz filmowy w kinie Helios w Szczecinie - najstarszym kinie na świecie");
+		add("W 2001 uruchomiono polską Wikipedię");
+		add("W 1900 zwodowano pancernik Potiomkin");
+		add("W 1983 płk Stanisław Pietrow prawdopodobnie zapobiegł wojnie nuklearnej");
+		add("W 1181 urodził się Franciszek z Asyżu");
+
+		setDay(927);
+		add("Dzień Podziemnego Państwa Polskiego");
+		add("Światowy Dzień Turystyki");
+		add("W 1446 pod Tatowem wojska Koszalina pokonały oddziały kołobrzeskie");
+		add("W 1825 pierwszy na świecie pociąg w regularnej komunikacji kolejowej odbył przejazd w Anglii");
+		add("W 1905 Albert Einstein opublikował pracę o równoważności masy i energii");
+		add("W 1908 rozpoczęła się seryjna produkcja Forda T");
+		add("W 1981 otwarto pierwszą linię szybkiej kolei TGV Paryż – Lyon");
+		add("W 1998 uruchomiono wyszukiwarkę Google (a teraz taka ośmiornica...)");
+		add("W 1533 urodził się Stefan Batory, król Polski");
+		
 	}
 	
 	
