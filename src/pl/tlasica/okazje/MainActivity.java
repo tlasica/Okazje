@@ -1,10 +1,8 @@
 package pl.tlasica.okazje;
 
 import java.util.Calendar;
-import java.util.Locale;
 
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.format.DateFormat;
@@ -19,7 +17,6 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private static final String LANGCODE = "langCode";
 	private TextView	mCurrDateTextView;
 	private TextView	mOccasionTextView;
 	private Calendar	currDate;
@@ -34,9 +31,7 @@ public class MainActivity extends Activity {
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
         
-        String langCode = getLangCodeFromSettings();
-        if (langCode == null) langCode = getLangCodeFromLocale();
-        occasionsDict = new Occasions( createDataProviderByLangCode( langCode ) );
+        occasionsDict = new Occasions( new OccasionsDataPL() );
     }
 
 	@Override
@@ -107,49 +102,7 @@ public class MainActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch( item.getItemId() ) {
-			case R.id.menu_english:
-				setLanguage("en");
-				return true;
-			case R.id.menu_polish:
-				setLanguage("pl");
-				return true;
-			default:
-				return super.onOptionsItemSelected(item);
-		}
+		return super.onOptionsItemSelected(item);
 	}
 	
-	private void setLanguage(String langCode) {
-		saveLangCodeToSettings("en");
-        occasionsDict = new Occasions( createDataProviderByLangCode( langCode ) );
-        this.updateContent();		
-	}
-
-	private String getLangCodeFromLocale() {
-		Locale locale = Locale.getDefault();
-		String lang = locale.getLanguage();
-		return lang;		
-	}
-	
-	private OccasionsData createDataProviderByLangCode(String lang) {
-		if (lang.equalsIgnoreCase("pl")) {
-			return new OccasionsDataPL();
-		}
-		if (lang.equalsIgnoreCase("en")) {
-			return new OccasionsDataEN();			
-		}
-		return new OccasionsDataEN();	// by default
-	}
-	
-	private void saveLangCodeToSettings(String langCode) {
-		SharedPreferences settings = this.getPreferences(MODE_PRIVATE);
-		SharedPreferences.Editor editor = settings.edit();
-		editor.putString(LANGCODE, langCode);
-		editor.commit();	
-	}
-	
-	private String getLangCodeFromSettings() {
-		SharedPreferences settings = this.getPreferences(MODE_PRIVATE);
-		return settings.getString(LANGCODE, null);
-	}
 }

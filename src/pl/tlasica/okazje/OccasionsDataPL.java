@@ -1290,6 +1290,174 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1533 urodził się Stefan Batory, król Polski");
 			break;	
 			
+		case 928:
+			res.add("Dzień św. Wacława, patrona Czech");
+			res.add("Światowy Dzień Wścieklizny");
+			res.add("Na Tajwanie Dzień Nauczyciela i Urzędnika (dzień urodzin Konfucjusza)");
+			res.add("W 1865 w Warszawie odbyła się prapremiera opery Straszny dwór Stanisława Moniuszki");
+			res.add("W 1878 w Krakowie zaprezentowano publiczności obraz Jana Matejki \"Bitwa pod Grunwaldem\"");
+			res.add("W 1953 pod Tarnobrzegiem odkryto złoża siarki");
+			res.add("W 1893 założono portugalski klub sportowy FC Porto");
+			res.add("W 1928 Alexander Fleming odkrył pierwszy antybiotyk – penicylinę");
+			res.add("W 2003 pierwszy satelita europejski SMART-1 został umieszczony na orbicie księżycowej");
+			res.add("W 1976 urodził się Fiodor Jemieljanienko, rosyjski zawodnik MMA");
+			break;
+
+		case 929:
+			res.add("Imieniny Dadzboga");
+			res.add("Imieniny Rypsyma");
+			res.add("W Argentynie Dzień Wynalazcy (rocznica urodzin László Bíró)");
+			res.add("W Paragwaju Rocznica Zwycięstwa Pod Boqueron");
+			res.add("W Polsce Dzień Kuriera i Przewoźnika");
+			res.add("W 1929 po raz pierwszy w Polsce wyświetlono film dźwiękowy");
+			res.add("W 1976 Powołano Centrum Badań Kosmicznych PAN");
+			res.add("W 1222 założono Uniwersytet w Padwie");
+			res.add("W 1829 założono Scotland Yard");
+			res.add("W 1966 odbyła się prezentacja Chevroleta Camaro");
+			res.add("W 1985 wyemitowano premierowy odcinek serialu MacGyver");
+			res.add("W 1758 urodził się Horatio Nelson, angielski admirał");
+			res.add("W 1943 urodził się Lech Wałęsa");
+			break;
+
+		case 930:
+			res.add("Międzynarodowy Dzień Tłumacza");
+			res.add("Dzień Chłopaka w Polsce");
+			res.add("W 1922 w Krakowie wprowadzono ruch prawostronny");
+			res.add("W 1986 TVP wyemitowała premierowy odcinek serialu \"Alternatywy 4\"");
+			res.add("W 1452 Johann Gutenberg wydrukował pierwszą w świecie chrześcijańskim książkę");
+			res.add("W 1901 Brytyjczyk Hubert Booth opatentował odkurzacz");
+			res.add("W 1973 urodził się Dzidosław Żuberek, polski piłkarz");
+			break;
+
+		case 1001:
+			res.add("Imieniny Cieszysława (cieszmy się wraz z nim)");
+			res.add("Światowy Dzień Wegetarianizmu");
+			res.add("Międzynarodowy Dzień Muzyki");
+			res.add("Światowy Dzień Uśmiechu");
+			res.add("W 1936 zwodowano niszczyciel ORP Błyskawica");
+			res.add("W 1949 otwarto dla ruchu odbudowaną po zniszczeniach wojennych ulicę Nowy Świat w Warszawie");
+			res.add("W 1410 Jodok z Moraw został wybrany przez część elektorów na antykróla Niemiec");
+			res.add("W 1890 Kongres Stanów Zjednoczonych utworzył Park Narodowy Yosemite w Kalifornii");
+			res.add("W 1931 w Hiszpanii przyznano kobietom prawa wyborcze");
+			res.add("W 1964 w Japonii otwarto pierwszą linię superszybkiej kolei Shinkansen (a u nas 50 lat później)");
+			res.add("W 1946 utworzono Mensa International");
+			res.add("W	1969 Concorde po raz pierwszy przekroczył barierę dźwięku");
+			break;
+
+		case 1002:
+			res.add("Imieniny Ursycyna i Nasiębora");
+			res.add("Światowy Dzień Zwierząt Hodowlanych");
+			res.add("Międzynarodowy Dzień bez Przemocy (nie namawiaj!)");
+			res.add("W 1941 Heini Dittmar jako pierwszy na świecie przekroczył granicę 1000 km/h, osiągając 1003,67 km/h");
+			res.add("W 1869 urodził się Mahatma Gandhi, indyjski filozof, prawnik i polityk");
+			res.add("W 1951 urodził się Sting, brytyjski muzyk, wokalista i kompozytor");
+			res.add("W 1962 urodził się Tomasz Budzyński - polski wokalista rockowy");
+			break;
+
+		case 1003:
+			res.add("Imieniny Częstobrony");
+			res.add("Święto Morazan w Hondurasie");
+			res.add("W 1633 zakończyło się nieudane rosyjskie oblężenie Smoleńska (polskiego!)");
+			res.add("W 1996 Wisława Szymborska otrzymała Nagrodę Nobla w dziedzinie literatury");
+			res.add("W 1906 SOS zostało przyjęte jako międzynarodowy sygnał ratunkowy (...---...)");
+			res.add("W 1790 urodził się John Ross, wódz Czirokezów");
+			break;
+
+		case 1004:
+			res.add("Dzień Niepodległości Lesotho");
+			res.add("Dzień Pokoju i Pojednania w Mozambiku");
+			res.add("Światowy Dzień Zwierząt");
+			res.add("Dzień Wojsk Kosmicznych w Rosji (mają rozmach s...)");
+			res.add("W 1582 papież Grzegorz XIII wprowadził kalendarz gregoriański");
+			res.add("W 1900 otwarto Teatr Miejski we Lwowie");
+			res.add("W 1883 w swój pierwszy kurs wyruszył pociąg Orient Express");
+			res.add("W 1957 ZSRR wystrzelił pierwszego sztucznego satelitę Ziemi – Sputnika 1");
+			res.add("W 1903 urodził się John Vincent Atanasoff, amerykański inżynier");
+			break;
+
+		case 1005:
+			res.add("Imieniny Maura");
+			res.add("Światowy Dzień Nauczyciela");
+			res.add("W 1377 Bełz otrzymał prawa miejskie");
+			res.add("W 1827 we wsi Fasty spadł meteoryt Białystok");
+			res.add("W 1938 wyemitowano pierwszy w Polsce program telewizyjny (oglądany na 4 odbiornikach)");
+			res.add("W 1983 Lech Wałęsa został uhonorowany Pokojową Nagrodą Nobla");
+			res.add("W 1842 Mistrz piwowarski Josef Groll uwarzył w Pilznie pierwszą warkę piwa Pilsner");
+			res.add("W 1962 odbyła się premiera filmu Doktor No, pierwszego z serii z agentem 007 Jamesem Bondem");
+			res.add("W 1962 ukazał się pierwszy singiel grupy The Beatles – \"Love Me Do/P.S. I Love You\"");
+			res.add("W 1969 BBC wyemitowała premierowy odcinek serialu komediowego Latający cyrk Monty Pythona");
+			res.add("W 1983 czeski astronom Antonín Mrkos odkrył planetoidę (9007) James Bond");
+			res.add("W 1955 urodził się Michał Lorenc, polski kompozytor, twórca muzyki filmowej");
+			break;
+
+		case 1006:
+			res.add("W 1674 w Krakowie został wydany zbiór utworów Wespazjana Kochowskiego \"Niepróżnujące próżnowanie\"");
+			res.add("W 2000 w Warszawie otwarto Most Świętokrzyski");
+			res.add("W 1889 Thomas Alva Edison przeprowadził w swym laboratorium pierwszą projekcję filmu");
+			res.add("W 1889 w Paryżu otwarto kabaret Moulin Rouge.");
+			res.add("W 1948 w Paryżu został zaprezentowany Citroën 2CV");
+			res.add("W 1831 urodził się Richard Dedekind, niemiecki matematyk, który nie skończył na zbiorach");
+			break;
+
+		case 1007:
+			res.add("Imieniny Bachusa i Bakchusa");
+			res.add("Dzień Kompozytora w Brazylii");
+			res.add("W 1918 Rada Regencyjna ogłosiła niepodległość Polski");
+			res.add("W 1945 założono klub piłkarski Promień Żary");
+			res.add("W 2009 wmurowano kamień węgielny pod budowę Stadionu Narodowego w Warszawie");
+			res.add("W 1886 Hiszpania zniosła niewolnictwo na Kubie");
+			res.add("W 1977 ukazał się singel We Are the Champions grupy Queen");
+			res.add("W 1885 urodził się Niels Bohr, duński fizyk, laureat Nagrody Nobla");
+			res.add("W 1955 urodził się Yo-Yo Ma, chiński wiolonczelista");
+			break;
+
+		case 1008:
+			res.add("Chorwacja – Święto Niepodległości");
+			res.add("W 1901 Sopot uzyskał prawa miejskie");
+			res.add("W 1966 Kazimierz Deyna zadebiutował w barwach ŁKS Łódź w wówczas najwyższej I lidze piłkarskiej");
+			res.add("W 1976 oddano do użytku trasę Warszawa-Katowice (tzw. gierkówkę)");
+			res.add("W 1821 został ustanowiony Order Słońca Peru");
+			res.add("W 2009 Kongres USA nadał pośmiertnie gen. Kazimierzowi Pułaskiemu tytuł Honorowego Obywatela Stanów Zjednoczonych");
+			res.add("W 1920 urodził się Frank Herbert, fantastyczny pisarz");
+			break;
+
+		case 1009:
+			res.add("Imieniny Przedpełka");
+			res.add("Azerbejdżan – Święto Armii i Marynarki Wojennej");
+			res.add("Światowy Dzień Poczty ");
+			res.add("W 1479 w Nowym Mieście Korczynie wielki mistrz krzyżacki złożył hołd lenny królowi Kazimierzowi IV Jagiellończykowi");
+			res.add("W 1550 na wieży wrocławskiego ratusza umieszczono zegar z pozytywką");
+			res.add("W 1633 uruchomiono Fontannę Neptuna w Gdańsku");
+			res.add("W 1980 Czesław Miłosz został laureatem literackiej Nagrody Nobla");
+			res.add("W 1000 Leif Eriksson jako pierwszy znany Europejczyk postawił stopę na ziemi kanadyjskiej");
+			res.add("W 1610 polskie chorągwie pod dowództwem hetmana Stanisława Żółkiewski wkroczyły na Kreml moskiewski");
+			break;
+
+		case 1010:
+			res.add("Imieniny Twardostoja");
+			res.add("Dzień Fińskiej Literatury w Finlandii (Muminki!)");
+			res.add("Światowy Dzień Drzewa");
+			res.add("Światowy Dzień Zdrowia Psychicznego (wypijmy aby nie zwariować!)");
+			res.add("W 1968 Telewizja Polska wyemitowała premierowy odcinek serialu \"Stawka większa niż życie\"");
+			res.add("W 1427 Przasnysz uzyskał prawa miejskie");
+			res.add("W 2005 bundz i śliwowica łącka zostały wpisane na Listę Produktów Tradycyjnych");
+			res.add("W 1776 Maurycy Beniowski został obwołany przez tubylców królem Madagaskaru");
+			res.add("W 2003 miała miejsce premiera pierwszej części filmu Kill Bill");
+			res.add("W 1813 urodził się Giuseppe Verdi, włoski kompozytor");
+			break;
+
+		case 1011:
+			res.add("USA – Dzień Pamięci Generała Pułaskiego");
+			res.add("Międzynarodowy Dzień Dziewczynek (ONZ!)");
+			res.add("Imieniny Domaczaja");
+			res.add("Iminieny Placyda i Probusa");
+			res.add("W 1919 powstał Polski Związek Lekkiej Atletyki, pierwsze polskie stowarzyszenie sportowe");
+			res.add("W 1919 uroczyście otwarto Uniwersytet Wileński");
+			res.add("W 1957 skonstruowano pierwszy prototyp jednoosiowego ciągnika ogrodniczego Ursus C-308");
+			res.add("W 1976 miała miejsce premiera 1. odcinka brazylijskiego serialu \"Niewolnica Isaura\"");
+			res.add("W 1937 urodził się Bobby Charlton, angielski piłkarz");
+			break;			
+			
 		default:
 			res.add("Za update aplikacji!");
 			break;
