@@ -1458,6 +1458,28 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1937 urodził się Bobby Charlton, angielski piłkarz");
 			break;			
 			
+		case 1012:
+			res.add("Columbus Day");
+			res.add("Rocznica Odkrycia na wyspach Bahama");
+			res.add("Rocznica Odkrycia Ameryki (w Hiszpanii)");
+			res.add("Dzień Bezpiecznego Komputera (w Polce)");
+			res.add("W 1919 założono Polski Komitet Olimpijski");
+			res.add("W 1810 odbył się pierwszy Oktoberfest w Monachium");
+			res.add("W 1887 założono japoński koncern Yamaha");
+			res.add("W 1909 zwodowano żaglowiec Dar Pomorza (jako niemiecki statek szkolny Prinzess Eitel Friedrich)");
+			break;
+
+
+			case 1013:
+			res.add("Imieniny Karpa");
+			res.add("Imieniny Reginbalda");
+			res.add("Dzień Ratownictwa Medycznego");
+			res.add("W 1978 przy ul. Głogowskiej w Poznaniu otwarto pierwszy sklep nocny");
+			res.add("W 1983 do amerykańskich sklepów trafił pierwszy na świecie telefon komórkowy Motorola DynaTAC");
+			res.add("W 2003 wystartowała albańska Wikipedia");
+			res.add("W 1971 urodził się Sacha Baron Cohen");
+			break;
+			
 		default:
 			res.add("Za update aplikacji!");
 			break;
