@@ -41,18 +41,23 @@ public class MainActivity extends Activity {
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		// Locate MenuItem with ShareActionProvider
-	    MenuItem item = menu.findItem(R.id.menu_item_share);
-	    // Fetch and store ShareActionProvider
-	    mShareActionProvider = (ShareActionProvider) item.getActionProvider();
-	    // Update Share Intent
-	    if (currOccasion != null ) {
-	    	updateShareIntent( currOccasion );
-	    }
-	    
-	    // Return true to display menu
-	    return super.onCreateOptionsMenu(menu);
+		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+		if (currentapiVersion >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			getMenuInflater().inflate(R.menu.activity_main, menu);
+			// Locate MenuItem with ShareActionProvider
+		    MenuItem item = menu.findItem(R.id.menu_item_share);
+		    // Fetch and store ShareActionProvider
+		    mShareActionProvider = (ShareActionProvider) item.getActionProvider();
+		    // Update Share Intent
+		    if (currOccasion != null ) {
+		    	updateShareIntent( currOccasion );
+		    }    
+		    // Return true to display menu
+		    return super.onCreateOptionsMenu(menu);
+		}
+		else {
+			return true;
+		}
     }
 
 	@Override
