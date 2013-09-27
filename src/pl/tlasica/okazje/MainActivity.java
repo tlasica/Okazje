@@ -3,8 +3,10 @@ package pl.tlasica.okazje;
 import java.util.Calendar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -13,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -20,7 +23,9 @@ public class MainActivity extends Activity {
 	private TextView	mCurrDateTextView;
 	private TextView	mOccasionTextView;
 	private Calendar	currDate;
+	private String		currOccasion;
 	private Occasions	occasionsDict;
+	private ShareActionProvider mShareActionProvider;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +41,18 @@ public class MainActivity extends Activity {
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);		
-        return true;
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		// Locate MenuItem with ShareActionProvider
+	    MenuItem item = menu.findItem(R.id.menu_item_share);
+	    // Fetch and store ShareActionProvider
+	    mShareActionProvider = (ShareActionProvider) item.getActionProvider();
+	    // Update Share Intent
+	    if (currOccasion != null ) {
+	    	updateShareIntent( currOccasion );
+	    }
+	    
+	    // Return true to display menu
+	    return super.onCreateOptionsMenu(menu);
     }
 
 	@Override
@@ -91,9 +106,9 @@ public class MainActivity extends Activity {
 	}
 
 	private void updateOccasion() {
-		String occ = occasionsDict.getRandomOccasion( currDate );
-		mOccasionTextView.setText( occ );		
-		
+		currOccasion = occasionsDict.getRandomOccasion( currDate );
+		mOccasionTextView.setText( currOccasion );
+		updateShareIntent( currOccasion );
 	}
 
 	public void onClickOccasion(View view) {
@@ -104,5 +119,21 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		return super.onOptionsItemSelected(item);
 	}
-	
+
+	// Call to update the share intent
+	private void updateShareIntent(String occ) {
+		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());				
+		String text = "Dobra okazja na " + dateStr + ":\n" + occ;
+		String link = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+		
+		Intent intent = new Intent(Intent.ACTION_SEND);
+		intent.putExtra(Intent.EXTRA_SUBJECT, text);
+		intent.setType("text/plain");
+		intent.putExtra(Intent.EXTRA_TEXT, link);
+		
+	    //intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);		
+	    if (mShareActionProvider != null) {
+	        mShareActionProvider.setShareIntent(intent);
+	    }
+	}
 }
