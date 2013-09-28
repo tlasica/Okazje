@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -20,6 +19,9 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+	private static final String LINK_PLAY_STORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+	private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp"; 
+	
 	private TextView	mCurrDateTextView;
 	private TextView	mOccasionTextView;
 	private Calendar	currDate;
@@ -128,13 +130,13 @@ public class MainActivity extends Activity {
 	// Call to update the share intent
 	private void updateShareIntent(String occ) {
 		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());				
-		String text = "Dobra okazja na " + dateStr + ":\n" + occ;
-		String link = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+		String text = "Dobra okazja na " + dateStr + ": " + occ;
+				
 		
 		Intent intent = new Intent(Intent.ACTION_SEND);
 		intent.putExtra(Intent.EXTRA_SUBJECT, text);
 		intent.setType("text/plain");
-		intent.putExtra(Intent.EXTRA_TEXT, link);
+		intent.putExtra(Intent.EXTRA_TEXT, LINK_FACEBOOK);
 		
 	    //intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);		
 	    if (mShareActionProvider != null) {
