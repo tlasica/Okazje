@@ -1470,7 +1470,7 @@ public class OccasionsDataPL implements OccasionsData{
 			break;
 
 
-			case 1013:
+		case 1013:
 			res.add("Imieniny Karpa");
 			res.add("Imieniny Reginbalda");
 			res.add("Dzień Ratownictwa Medycznego");
@@ -1480,8 +1480,69 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1971 urodził się Sacha Baron Cohen");
 			break;
 			
+		case 1014:
+			res.add("Gruzja – Dzień Kościoła Sweti Cchoweli");
+			res.add("Jemen – Rocznica Rewolucji 1963 Roku");
+			res.add("Polska – Dzień Edukacji Narodowej (dawn. Dzień Nauczyciela)");
+			res.add("Zimbabwe – Święto Karirurute");
+			res.add("Światowy Dzień Normalizacji");
+			res.add("W 1773 powstała Komisja Edukacji Narodowej");
+			res.add("W 1966 w pobliżu wsi Kletno w Sudetach odkryto Jaskinię Niedźwiedzią");
+			res.add("W 1834 opatentowano maszynę do siania kukurydzy");
+			res.add("W 1892 Arthur Conan Doyle wydał zbiór opowiadań \"Przygody Sherlocka Holmesa\"");
+			res.add("W 1926 wydano Kubusia Puchatka Alana Alexandra Milne’a");
+			res.add("W 1947 amerykanin Chuck Yeager na samolocie Bell X-1 jako pierwszy przekroczył barierę dźwięku");
+			res.add("W 1994 odbyła się premiera filmu Pulp Fiction.");
+			res.add("W 2012 Felix Baumgartner pobił rekord świata skacząc z wysokości ponad 39 km");
+			res.add("W 1542 urodził się Akbar, władca Imperium Mogołów w Indiach");
+			break;
+		
+		case 1015:
+			res.add("Światowy Dzień Mycia Rąk");
+			res.add("W Polsce Święto Wojsk Radiotechnicznych");
+			res.add("W 1979 Centrum Zdrowia Dziecka przyjęło pierwszego pacjenta");
+			res.add("W 1993 rozpoczęto produkcję samochodu dostawczego Lublin");
+			res.add("W 2005 w Emilcinie na Lubelszczyźnie odsłonięto jedyny w kraju pomnik UFO");
+			res.add("W 1971 w Jugosławii rozpoczęto produkcję samochodu Zastava 101");
+			break;
+		
+		case 1016:
+			res.add("Światowy Dzień Żywności");
+			res.add("Dzień Szefów (ang. Boss’s Day) w USA");
+			res.add("W 1889 fotograf i wynalazca Konrad Brandel uzyskał patent na swój ręczny aparat do zdjęć migawkowych");
+			res.add("W 1958 Telewizja Polska wyemitowała premierowy program Kabaretu Starszych Panów");
+			res.add("W 2006 otwarto nowo wybudowany peron na stacji kolejowej Włoszczowa Północ");
+			res.add("W 1919 założono Żytomierski Uniwersytet Państwowy im. Iwana Franki");
+			res.add("W 1923 brytyjski zegarmistrz John Harwood opatentował w Szwajcarii zegarek automatyczny");
+			res.add("W 1923 założono The Walt Disney Company");
+			res.add("W 1978 arcybiskup krakowski kardynał Karol Józef Wojtyła został wybrany na papieża jako pierwsza osoba spoza Włoch od 456 lat");
+			res.add("W 1978 Wanda Rutkiewicz, jako trzecia kobieta na świecie oraz pierwsza Europejka, weszła na szczyt Mount Everestu (8848 m n.p.m.)");
+			res.add("W 1986 Tyrolczyk Reinhold Messner po wejściu na Lhotse został pierwszym zdobywcą wszystkich ośmiotysięczników");
+			break;
+		
+		case 1017:
+			res.add("Imieniny Mamelta");
+			res.add("Wyspy Dziewicze Stanów Zjednoczonych – Dzień Przyjaźni z Portoryko");
+			res.add("W 1781 rozpoczął działalność Teatr Stary w Krakowie");
+			res.add("W 1997 weszła w życie nowa Konstytucja Rzeczypospolitej Polskiej");
+			res.add("W 1938 w stoczni w Rotterdamie zwodowano okręt podwodny ORP Sęp");
+			res.add("W 1938 urodził się Władysław Turski, polski informatyk (zm. 2013)");
+			break;
+			
+		case 1018:
+			res.add("Imieniny Bratomiła i Miłobrata");
+			res.add("Imieniny Asklepiadesa");
+			res.add("Dzień Alaski");
+			res.add("Dzień Poczty Polskiej");
+			res.add("W 1558 król Zygmunt II August zainicjował pierwsze międzynarodowe połączenie pocztowe między Krakowem a Wenecją");
+			res.add("W 1987 Telewizja Polska wyemitowała premierowy odcinek serialu Zmiennicy");
+			res.add("W 1998 Powszechny Bank Gospodarczy po raz pierwszy zaoferował dostęp do rachunku bankowego przez Internet");
+			res.add("W 1977 urodził się Paweł Zagumny, polski siatkarz");
+			break;
+			
 		default:
 			res.add("Za update aplikacji!");
+			res.add("Za autora aplikacji, żeby zaktualizował okazje!");
 			break;
 		}
 		

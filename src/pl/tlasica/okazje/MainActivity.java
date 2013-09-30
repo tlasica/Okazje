@@ -19,7 +19,8 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private static final String LINK_PLAY_STORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+	private static final String LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+	private static final String LINK_BITLY="http://bit.ly/19b02vz";
 	private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp"; 
 	
 	private TextView	mCurrDateTextView;
@@ -127,16 +128,24 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	private String createShareContentText(String occ, String dateStr) {
+		String content = String.format("Dobra okazja na %s:\n%s\n\n" +
+				"Okazje Android App: %s\n", dateStr, occ, LINK_BITLY);
+		return content;
+	}
+		
 	// Call to update the share intent
 	private void updateShareIntent(String occ) {
 		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());				
-		String text = "Dobra okazja na " + dateStr + ": " + occ;
 				
-		
+		String subject = "Dobra okazja na " + dateStr;
+		String content = createShareContentText(occ, dateStr);
+		Log.d("SHARE", content);
+						
 		Intent intent = new Intent(Intent.ACTION_SEND);
-		intent.putExtra(Intent.EXTRA_SUBJECT, text);
 		intent.setType("text/plain");
-		intent.putExtra(Intent.EXTRA_TEXT, LINK_FACEBOOK);
+		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+		intent.putExtra(Intent.EXTRA_TEXT, content);
 		
 	    //intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);		
 	    if (mShareActionProvider != null) {
