@@ -1539,7 +1539,123 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1998 Powszechny Bank Gospodarczy po raz pierwszy zaoferował dostęp do rachunku bankowego przez Internet");
 			res.add("W 1977 urodził się Paweł Zagumny, polski siatkarz");
 			break;
-			
+
+		case 1019:
+			res.add("Imieniny Fredeswinda");
+			res.add("W Albanii obchodzony jest Dzień Matki Teresy z Kalkuty");
+			res.add("W 1927 założono Aeroklub Warszawski");
+			res.add("W 1970 odbyła się premiera komedii filmowej Rejs");
+			res.add("W 1512 Marcin Luter otrzymał promocję na doktora teologii");
+			res.add("W 1856 Majid ibn-Said został sułtanem Zanzibaru");
+			res.add("W 1974 uchwalono konstytucję Niue");
+			res.add("W 1975 odbyła się premiera filmu Lot nad kukułczym gniazdem");
+			res.add("W 2002 uruchomiono metro w Kopenhadze (a w Warszawie 7 lat wcześniej!)");
+			res.add("W 1940 urodził się Jerzy Kulej, znakomity polski bokser");
+			res.add("W 1969 urodził się Janusz Kulig, polski kierowca rajdowy");
+			break;
+
+		case 1020:
+			res.add("Imieniny Żywii");
+			res.add("Światowy Dzień Statystyki");
+			res.add("Europejski Dzień Seniora");
+			res.add("W 1918 Lwowska Rada Miejska przyjęła rezolucję o przyłączeniu miasta do Polski");
+			res.add("W 1919 Naczelnik Państwa Józef Piłsudski dokonał uroczystego otwarcia Akademii Górniczej w Krakowie");
+			res.add("W 1923 Senat Wolnego Miasta Gdańska uchwalił wprowadzenie guldena gdańskiego w miejsce marki niemieckiej");
+			res.add("W 1548 Alonso de Mendoza założył La Paz, dzisiejszą stolicę Boliwii");
+			res.add("W 1803 Senat Stanów Zjednoczonych ratyfikował zakup Luizjany (tak się handluje!)");
+			res.add("W 1976 Diego Armando Maradona zadebiutował w 1. lidze argentyńskiej w barwach Argentinos Juniors");
+			res.add("W 1926 urodził się Andrzej Waligórski, polski poeta, satyryk, autor tekstów piosenek");
+			break;
+
+		case 1021:
+			res.add("Brytyjskie Wyspy Dziewicze – Dzień Św. Urszuli");
+			res.add("Wyspy Marshalla – Compact Day");
+			res.add("W 1949 przekazano do eksploatacji 1. zbudowany po wojnie w Polsce statek pełnomorski \"SS Sołdek\"");
+			res.add("W 1956 w Suwałkach (a jakże) odnotowano polskie październikowe minimum temperatury (−14,2°C)");
+			res.add("W 1923 w Deutsches Museum w Monachium uruchomiono pierwsze na świecie planetarium");
+			res.add("W 2003 została odkryta (136199) Eris, największa znana planeta karłowata");
+			res.add("W 2010 przyjęto nowy wzór flagi Mjanmy");
+			break;
+
+		case 1022:
+			res.add("Imieniny Nunilona");
+			res.add("W 1906 założono Towarzystwo Przyjaciół Nauk w Wilnie");
+			res.add("W 1980 W meczu 1/16 finału Pucharu UEFA Widzew Łódź pokonał Juventus FC 3–1");
+			res.add("W 1746 założono Princeton University (jako College of New Jersey)");
+			res.add("W 1978 odbyła się inauguracja pontyfikatu papieża Jana Pawła II");
+			res.add("W 1982 miała miejsce premiera filmu Rambo - Pierwsza krew");
+			res.add("W 2011 założono centrolewicową partię polityczną Pozytywna Słowenia");
+			break;
+
+		case 1023:
+			res.add("Kraje Ameryki Północnej – Dzień Mola (pomiędzy godzinami 6:02 i 18:02)");
+			res.add("Węgry – Święto Niepodległości");
+			res.add("Tajlandia – Dzień Pamięci Króla Chulalongkorna");
+			res.add("W 1929 został znaleziony nosorożec włochaty ze Staruni (woj. stanisławowskie)");
+			res.add("W 1958 w odcinku komiksu autorstwa belgijskiego rysownika Peyo po raz pierwszy pojawiły się Smerfy");
+			res.add("W 2001 miała miejsce premiera iPoda");
+			res.add("W 1927 urodził się Leszek Kołakowski, polski filozof, eseista, publicysta");
+			res.add("W 1947 urodził się Kazimierz Deyna, wybitny polski piłkarz");
+			res.add("W 1952 urodził Winicjusz Chróst, polski gitarzysta zespołu Breakout");
+			break;
+
+		case 1024:
+			res.add("Imieniny Boleczesta");
+			res.add("Światowy Dzień Informacji na temat Rozwoju");
+			res.add("Dzień Narodów Zjednoczonych");
+			res.add("Dzień Walki z Otyłością (pijemy bez chipsów!)");
+			res.add("W 1965 Telewizja Polska wyemitowała premierowy odcinek serialu Wojna domowa");
+			res.add("W 1836 Amerykanin Alonzo Philips opatentował zapałki");
+			res.add("W 1857 założono najstarszy klub piłkarski na świecie Sheffield FC");
+			break;
+
+		case 1025:
+			res.add("Imieniny Maura");
+			res.add("Republika Chińska (Tajwan) – Dzień Retrocesji");
+			res.add("Dzień Kundelka (święto wszystkich wielorasowych psów)");
+			res.add("W 1899 otwarto linię kolejową Kraków - Zakopane");
+			res.add("W 1952 Telewizja Polska wyemitowała pierwszy, półgodzinny program (o godz. 19:00)");
+			res.add("W 2008 oddano do użytku pełną I linię warszawskiego metra");
+			res.add("W 1956 Adolf Hitler został urzędowo uznany za zmarłego");
+			res.add("W 2001 wydano system operacyjny Microsoft Windows XP (zapewne programowany ekstremalnie)");
+			res.add("W 2007 odbył się pierwszy komercyjny lot Airbusa A380 na trasie Singapur - Sydney");
+			break;
+						
+		case 1026:
+			res.add("Imieniny Fulka (kto czytał Wiedźmina ten wie)");
+			res.add("Angam Day w Nauru (?)");
+			res.add("W 1958 otwarto Muzeum Henryka Sienkiewicza w Oblęgorku");
+			res.add("W 1969 w Beskidzie Śląskim została odkryta Jaskinia Pajęcza");
+			res.add("W 1971 Polska kupiła licencję na produkcję Fiata 126");
+			res.add("W 1982 Sejm PRL przyjął ustawę o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi");
+			res.add("W 1881 W Tombstone (Arizona) miała miejsce strzelanina w O.K. Corral");
+			res.add("W 1984 miała miejsce premiera filmu Terminator");
+			res.add("W 2012 został wydany znany i lubiany Microsoft Windows 8");
+			res.add("W 2010 zakończono napełnianie zbiornika za Zaporą Trzech Przełomów w ChRL");
+			break;
+
+
+		case 1027:
+			res.add("Imieniny Frumencjusza i Siestrzemiła");
+			res.add("Imieniny Wielebora");
+			res.add("Światowy Dzień Dziedzictwa Audiowizualnego (nooo!)");
+			res.add("Dzień Flagi w Grecji (pijemy na kredyt)");
+			res.add("W 2007 Paweł Kotuliński pobił w Świdnicy rekord Guinnessa na najdłuższy talk-show (łącznie 40 godzin)");
+			res.add("W 1607 pojawiła się Kometa Halleya");
+			res.add("W 1728 urodził się James Cook, angielski żeglarz i odkrywca");
+			res.add("W 1942 urodził się Janusz Korwin-Mikke, publicysta, brydżysta i kontrowersjonista");
+			break;
+
+		case 1028:
+			res.add("W 1861 otwarto dla żeglugi towarowej Kanał Elbląski");
+			res.add("W 1913 Lucyna Messal i Józef Redo, w trakcie spektaklu po raz pierwszy w Polsce zatańczyli tango");
+			res.add("W 1999 Himalaista Leszek Cichy został pierwszym Polakiem, który zdobył Koronę Ziemi");
+			res.add("W 1974 Polscy siatkarze zajęli pierwsze miejsce na zakończonych w Meksyku VIII Mistrzostwach Świata");
+			res.add("W 1981 James Hetfield i Lars Ulrich założyli zespół Metallica (seek & destroy some beer)");
+			res.add("W 1955 urodził się Bill Gates, znany z zamiłowania do Okien");
+			break;
+						
+						
 		default:
 			res.add("Za update aplikacji!");
 			res.add("Za autora aplikacji, żeby zaktualizował okazje!");
