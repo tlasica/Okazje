@@ -1620,7 +1620,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2001 wydano system operacyjny Microsoft Windows XP (zapewne programowany ekstremalnie)");
 			res.add("W 2007 odbył się pierwszy komercyjny lot Airbusa A380 na trasie Singapur - Sydney");
 			break;
-						
+
 		case 1026:
 			res.add("Imieniny Fulka (kto czytał Wiedźmina ten wie)");
 			res.add("Angam Day w Nauru (?)");
@@ -1654,7 +1654,201 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1981 James Hetfield i Lars Ulrich założyli zespół Metallica (seek & destroy some beer)");
 			res.add("W 1955 urodził się Bill Gates, znany z zamiłowania do Okien");
 			break;
-						
+
+		case 1029:
+			res.add("Imieniny Żelibora");
+			res.add("Święto Nazwania w Tunezji");
+			res.add("W 1611 w Warszawie wzięty do niewoli car Rosji Wasyl IV Szujski złożył hołd przed królem Zygmuntem III Wazą");
+			res.add("W 1909 powstało Tatrzańskie Ochotnicze Pogotowie Ratunkowe (TOPR)");
+			res.add("W 2008 wyprodukowano ostatni autobus marki Jelcz.");
+			res.add("W 1863 założono Międzynarodowy Czerwony Krzyż");
+			res.add("W 1888 w Kiszyniowie wyjechał na trasę pierwszy tramwaj konny");
+			res.add("W 1959 ukazał się pierwszy komiks o przygodach Asterixa");
+			res.add("W 1960 Muhammad Ali stoczył pierwszą zawodową walkę bokserską");
+			res.add("W 1984 został wydany pierwszy singiel niemieckiego duetu Modern Talking");
+			break;
+
+		case 1030:
+			res.add("Imieniny Amparo");
+			res.add("Imieniny Sęczygniewa");
+			res.add("Dzień Spódnicy (w Polsce)");
+			res.add("W 1918 Tarnów jako pierwsze miasto odzyskał niepodległość");
+			res.add("W 1951 założono Polską Akademię Nauk");
+			res.add("W 1954 utworzono parki narodowe: Babiogórski, Tatrzański i Pieniński");
+			res.add("W 2008 Grzegorz Lato został wybrany na nowego prezesa PZPN (pijemy pod sałatkę)");
+			res.add("W 1938 w USA słuchowisko Orsona Wellesa \"Wojna światów\" wywołało masową panikę wśród słuchaczy radia");
+			res.add("W 1960 urodził się Diego Armando Maradona, argentyński piłkarz");
+			break;
+
+		case 1031:
+			res.add("Dziady (jesienne, słowiańskie święto)");
+			res.add("Urodziny Króla w Kambodży");
+			res.add("Święto Reformacji");
+			res.add("Światowy Dzień Oszczędzania");
+			res.add("W 1353 Olsztyn otrzymał prawa miejskie");
+			res.add("W 1926 założono Polski Związek Hokeja na Trawie");
+			res.add("W 1517 Marcin Luter ogłosił w Wittenberdze swoich 95 tez");
+			res.add("W 2002 w meczu madagaskarskiej najwyższej ligi piłkarskiej padł rekordowy wynik 149:0");
+			res.add("W 1451 (być może) urodził się Krzysztof Kolumb, włoski żeglarz, odkrywca Ameryki");
+			break;
+
+		case 1101:
+			res.add("Bułgaria – Dzień Budzicieli Narodu");
+			res.add("Celtyckie Święto Samhain");
+			res.add("Światowy Dzień Wegan");
+			res.add("W 1985 zniesiono w Polsce reglamentację cukru");
+			res.add("W 1335 władcy Czech, Polski i Węgier spotkali się na zjeździe w Wyszehradzie");
+			res.add("W 1963 odkryto pierwszego kwazara");
+			break;
+		
+		case 1102:
+			res.add("Dzień Zaduszny - przerwa");
+			break;
+			
+		case 1103:
+			res.add("Dzień Kultury (Bunka-no Hi) w Japonii");
+			res.add("Hubertus – święto myśliwych, leśników i jeźdźców");
+			res.add("W 1231 notujemy pierwszą wzmiankę o Zgierzu");
+			res.add("W 2005 serial Klan osiągnął jako pierwszy polski serial telewizyjny granicę 1000 odcinków");
+			res.add("W 1913 w USA wprowadzono podatek dochodowy.");
+			res.add("W 1954 miała miejsce premiera filmu \"Godzilla - król potworów\"");
+			res.add("W 1994 całkowite zaćmienie Słońca widoczne nad Ameryką Południową, Atlantykiem i południową Afryką");
+			res.add("W 1927 urodził się Zbigniew Cybulski, polski aktor");
+			break;
+		case 1104:
+			res.add("Imieniny Dżesiki");
+			res.add("Imieniny Mszczujwoja i Mściwoja");
+			res.add("W 1844 we Lwowie otwarto Akademię Techniczną (od 1920 roku Politechnika Lwowska)");
+			res.add("W 2000 na antenie TVP2 wyemitowano premierowy odcinek serialu M jak miłość");
+			res.add("W 1869 w Londynie ukazał się pierwszy numer czasopisma Nature");
+			res.add("W 1970 samolot Concorde po raz pierwszy przekroczył dwukrotną prędkość dźwięku");
+			res.add("W 1952 urodził się Fred Fish, amerykański programista komputerowy");
+			break;
+		case 1105:
+			res.add("Imieniny Blandyny i Blandyna");
+			res.add("Salwador – Pierwsze Wołanie o Niepodległość");
+			res.add("W 1901 zainaugurowała działalność Filharmonia Warszawska");
+			res.add("W 1985 Zbigniew Religa dokonał pierwszej w Polsce udanej transplantacji serca");
+			res.add("W 2010 otwarto Centrum Nauki Kopernik w Warszawie");
+			res.add("W 1906 Maria Skłodowska-Curie wygłosiła swój pierwszy wykład na Sorbonie");
+			res.add("W 1935 przedsiębiorstwo Parker Brothers wprowadziło na rynek grę planszową Monopoly");
+			res.add("W 1967 odbyła się premiera 1. odcinka czechosłowackiego serialu animowanego Rozbójnik Rumcajs.");
+			res.add("W 1950 urodził się Gary Fisher, amerykański wynalazca roweru górskiego");
+			break;
+		case 1106:
+			res.add("Imieniny Nonnusa i Trzebowita");
+			res.add("Maroko – Rocznica Zielonego Marszu");
+			res.add("W 1922 w Toruniu utworzono Oficerską Szkołę Marynarki Wojennej");
+			res.add("W 1926 w porcie w Gdyni rozpoczął pracę pierwszy żuraw portowy");
+			res.add("W 1951 z linii montażowej Fabryki Samochodów Osobowych zjechała pierwsza Warszawa M20");
+			res.add("W 1975 w Londynie odbył się pierwszy koncert grupy Sex Pistols");
+			break;
+		case 1107:
+			res.add("Imieniny Przemiła");
+			res.add("Imieniny Żelibrata");
+			res.add("Tunezja – Święto Nowej Ery");
+			res.add("W 1977 powstał Polski Związek Badmintona");
+			res.add("W 1902 założono miasto Mountain View, serce Doliny Krzemowej w Kalifornii.");
+			res.add("W 1911 Maria Skłodowska-Curie została laureatką Nagrody Nobla w dziedzinie chemii");
+			res.add("W 1996 NASA wystrzeliła sondę Mars Global Surveyor.");
+			res.add("W 1913 urodził się Albert Camus, francuski pisarz, laureat Nagrody Nobla");
+			break;
+		case 1108:
+			res.add("Imieniny Wilehada");
+			res.add("W 2006 do Polski przyleciały dwa pierwsze zakupione w USA myśliwce typu F-16 Fighting Falcon");
+			res.add("W 1602 na Uniwersytecie Oksfordzkim otwarto Bodleian Library");
+			res.add("W 1793 otwarto muzeum w Luwrze w Paryżu");
+			res.add("W 1971 ukazał się album Led Zeppelin IV zawierający utwór Stairway to Heaven");
+			break;
+		case 1109:
+			res.add("Imieniny Dziwigora");
+			res.add("Europejski Dzień Wynalazcy (pijmy innowacyjnie!)");
+			res.add("W 1883 w Gdańsku zainstalowano pierwsze telefony. Aparat z nr 1 otrzymał miejscowy browar");
+			res.add("W 1919 założono Towarzystwo Żeglugowe „Sarmacja”");
+			res.add("W 1958 ukazało się premierowe wydanie Telewizyjnego Kuriera Warszawskiego");
+			res.add("W 1939 Naczelny Wódz gen. Władysław Sikorski nadał Warszawie order Virtuti Militari V klasy");
+			res.add("W 1921 Albert Einstein otrzymał Nagrodę Nobla w dziedzinie fizyki za wyjaśnienie efektu fotoelektrycznego");
+			res.add("W 1885 urodził się Teodor Kałuża, niemiecki matematyk, fizyk");
+			res.add("W 1991 urodził się Čestmír Kožíšek, czeski skoczek narciarski, znany z lotów");
+			break;
+		case 1110:
+			res.add("Imieniny Monitora");
+			res.add("W 1292 Zator w Małopolsce otrzymał prawa miejskie");
+			res.add("W 1918 Austria zrzekła się Galicji na rzecz Polski");
+			res.add("W 1619 Kartezjusz miał w oberży pod Ulm serię trzech proroczych snów na temat dalszego rozwoju nauki");
+			res.add("W 1992 miała miejsce premiera telefonu komórkowego Nokia 1011.");
+			res.add("W 1483 urodził się Marcin Luter, niemiecki teolog, przywódca protestanckiej reformacji");
+			res.add("W 1919 urodził się  Michaił Kałasznikow, radziecki konstruktor broni, m.in. karabinka AK47");
+			break;
+		case 1111:
+			res.add("Imieniny Sobieżyra i Spycisława");
+			res.add("Narodowe Święto Niepodległości");
+			res.add("Dzień Weteranów w USA");
+			res.add("Dzień Singli w ChRL");
+			res.add("W 1673 wojska polskie pod dowództwem Jana Sobieskiego pokonały Turków w bitwie pod Chocimiem");
+			res.add("W 1918 Rada Regencyjna przekazała władzę nad podległym jej wojskiem Józefowi Piłsudskiemu");
+			res.add("W 1842 w browarze w Pilznie rozpoczęto rozlewanie nowego gatunku piwa dolnej fermentacji – Pilsner Urquell.");
+			res.add("W 1871 rozpoczęła się I edycja Pucharu Anglii w piłce nożnej");
+			res.add("W 1896 urodził się Leopold Lis-Kula, polski pułkownik Legionów (zm. 1919)");
+			res.add("W 1987 urodził się Muflon, polski raper");
+			break;
+		case 1112:
+			res.add("Światowy Dzień Bicia Rekordów (oj,nie przesadzać!)");
+			res.add("W 1935 spadł meteoryt Łowicz");
+			res.add("W 1962 odbyła się premiera filmu \"O dwóch takich, co ukradli Księżyc\"");
+			res.add("W 1933 Hugh Gray jako pierwszy sfotografował rzekomego potwora z Loch Ness");
+			res.add("W 1980 w Barcelonie w towarzyskim meczu Polska odniosła jedyne do tej pory zwycięstwo (2-1) nad Hiszpanią");
+			res.add("W 1931 urodził się Norman Mineta, amerykański polityk");
+			break;
+		case 1113:
+			res.add("Polska – Święto Służby Uzbrojenia i Elektroniki");
+			res.add("Międzynarodowy Dzień Niewidomych (uważaj, co pijesz!)");
+			res.add("W 1921 w Krakowie została opublikowana druga jednodniówka futurystów polskich \"Nuż w bżuhu\"");
+			res.add("W 1924 Władysław Reymont został laureatem Nagrody Nobla w dziedzinie literatury za powieść Chłopi");
+			res.add("W 1974 zakończono budowę Obserwatorium Wysokogórskiego na Śnieżce");
+			res.add("W 1975 utworzono Morską Jednostkę Działań Specjalnych „Formoza”");
+			res.add("W 1990 pojawiła się pierwsza strona WWW");
+			res.add("W 1990 urodził się Jerzy Janowicz, polski tenisista");
+			break;
+		case 1114:
+			res.add("Imieniny Hipacego");
+			res.add("Polska – Ogólnopolski Dzień Seniora ");
+			res.add("Światowy Dzień Cukrzycy ");
+			res.add("W 1908 Albert Einstein zaprezentował teorię kwantów");
+			res.add("W 1971 sonda Mariner 9 osiągnęła orbitę Marsa, stając się pierwszym ziemskim sztucznym satelitą innej planety");
+			break;
+		case 1115:
+			res.add("Imieniny Sekundusa");
+			res.add("Dzień Świętego Leopolda w Belgii");
+			res.add("W 1702 zainaugurowała działalność Akademia Leopoldyńska we Wrocławiu");
+			res.add("W 1822 uruchomiono latarnię morską na Rozewiu");
+			res.add("W 2010 wprowadzono zakaz palenia tytoniu w miejscach publicznych");
+			res.add("W 1971 Intel wprowadził na rynek pierwszy na świecie mikroprocesor (Intel 4004)");
+			break;
+		case 1116:
+			res.add("Bhutan – Urodziny Króla");
+			res.add("Islandia – Dzień Języka Islandzkiego");
+			res.add("Międzynarodowy Dzień Tolerancji (kolor piwa nie ma znaczenia)");
+			res.add("W 1904 w Warszawie uruchomiono pierwszą centralę telefoniczną");
+			res.add("W 1910 miasto Sopot zakupiło pobliską miejscowość Karlikowo");
+			res.add("W 1848 został odkryty księżyc Saturna Hyperion");
+			res.add("W 1945 powstało UNESCO.");
+			res.add("W 1717 urodził się Jean le Rond d’Alembert, francuski matematyk i filozof ");
+			break;
+		case 1117:
+			res.add("Azerbejdżan – Dzień Narodowego Odrodzenia");
+			res.add("Międzynarodowy Dzień Studenta");
+			res.add("W Polska Dzień bez Długów (pijemy za swoje!)");
+			res.add("W 1989 w Warszawie zdemontowano pomnik Feliksa Dzierżyńskiego");
+			res.add("W 1989 wyemitowano ostatnie wydanie Dziennika Telewizyjnego");
+			res.add("W 2007 po wygranej 2–0 na z reprezentacją Belgii, Polska awansowała po raz 1. do mistrzostw Europy");
+			res.add("W 1873 z połączenia trzech naddunajskich miast (Budy, Óbudy oraz Pesztu) utworzono Budapeszt");
+			res.add("W 1970 Douglas Engelbart opatentował mysz komputerową");
+			res.add("W 2007 w Finlandii po raz pierwszy sfotografowano tzw. łuk Kerna");
+			res.add("W 1790 urodził się August Ferdinand Möbius, niemiecki matematyk");
+			res.add("W 1942 urodził się Martin Scorsese, amerykański reżyser filmowy");
+			break;
+			
 						
 		default:
 			res.add("Za update aplikacji!");
