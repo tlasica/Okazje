@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
         
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
-        
+                
         occasionsDict = new Occasions( new OccasionsDataPL() );
     }
 
