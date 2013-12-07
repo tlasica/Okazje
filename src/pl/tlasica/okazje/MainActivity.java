@@ -13,6 +13,7 @@ import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
@@ -90,8 +91,8 @@ public class MainActivity extends Activity {
         Log.d("DISPLAY", "ySize=" + ySize);
 
         // adjust card size to 50% of min(width,height)
-        LinearLayout layout = (LinearLayout) findViewById(R.id.layout_card);
-        LinearLayout.LayoutParams p = (LinearLayout.LayoutParams) layout.getLayoutParams();
+        ViewGroup layout = (ViewGroup) findViewById(R.id.layout_card);
+        ViewGroup.LayoutParams p = (ViewGroup.LayoutParams) layout.getLayoutParams();
         int cardHeight = Math.round( ySize * 0.56f ); 
         p.height = cardHeight;
         layout.requestLayout();
