@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center"
+        android:clickable="true"
+        android:onClick="today"
         android:textSize="26sp"
         android:text="{dzisiaj}" />
 

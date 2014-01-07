@@ -6,23 +6,25 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private static final String LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
+	//private static final String LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
 	private static final String LINK_BITLY="http://bit.ly/19b02vz";
-	private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp"; 
+	//private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp"; 
 	
 	private TextView	mCurrDateTextView;
 	private TextView	mOccasionTextView;
@@ -30,6 +32,8 @@ public class MainActivity extends Activity {
 	private String		currOccasion;
 	private Occasions	occasionsDict;
 	private ShareActionProvider mShareActionProvider;
+	private GestureDetectorCompat 	mDetector;
+
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +41,12 @@ public class MainActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         
+		mDetector = new GestureDetectorCompat(this, new MyGestureListener() );
+        
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
-                
+            
+        
         occasionsDict = new Occasions( new OccasionsDataPL() );
     }
 
@@ -67,7 +74,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		updateContent();
+		today();
 	}
 	
 	@Override
@@ -76,8 +83,32 @@ public class MainActivity extends Activity {
 		adjustDisplay();
 	}
 
-	private void updateContent() {
-		updateCurrentDate();
+    @Override 
+    public boolean onTouchEvent(MotionEvent event){ 
+        this.mDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }	
+	
+    public void today(View view) {
+    	today();
+    }
+    
+	private void today() {
+		updateCurrentDate(Calendar.getInstance());
+		updateOccasion();
+	}
+
+	private void prevDay() {
+		Calendar prev = currDate;		
+		prev.add(Calendar.DAY_OF_YEAR, -1);			
+		updateCurrentDate(prev);
+		updateOccasion();		
+	}
+	
+	private void nextDay() {
+		Calendar next = currDate;		
+		next.add(Calendar.DAY_OF_YEAR, +1);			
+		updateCurrentDate(next);
 		updateOccasion();
 	}
 
@@ -108,8 +139,8 @@ public class MainActivity extends Activity {
     	textOccasion.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);                		
 	}
 	
-	private void updateCurrentDate() {
-		currDate = Calendar.getInstance();
+	private void updateCurrentDate(Calendar day) {
+		currDate = day;
 		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
 		mCurrDateTextView.setText( dateStr );		
 	}
@@ -153,4 +184,22 @@ public class MainActivity extends Activity {
 	        mShareActionProvider.setShareIntent(intent);
 	    }
 	}
+	
+	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+	       
+        @Override
+        public boolean onFling(MotionEvent event1, MotionEvent event2, 
+                float velocityX, float velocityY) {
+        	float x1 = event1.getX();
+        	float x2 = event2.getX();
+        	
+        	if (x2 - x1 > 150.0) {
+        		prevDay();
+        	}
+        	if (x2 - x1 < -150.0) {
+        		nextDay();
+        	}
+            return true;
+        }
+    }	
 }
