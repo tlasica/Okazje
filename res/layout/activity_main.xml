@@ -59,6 +59,7 @@
         android:onClick="onClickOccasion"
 	/>
 
+    <!--
     <TextView
         android:id="@+id/textview_link"
     	android:layout_alignParentBottom="true"        
@@ -75,6 +76,7 @@
         android:textColor="#0000ff"
         android:autoLink="web"
 	/>
+	-->
     
     </RelativeLayout>
     </LinearLayout>

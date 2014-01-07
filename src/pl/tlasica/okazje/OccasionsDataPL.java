@@ -110,14 +110,14 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1280 Przemków uzyskał prawa miejskie");
 			res.add("W 1357 Łeba uzyskała prawa miejskie");
 			res.add("W 1659 zwycięstwo wojsk polsko-kozacko-tatarskich nad rosyjskimi w bitwie pod Konotopem");
-			res.add("W 975 Edward Męczennik został królem Anglii.");
-			res.add("W 1497 Vasco da Gama wyruszył w poszukiwaniu drogi morskiej do Indii.");
-			res.add("W 1714 brytyjski parlament powołał Komisję Długości Geograficznej.");
-			res.add("W 1889 wkazało się pierwsze wydanie The Wall Street Journal.");
-			res.add("W 1963 założono klub piłkarski PAS Teheran.");
-			res.add("W 1979 została odkryta Adrastea, księżyc Jowisza.");
-			res.add("W 1997 Węgry, Czechy i Polska zostały zaproszone do NATO.");
-			res.add("W 2007 w Seattle został zaprezentowany Boeing 787 Dreamliner.");
+			res.add("W 975 Edward Męczennik został królem Anglii");
+			res.add("W 1497 Vasco da Gama wyruszył w poszukiwaniu drogi morskiej do Indii");
+			res.add("W 1714 brytyjski parlament powołał Komisję Długości Geograficznej");
+			res.add("W 1889 wkazało się pierwsze wydanie The Wall Street Journal");
+			res.add("W 1963 założono klub piłkarski PAS Teheran");
+			res.add("W 1979 została odkryta Adrastea, księżyc Jowisza");
+			res.add("W 1997 Węgry, Czechy i Polska zostały zaproszone do NATO");
+			res.add("W 2007 w Seattle został zaprezentowany Boeing 787 Dreamliner");
 			res.add("W 1621 urodził się Jean de La Fontaine, francuski pisarz");
 			res.add("1838 urodził się Ferdinand von Zeppelin, niemiecki konstruktor sterowców");
 			res.add("1847 urodził się František Křižík, czeski wynalazca");
@@ -218,7 +218,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1832 odkryto źródła Missisipi");
 			res.add("W 1923 powstał napis HOLLYWOODLAND na wzgórzach niedaleko Los Angeles");
 			res.add("W 1925 w Czechosłowacji odnaleziono figurkę Wenus z Dolních Věstonic");
-			res.add("W 1969 została wystrzelona radziecka sonda księżycowa Łuna-15.");
+			res.add("W 1969 została wystrzelona radziecka sonda księżycowa Łuna-15");
 			res.add("W 1973 ukazał się debiutancki album brytyjskiej grupy Queen");
 			res.add("W 1944 urodził się Ernő Rubik, węgierski matematyk");
 			res.add("W 1951 urodził się Marek Piekarczyk, polski wokalista zespołu TSA");
@@ -235,7 +235,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1894 we Lwowie odbył się pierwszy mecz piłkarski na ziemiach polskich");
 			res.add("W 1795 Marsylianka została ogłoszona hymnem Francji");
 			res.add("W 1789 zdobycie i zburzenie Bastylii rozpoczęło Rewolucję Francuską");
-			res.add("W 1832 w USA zwolniono handel opium z podatków federalnych.");
+			res.add("W 1832 w USA zwolniono handel opium z podatków federalnych");
 			res.add("W 1867 Alfred Nobel po raz pierwszy publicznie zaprezentował dynamit");
 			res.add("W 1881 rewolwerowiec Billy Kid został zastrzelony przez Pata Garretta");
 			res.add("W 1976 zakończono budowę linii kolejowej łączącej Tanzanię z Zambią");
@@ -358,7 +358,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1873 Jesse James dokonał swojego pierwszego napadu na pociąg");
 			res.add("W 1964 jwiat moreli japońskiej został kwiatem państwowym Tajwanu");
 			res.add("W 1990 odbył się konkurs The Wall Live In Berlin");
-			res.add("Bo ciepło. Ewentualnie dlatego że leje.");
+			res.add("Bo ciepło. Ewentualnie dlatego że leje");
 			break;
 
 		case 722:
@@ -755,7 +755,6 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1937 urodził się Edward Stachura, polski pisarz");
 			res.add("W 1933 urodził się Roman Polański");
 			res.add("W 1981 urodził się Lucas Vonlanthen, szwajcarski kombinator norweski");
-			res.add("");
 			break;
 
 		case 819:
@@ -1087,7 +1086,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1976 w Płocku odbyły się Dożynki Centralne");
 			res.add("W 1989 Sejm udzielił wotum zaufania rządowi Tadeusza Mazowieckiego");
 			res.add("W 490 p.n.e. w bitwa pod Maratonem wojska ateńskie i platejskie pokonały armię króla Persów");
-			res.add("W 1609 Henry Hudson odkrył ujście dzisiejszej rzeki Hudson.");
+			res.add("W 1609 Henry Hudson odkrył ujście dzisiejszej rzeki Hudson");
 			res.add("W 1940 odkryto paleolityczne malowidła naskalne w Lascaux we Francji");
 			res.add("W 1958 zaprezentowano pierwszy układ scalony, zaprojektowany przez Jacka Kilby’ego");
 			res.add("W 1968 Albania wystąpiła z Układu Warszawskiego");
@@ -1114,7 +1113,7 @@ public class OccasionsDataPL implements OccasionsData{
 		case 914:
 			res.add("W 1309 zamek w Malborku został siedzibą wielkiego mistrza krzyżackiego");
 			res.add("W 1922 w Poznaniu założono Wielkopolski Klub Bokserski");
-			res.add("W 1752 Imperium Brytyjskie przyjęło kalendarz gregoriański.");
+			res.add("W 1752 Imperium Brytyjskie przyjęło kalendarz gregoriański");
 			res.add("W 1917 Rosja została ogłoszona republiką");
 			res.add("W 2012 Felix Baumgartner skoczył z 39 kilometrów na ziemię, tym samym bijąc 2 rekordy");
 			res.add("W 1961 urodził się Tomasz Dziubiński, założyciel wytwórni Metal Mind Productions");
@@ -1161,7 +1160,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1971 w Poznaniu odbył się pierwszy występ Kabaretu TEY");
 			res.add("W 1974 podpisano umowę z Fiatem na opracowanie projektu samochodu FSO Polonez");
 			res.add("W 1980 powstał Niezależny Samorządny Związek Zawodowy „Solidarność” z Lechem Wałęsą na czele");
-			res.add("W 1972 wyemitowano pierwszy odcinek amerykańskiego serialu M*A*S*H.");
+			res.add("W 1972 wyemitowano pierwszy odcinek amerykańskiego serialu M*A*S*H");
 			res.add("W 1991 została udostępniona pierwsza wersja jądra Linuxa");
 			res.add("W 879 urodził się Karol III Prostak, król zachodniofrankijski");
 			res.add("W 980 urodził się Avicenna, perski filozof, lekarz, przyrodnik");
@@ -1174,7 +1173,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Światowy Dzień Monitoringu Wody");
 			res.add("W 1351 księstwo płockie zostało przyłączone przez króla Kazimierza III Wielkiego do Polski");
 			res.add("W 1905 miała miejsce nieudana próba wysadzenia rosyjskiego pomnika zdobycia Warszawy");
-			res.add("W 1958 w Warszawie rozpoczął się I Festiwal Jazz Jamboree (pod nazwą Jazz 58).");
+			res.add("W 1958 w Warszawie rozpoczął się I Festiwal Jazz Jamboree (pod nazwą Jazz 58)");
 			res.add("W 1975 w Zakładzie nr 2 w Tychach uruchomiono produkcję Fiata 126p");
 			res.add("W 1851 ukazało się pierwsze wydanie The New York Daily Times");
 			res.add("W 1987 Jerzy Kukuczka jako drugi himalaista w historii zdobył Koronę Himalajów i Karakorum");
@@ -1194,7 +1193,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Imieniny Miłowuja");
 			res.add("W 1908 odbyły się pierwsze odnotowane w prasie piłkarskie derby Krakowa");
 			res.add("W 1969 Waldemar Baszanowski zdobył w Warszawie złoty medal mistrzostw świata w podnoszeniu ciężarów");
-			res.add("W 2003 odkryto Jaskinię Wiślańską w Beskidzie Śląskim.");
+			res.add("W 2003 odkryto Jaskinię Wiślańską w Beskidzie Śląskim");
 			res.add("W 1459 pierwsza znana wzmianka o Bukareszcie, w dokumencie sygnowanym przez Włada Palownika");
 			res.add("W 1519 portugalski żeglarz Ferdynand Magellan rozpoczął pierwszą w historii wyprawę dookoła świata");
 			res.add("W 1898 Konstantin Rengarten zakończył trwającą od 15.08.1894 roku pieszą wędrówkę dookoła świata");
@@ -1246,7 +1245,7 @@ public class OccasionsDataPL implements OccasionsData{
 		case 924:
 			res.add("Imieniny Armaty");
 			res.add("Imieniny Pacyfika i Twardomira");
-			res.add("W 1926 utworzono przedsiębiorstwo Polskie Koleje Państwowe.");
+			res.add("W 1926 utworzono przedsiębiorstwo Polskie Koleje Państwowe");
 			res.add("W 1928 Kościół katolicki w Polsce usunął z przysięgi ślubnej dla kobiet posłuszeństwo mężowi");
 			res.add("W 1921 w Berlinie oddano do użytku pierwszy europejski odcinek autostrady (AVUS)");
 			res.add("W 1948 założono japoński koncern motoryzacyjny Honda");
@@ -1394,7 +1393,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1674 w Krakowie został wydany zbiór utworów Wespazjana Kochowskiego \"Niepróżnujące próżnowanie\"");
 			res.add("W 2000 w Warszawie otwarto Most Świętokrzyski");
 			res.add("W 1889 Thomas Alva Edison przeprowadził w swym laboratorium pierwszą projekcję filmu");
-			res.add("W 1889 w Paryżu otwarto kabaret Moulin Rouge.");
+			res.add("W 1889 w Paryżu otwarto kabaret Moulin Rouge");
 			res.add("W 1948 w Paryżu został zaprezentowany Citroën 2CV");
 			res.add("W 1831 urodził się Richard Dedekind, niemiecki matematyk, który nie skończył na zbiorach");
 			break;
@@ -1492,7 +1491,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1892 Arthur Conan Doyle wydał zbiór opowiadań \"Przygody Sherlocka Holmesa\"");
 			res.add("W 1926 wydano Kubusia Puchatka Alana Alexandra Milne’a");
 			res.add("W 1947 amerykanin Chuck Yeager na samolocie Bell X-1 jako pierwszy przekroczył barierę dźwięku");
-			res.add("W 1994 odbyła się premiera filmu Pulp Fiction.");
+			res.add("W 1994 odbyła się premiera filmu Pulp Fiction");
 			res.add("W 2012 Felix Baumgartner pobił rekord świata skacząc z wysokości ponad 39 km");
 			res.add("W 1542 urodził się Akbar, władca Imperium Mogołów w Indiach");
 			break;
@@ -1660,7 +1659,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Święto Nazwania w Tunezji");
 			res.add("W 1611 w Warszawie wzięty do niewoli car Rosji Wasyl IV Szujski złożył hołd przed królem Zygmuntem III Wazą");
 			res.add("W 1909 powstało Tatrzańskie Ochotnicze Pogotowie Ratunkowe (TOPR)");
-			res.add("W 2008 wyprodukowano ostatni autobus marki Jelcz.");
+			res.add("W 2008 wyprodukowano ostatni autobus marki Jelcz");
 			res.add("W 1863 założono Międzynarodowy Czerwony Krzyż");
 			res.add("W 1888 w Kiszyniowie wyjechał na trasę pierwszy tramwaj konny");
 			res.add("W 1959 ukazał się pierwszy komiks o przygodach Asterixa");
@@ -1710,7 +1709,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Hubertus – święto myśliwych, leśników i jeźdźców");
 			res.add("W 1231 notujemy pierwszą wzmiankę o Zgierzu");
 			res.add("W 2005 serial Klan osiągnął jako pierwszy polski serial telewizyjny granicę 1000 odcinków");
-			res.add("W 1913 w USA wprowadzono podatek dochodowy.");
+			res.add("W 1913 w USA wprowadzono podatek dochodowy");
 			res.add("W 1954 miała miejsce premiera filmu \"Godzilla - król potworów\"");
 			res.add("W 1994 całkowite zaćmienie Słońca widoczne nad Ameryką Południową, Atlantykiem i południową Afryką");
 			res.add("W 1927 urodził się Zbigniew Cybulski, polski aktor");
@@ -1732,7 +1731,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2010 otwarto Centrum Nauki Kopernik w Warszawie");
 			res.add("W 1906 Maria Skłodowska-Curie wygłosiła swój pierwszy wykład na Sorbonie");
 			res.add("W 1935 przedsiębiorstwo Parker Brothers wprowadziło na rynek grę planszową Monopoly");
-			res.add("W 1967 odbyła się premiera 1. odcinka czechosłowackiego serialu animowanego Rozbójnik Rumcajs.");
+			res.add("W 1967 odbyła się premiera 1. odcinka czechosłowackiego serialu animowanego Rozbójnik Rumcajs");
 			res.add("W 1950 urodził się Gary Fisher, amerykański wynalazca roweru górskiego");
 			break;
 		case 1106:
@@ -1748,9 +1747,9 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Imieniny Żelibrata");
 			res.add("Tunezja – Święto Nowej Ery");
 			res.add("W 1977 powstał Polski Związek Badmintona");
-			res.add("W 1902 założono miasto Mountain View, serce Doliny Krzemowej w Kalifornii.");
+			res.add("W 1902 założono miasto Mountain View, serce Doliny Krzemowej w Kalifornii");
 			res.add("W 1911 Maria Skłodowska-Curie została laureatką Nagrody Nobla w dziedzinie chemii");
-			res.add("W 1996 NASA wystrzeliła sondę Mars Global Surveyor.");
+			res.add("W 1996 NASA wystrzeliła sondę Mars Global Surveyor");
 			res.add("W 1913 urodził się Albert Camus, francuski pisarz, laureat Nagrody Nobla");
 			break;
 		case 1108:
@@ -1776,7 +1775,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1292 Zator w Małopolsce otrzymał prawa miejskie");
 			res.add("W 1918 Austria zrzekła się Galicji na rzecz Polski");
 			res.add("W 1619 Kartezjusz miał w oberży pod Ulm serię trzech proroczych snów na temat dalszego rozwoju nauki");
-			res.add("W 1992 miała miejsce premiera telefonu komórkowego Nokia 1011.");
+			res.add("W 1992 miała miejsce premiera telefonu komórkowego Nokia 1011");
 			res.add("W 1483 urodził się Marcin Luter, niemiecki teolog, przywódca protestanckiej reformacji");
 			res.add("W 1919 urodził się  Michaił Kałasznikow, radziecki konstruktor broni, m.in. karabinka AK47");
 			break;
@@ -1787,7 +1786,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Dzień Singli w ChRL");
 			res.add("W 1673 wojska polskie pod dowództwem Jana Sobieskiego pokonały Turków w bitwie pod Chocimiem");
 			res.add("W 1918 Rada Regencyjna przekazała władzę nad podległym jej wojskiem Józefowi Piłsudskiemu");
-			res.add("W 1842 w browarze w Pilznie rozpoczęto rozlewanie nowego gatunku piwa dolnej fermentacji – Pilsner Urquell.");
+			res.add("W 1842 w browarze w Pilznie rozpoczęto rozlewanie nowego gatunku piwa dolnej fermentacji – Pilsner Urquell");
 			res.add("W 1871 rozpoczęła się I edycja Pucharu Anglii w piłce nożnej");
 			res.add("W 1896 urodził się Leopold Lis-Kula, polski pułkownik Legionów (zm. 1919)");
 			res.add("W 1987 urodził się Muflon, polski raper");
@@ -1832,7 +1831,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1904 w Warszawie uruchomiono pierwszą centralę telefoniczną");
 			res.add("W 1910 miasto Sopot zakupiło pobliską miejscowość Karlikowo");
 			res.add("W 1848 został odkryty księżyc Saturna Hyperion");
-			res.add("W 1945 powstało UNESCO.");
+			res.add("W 1945 powstało UNESCO");
 			res.add("W 1717 urodził się Jean le Rond d’Alembert, francuski matematyk i filozof ");
 			break;
 		case 1117:
@@ -1871,7 +1870,7 @@ public class OccasionsDataPL implements OccasionsData{
 
 		case 1120:
 			res.add("Imieniny Maksencji");
-			res.add("Dzień Industrializacji Afryki (ustanowione w 1989 roku przez Zgromadzenie Ogólne ONZ[2])");
+			res.add("Dzień Industrializacji Afryki (ustanowione w 1989 roku przez Zgromadzenie Ogólne ONZ)");
 			res.add("Powszechny Dzień Dziecka (Organizacja Narodów Zjednoczonych)");
 			res.add("Brazylia – Dzień Zumbiego");
 			res.add("W 1900 w dworku malarza Włodzimierza Tetmajera w Bronowicach pod Krakowem odbyło się TO wesele");
@@ -1891,7 +1890,7 @@ public class OccasionsDataPL implements OccasionsData{
 
 		case 1122:
 			res.add("Liban – Święto Niepodległości");
-			res.add("W 1931 Dar Pomorza po raz pierwszy przepłynął równik.");
+			res.add("W 1931 Dar Pomorza po raz pierwszy przepłynął równik");
 			res.add("Nuda Panie, nie ma za co wypić...");
 			break;
 
@@ -1964,7 +1963,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1786 Wielki książę Toskanii Leopold II Habsburg zniósł jako pierwszy karę śmierci");
 			res.add("W 1872 w Glasgow odbył się pierwszy oficjalny mecz między reprezentacjami narodowymi (Szkocja:Anglia 0:0)");
 			res.add("W 1979 odbyła się premiera płyty The Wall zespołu Pink Floyd");
-			res.add("W 1990 w Japonii zadebiutowała konsola Super Nintendo.");
+			res.add("W 1990 w Japonii zadebiutowała konsola Super Nintendo");
 			res.add("W 1996 ukazała się pierwsza część gry komputerowej Diablo");
 			break;
 
@@ -1992,7 +1991,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Ghana – Narodowy Dzień Farmerów");
 			res.add("Polska – Dzień Naftowca i Gazownika (dajecie w gaz?)");
 			res.add("W 1591 101 piwowarów z Hamburga podpisało pierwsze w świecie ubezpieczenie majątkowe");
-			res.add("W 1992 wysłano pierwszy SMS.");
+			res.add("W 1992 wysłano pierwszy SMS");
 			res.add("W 1994 miała miejsce premiera konsoli do gier PlayStation");
 			res.add("W 2006 Polscy siatkarze zdobyli srebrny medal na mistrzostwach świata w Japonii");
 			res.add("W 1857 urodził się Joseph Conrad, angielski pisarz pochodzenia polskiego");
@@ -2093,7 +2092,7 @@ public class OccasionsDataPL implements OccasionsData{
 			case 1214:
 			res.add("Imieniny Zozyma i Wiatora");
 			res.add("1575 Stefan Batory został obwołany królem Polskiego");
-			res.add("W 1950 Rząd podjął uchwałę o budowie warszawskiego metra.");
+			res.add("W 1950 Rząd podjął uchwałę o budowie warszawskiego metra");
 			res.add("W 1900 w Berlinie Max Planck przedstawił teorię kwantową");
 			res.add("W 1911 Roalda Amundsen, jako pierwszy w historii, dotarł na biegun południowy");
 			res.add("W 1948 W Stanach Zjednoczonych przyznano patent na pierwszą grę komputerową");
@@ -2111,7 +2110,7 @@ public class OccasionsDataPL implements OccasionsData{
 			case 1216:
 			res.add("Imieniny Dytera i Tytera");
 			res.add("Dzień Zwycięstwa w Bangladeszu");
-			res.add("W 1261 lokowano wrocławskie Nowe Miasto.");
+			res.add("W 1261 lokowano wrocławskie Nowe Miasto");
 			res.add("W 1899 założono włoski klub piłkarski A.C. Milan");
 			res.add("W 1916 urodził się Edward Dziewoński, polski aktor");
 			break;
@@ -2199,8 +2198,8 @@ public class OccasionsDataPL implements OccasionsData{
 			case 1226:
 			res.add("Imieniny Szczepana");
 			res.add("W 1929 w pierwszy rejs wypłynął żaglowiec Pomorze (późniejszy Dar Pomorza)");
-			res.add("W 1978 wystartował pierwszy Rajd Paryż-Dakar.");
-			res.add("W 1991 nastapił Rozpad ZSRR.");
+			res.add("W 1978 wystartował pierwszy Rajd Paryż-Dakar");
+			res.add("W 1991 nastapił Rozpad ZSRR");
 			res.add("W 1791 urodził się Charles Babbage, angielski matematyk, twórca protoplastusia komputera");
 			res.add("W 1963 urodził się Lars Ulrich, duński perkusista zespołu Metallica");
 			break;
@@ -2223,11 +2222,104 @@ public class OccasionsDataPL implements OccasionsData{
 			break;
 
 			case 1229:
-			res.add("W 1962 wydano pierwszy tom Wielkiej Encyklopedii Powszechnej PWN.");
+			res.add("W 1962 wydano pierwszy tom Wielkiej Encyklopedii Powszechnej PWN");
 			res.add("W 1982 poczta Jamajki wydała specjalny znaczek ku czci Boba Marleya");
 			res.add("Może lekki trening przed Sylwestrem?");
 			break;
 			
+			//== 1.5.7 ==
+			case 1230:
+			res.add("Imieniny Perpetuusa");
+			res.add("W 1907 Jerzy Maślanka dokonał pierwszego zimowego wejścia na Świnicę w Tatrach Wysokich");
+			res.add("W 1988 wyemitowano 1. odcinek telenoweli W labiryncie");
+			res.add("W 1924 amerykański astronom Edwin Hubble ogłosił odkrycie istnienia innych niż Droga Mleczna galaktyk");
+			res.add("W 1975 urodził się Tiger Woods, amerykański golfista (zaliczamy kolejne dołki!)");
+			break;
+
+			case 1231:
+			res.add("Sylwester");
+			res.add("Imieniny Barbacjana");
+			res.add("W 1953 zaprezentowano pierwszy przedprototypowy egzemplarz Syreny");
+			res.add("W 1935 Charles Darrow opatentował grę planszową Monopoly");
+			res.add("W 1973 w Sydney odbył się pierwszy koncert australijskiej grupy hardrockowej AC/DC");
+			res.add("W 1988 Krzysztof Wielicki dokonał pierwszego zimowego wejścia na ośmiotysięcznik Lhotse w Himalajach");
+			res.add("W 1991 Formalnie przestał istnieć ZSRR (za flotę radziecką do dna!)");
+			break;
+
+			case 101:
+			res.add("Imieniny Fulgentego i Almachiusza");
+			res.add("W 1860 w Królestwie Polskim wyszedł pierwszy polski znaczek pocztowy");
+			res.add("W 1973 wprowadzono system kodów pocztowych");
+			res.add("W 1988 zakończono zagłuszanie Radia Wolna Europa");
+			res.add("W 1808 w USA zakazano importu niewolników");
+			res.add("W 1867 Szwedzki chemik Alfred Nobel wyprodukował dynamit");
+			res.add("W 1969 odbyła się premiera 1. odcinka radzieckiego serialu animowanego Wilk i Zając");
+			res.add("W 1970 rozpoczęła się Epoka Uniksa"); // [http://pl.wikipedia.org/wiki/Czas_uniksowy]");
+			res.add("W 1878 urodził się Agner Krarup Erlang, duński matematyk"); //[http://pl.wikipedia.org/wiki/Agner_Krarup_Erlang]");
+			break;
+
+			case 102:
+			res.add("W 1929 rozpoczęła się działalność przewozowa PLL LOT");
+			res.add("W 1978 Program I Polskiego Radia nadał premierowe wydanie audycji Cztery Pory Roku");
+			res.add("W 1978 uruchomiono produkcję w Browarze Leżajsk");
+			res.add("W 1920 urodził się Isaac Asimov, amerykański biochemik, pisarz fantastyki naukowej"); //[http://pl.wikipedia.org/wiki/Isaac_Asimov]");
+			break;
+
+			case 103:
+			res.add("W 1887 w szczecińskiej stoczni AG Vulcan zwodowano chiński krążownik pancerny Jingyuan");
+			res.add("W 1965 założono zespół Czerwone Gitary");
+			res.add("W 1993 odbył się 1. finał Wielkiej Orkiestry Świątecznej Pomocy");
+			res.add("W 1998 odbyła się premiera 1. odcinka serialu Złotopolscy (pszeniczka nisko...)");
+			res.add("W 1969 urodził się Michael Schumacher, niemiecki kierowca wyścigowy Formuły 1");
+			break;
+
+			case 104:
+			res.add("Imieniny Fereola");
+			res.add("Mjanma – Święto Niepodległości");
+			res.add("W 1927 masowiec SS Wilno jako pierwszy polski statek wszedł do portu w Gdyni");
+			res.add("W 1936 w Nowym Jorku opublikowano po raz pierwszy listę przebojów Billboard");
+			res.add("W 1958 Nowozelandczyk Edmund Hillary zdobył biegun południowy (pijemy zmrożone!)");
+			res.add("W 1643 urodził się Isaac Newton, angielski fizyk, matematyk, astronom (uwaga, akcja wywołuje reakcję)");
+			res.add("W 1913 urodził się Malietoa Tanumafili II, król Samoa");
+			res.add("W 1963 urodził się Till Lindemann, niemiecki wokalista zespołu Rammstein (pijemy do chrypki)");
+			break;
+
+			case 105:
+			res.add("Imieniny Armaty");
+			res.add("W 1393 hospodar mołdawski Roman I złożył akt hołdowniczy wobec Jadwigi i Władysława Jagiełły");
+			res.add("W 1972 Polska uznała niepodległość Bangladeszu");
+			res.add("W 1981 Antoni Piechniczek został selekcjonerem piłkarskiej reprezentacji Polski");
+			res.add("W 1769 James Watt opatentował swoją maszynę parową");
+			res.add("W 1984 Richard Stallman uruchomił projekt GNU");
+			res.add("W 1902 urodził się Wsiewołod Jakimiuk, polski konstruktor samolotów");
+			res.add("W 1949 urodził się Andrzej Mleczko, polski rysownik, malarz, satyryk (pijemy do krzywego zwierciadła)");
+			break;
+
+			case 106:
+			res.add("Imieniny Bolemira i Manomira");
+			res.add("Święto Armii w Iraku");
+			res.add("Dzień Filatelisty");
+			res.add("W 1389 zainaugurował działalność Uniwersytet w Kolonii");
+			res.add("W 2001 Adam Małysz jako pierwszy Polak wygrał 49. Turniej Czterech Skoczni (można niemieckie piwko)");
+			res.add("W 1945 Tadeusz Baranowski, polski rysownik, twórca komiksów (pijemy wodę+sodę)");
+			break;
+
+			case 107:
+			res.add("Imieniny Nicetasa");
+			res.add("Dzień Flagi Narodowej we Włoszech");
+			res.add("W 1785 Jean-Pierre Blanchard i John Jeffries dokonali pierwszego przelotu balonem nad kanałem La Manche");
+			res.add("W 1789 Jerzy Waszyngton został wybrany pierwszym prezydentem USA");
+			res.add("W 1914 pierwszy statek przepłynął przez Kanał Panamski");
+			res.add("W 1927 Amerykański zespół koszykarski Harlem Globetrotters rozegrał swój pierwszy mecz");
+			break;
+
+			case 108:
+			res.add("Imieniny Mroczysława");
+			res.add("W 1549 Kozienice otrzymały prawa miejskie");
+			res.add("W 1993 Sejm przyjął ustawę o podatku od towarów i usług oraz o podatku akcyzowym (nic, tylko się upić)");
+			res.add("Nuda, zatem można z nudy");
+			break;
+
 		default:
 			res.add("Za update aplikacji!");
 			res.add("Za autora aplikacji, żeby zaktualizował okazje!");
