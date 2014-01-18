@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class OccasionsDataPL implements OccasionsData{
-	
+
 	public List<String> forDay(int dateNum) {
 		List<String> res = new LinkedList<String>(); 
 
@@ -25,7 +25,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1883 urodził się Franz Kafka");
 			res.add("W 1928 urodził się jan Machulski");
 			break;
-		
+
 		case 704:
 			res.add("Imieniny Aggeusza i Anatazego");
 			res.add("Imieniny Hiacynta i Innocentego");
@@ -49,7 +49,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1917 urodził się Manolete, hiszpański matador");
 			res.add("W 1974 urodził się Denis Pankratow, rosyjski pływak");
 			break;
-		
+
 		case 705:
 			res.add("Imieniny Przybywoja i Trofima");
 			res.add("Imieniny Antoniego");
@@ -70,7 +70,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1946 w Paryżu zaprezentowano publicznie kostium bikini");
 			res.add("W 1996 w Szkocji urodziła się owca Dolly");
 			break;
-		
+
 		case 706:
 			res.add("Imieniny Zuzanny");
 			res.add("Imieniny Teresy");
@@ -102,7 +102,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1874 urodził się Władysław Grabski");
 			res.add("W 1983 urodził się Krzysztof Lijewski");
 			break;
-	
+
 		case 708:
 			res.add("Imieniny Chwalimira i Falibora");
 			res.add("Imieniny Hadriany i Hadriana");
@@ -161,7 +161,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1925 urodził się Edmund Niziurski");
 			res.add("W 2013 ukazała się wersja 1.0 aplikacji Okazje");
 			break;
-		
+
 		case 711:
 			res.add("Imieniny Pelagii i Pelagiusza");
 			res.add("Imieniny Sieprawa");
@@ -181,7 +181,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2006 Microsoft zakończył wsparcie dla Windows 98");
 			res.add("W 1942 urodził się Tomasz Stańko, polski trębacz jazzowy");
 			break;
-		
+
 		case 712:
 			res.add("Imieniny Bruna i Brunona");
 			res.add("Imieniny Himisława i Imisława");
@@ -202,7 +202,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1867 urodził się Karoly Kaan, węgierski leśnik");
 			res.add("W 1971 urodził się Liroy, polski raper i producent");
 			break;
-		
+
 		case 713:
 			res.add("Imieniny Joela");
 			res.add("Imieniny Świerada i Trofima");
@@ -223,8 +223,8 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1944 urodził się Ernő Rubik, węgierski matematyk");
 			res.add("W 1951 urodził się Marek Piekarczyk, polski wokalista zespołu TSA");
 			res.add("W 1986 urodził się Ganbatyn Dżarglanczuluun, mongolski łyżwiarz szybki");
-		break;
-		
+			break;
+
 		case 714:
 			res.add("Imieniny Bonawentury");
 			res.add("Imieniny Donalda");
@@ -242,7 +242,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1862 urodził się Gustav Klimt");
 			res.add("W 1971 urodził się Howard Webb, angielski sędzia piłkarski");
 			break;
-		
+
 		case 715:
 			res.add("Imieniny Antiocha i Cyriaka");
 			res.add("Imieniny Pompiliusza");
@@ -278,7 +278,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1928 urodził się Andrzej Zawada, polski himalaista");
 			res.add("W 1957 urodził się Włodzimierz Smolarek, polski piłkarz");
 			break;
-		
+
 		case 717:
 			res.add("Imieniny Akwilina");
 			res.add("Imieniny Dzierżykraja");
@@ -313,7 +313,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1872 urodził się Julius Fucik, czeski kompozytor");
 			res.add("W 1958 urodziła się Renata Beger");
 			break;
-		
+
 		case 719:
 			res.add("Mjanna - Dzień Męczenników");
 			res.add("Imieniny Epafrasa");
@@ -328,7 +328,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1922 urodził się Tuanku Jaafar, malezyjski dyplomata i król Malezji");
 			res.add("W 1934 urodził się Janusz Christa, rysownik i autor komiksów ");
 			break;
-		
+
 		case 720:
 			res.add("Imieniny Ansegiza");
 			res.add("Imieniny Modesta");
@@ -408,7 +408,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1888 Jonh Boyd Dunlop opatentował oponę");
 			res.add("W 1944 urodził się Krzysztof Pośpiech, polski dyrygent");
 			break;
-		
+
 		case 725:
 			res.add("Imieniny Olimpii");
 			res.add("Dzień Św.Jakuba w Hiszpanii");
@@ -423,7 +423,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1980 został wydany album \"Back in Black\" AC/DC");
 			res.add("W 1952 urodził się Effi Eitam, izraelski polityk");
 			break;
-		
+
 		case 726:
 			res.add("Imieniny Sancji i Symeona");
 			res.add("Święto Rewolucji na Kubie");
@@ -449,7 +449,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1940 miał miejsce debiut ekranowy Królika Bugsa");
 			res.add("W 1983 Madonna wydała debiutancki album");
 			break;
-		
+
 		case 728:
 			res.add("Imieniny Achacjusza i Achacego");
 			res.add("Światowy Dzień Wirusowego Zapalenia Wątroby (wypada nie pić)");
@@ -474,7 +474,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1095 Koloman I Uczony został królem Węgier");
 			res.add("W 1958 w Waszyngtonie utworzono NASA");
 			break;
-		
+
 		case 730:
 			res.add("Imieniny Ingeborgi");
 			res.add("Imieniny Swojsława i Ubysława");
@@ -492,7 +492,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1963 urodził się Arnold Schwarzenegger");
 			res.add("W 1974 urodził się Jacek Dukaj");
 			break;
-		
+
 		case 731:
 			res.add("Imieniny Beata (tak, tak)");
 			res.add("Dzień Flagi na Hawajach");
@@ -1288,7 +1288,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1998 uruchomiono wyszukiwarkę Google (a teraz taka ośmiornica...)");
 			res.add("W 1533 urodził się Stefan Batory, król Polski");
 			break;	
-			
+
 		case 928:
 			res.add("Dzień św. Wacława, patrona Czech");
 			res.add("Światowy Dzień Wścieklizny");
@@ -1456,7 +1456,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1976 miała miejsce premiera 1. odcinka brazylijskiego serialu \"Niewolnica Isaura\"");
 			res.add("W 1937 urodził się Bobby Charlton, angielski piłkarz");
 			break;			
-			
+
 		case 1012:
 			res.add("Columbus Day");
 			res.add("Rocznica Odkrycia na wyspach Bahama");
@@ -1478,7 +1478,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2003 wystartowała albańska Wikipedia");
 			res.add("W 1971 urodził się Sacha Baron Cohen");
 			break;
-			
+
 		case 1014:
 			res.add("Gruzja – Dzień Kościoła Sweti Cchoweli");
 			res.add("Jemen – Rocznica Rewolucji 1963 Roku");
@@ -1495,7 +1495,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2012 Felix Baumgartner pobił rekord świata skacząc z wysokości ponad 39 km");
 			res.add("W 1542 urodził się Akbar, władca Imperium Mogołów w Indiach");
 			break;
-		
+
 		case 1015:
 			res.add("Światowy Dzień Mycia Rąk");
 			res.add("W Polsce Święto Wojsk Radiotechnicznych");
@@ -1504,7 +1504,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2005 w Emilcinie na Lubelszczyźnie odsłonięto jedyny w kraju pomnik UFO");
 			res.add("W 1971 w Jugosławii rozpoczęto produkcję samochodu Zastava 101");
 			break;
-		
+
 		case 1016:
 			res.add("Światowy Dzień Żywności");
 			res.add("Dzień Szefów (ang. Boss’s Day) w USA");
@@ -1518,7 +1518,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1978 Wanda Rutkiewicz, jako trzecia kobieta na świecie oraz pierwsza Europejka, weszła na szczyt Mount Everestu (8848 m n.p.m.)");
 			res.add("W 1986 Tyrolczyk Reinhold Messner po wejściu na Lhotse został pierwszym zdobywcą wszystkich ośmiotysięczników");
 			break;
-		
+
 		case 1017:
 			res.add("Imieniny Mamelta");
 			res.add("Wyspy Dziewicze Stanów Zjednoczonych – Dzień Przyjaźni z Portoryko");
@@ -1527,7 +1527,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1938 w stoczni w Rotterdamie zwodowano okręt podwodny ORP Sęp");
 			res.add("W 1938 urodził się Władysław Turski, polski informatyk (zm. 2013)");
 			break;
-			
+
 		case 1018:
 			res.add("Imieniny Bratomiła i Miłobrata");
 			res.add("Imieniny Asklepiadesa");
@@ -1699,11 +1699,11 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1335 władcy Czech, Polski i Węgier spotkali się na zjeździe w Wyszehradzie");
 			res.add("W 1963 odkryto pierwszego kwazara");
 			break;
-		
+
 		case 1102:
 			res.add("Dzień Zaduszny - przerwa");
 			break;
-			
+
 		case 1103:
 			res.add("Dzień Kultury (Bunka-no Hi) w Japonii");
 			res.add("Hubertus – święto myśliwych, leśników i jeźdźców");
@@ -1847,7 +1847,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1790 urodził się August Ferdinand Möbius, niemiecki matematyk");
 			res.add("W 1942 urodził się Martin Scorsese, amerykański reżyser filmowy");
 			break;
-			
+
 		case 1118:
 			res.add("Imieniny Cieszymysła");
 			res.add("Oman – Dzień Urodzin Sułtana");
@@ -2066,7 +2066,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1815 urodziła się Ada Lovelace, brytyjska matematyk, uważana za pierwszego programistę");
 			break;
 
-			case 1211:
+		case 1211:
 			res.add("Międzynarodowy Dzień Terenów Górskich");
 			res.add("W 1922 został zaprzysiężony pierwszy prezydent RP Gabriel Narutowicz");
 			res.add("W 1866 otwarto pierwszą linię tramwaju konnego w Warszawie");
@@ -2074,13 +2074,13 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1981 urodził się Bogusław Rąpała, polski hokeista");
 			break;
 
-			case 1212:
+		case 1212:
 			res.add("Imieniny Suliwuja");
 			res.add("W 1953 w Warszawie otwarto drugie w kraju sztuczne lodowisko – Torwar");
 			res.add("W 2002 ustawiono sztuczną palmę na rondzie Charles'a de Gaulle'a w Warszawie");
 			break;
 
-			case 1213:
+		case 1213:
 			res.add("Imieniny Jodoka");
 			res.add("Dzień Księgarza");
 			res.add("W 1253 Książę Konrad Laskonogi lokował Głogów na lewym brzegu Odry oraz nadał mu prawa miejskie");
@@ -2089,7 +2089,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("Wiadomo, straszna rocznica...");
 			break;
 
-			case 1214:
+		case 1214:
 			res.add("Imieniny Zozyma i Wiatora");
 			res.add("1575 Stefan Batory został obwołany królem Polskiego");
 			res.add("W 1950 Rząd podjął uchwałę o budowie warszawskiego metra");
@@ -2098,7 +2098,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1948 W Stanach Zjednoczonych przyznano patent na pierwszą grę komputerową");
 			break;
 
-			case 1215:
+		case 1215:
 			res.add("Imieniny Bachusa");
 			res.add("W 1937 powstał klub sportowy Calisia Kalisz");
 			res.add("W 1956 Program I Polskiego Radia wyemitował premierowy odcinek powieści radiowej Matysiakowie");
@@ -2107,7 +2107,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2000 definitywnie zamknięto elektrownię jądrową w Czarnobylu");
 			break;
 
-			case 1216:
+		case 1216:
 			res.add("Imieniny Dytera i Tytera");
 			res.add("Dzień Zwycięstwa w Bangladeszu");
 			res.add("W 1261 lokowano wrocławskie Nowe Miasto");
@@ -2115,7 +2115,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1916 urodził się Edward Dziewoński, polski aktor");
 			break;
 
-			case 1217:
+		case 1217:
 			res.add("Dzień bez Przekleństw");
 			res.add("Imieniny Modesta (pijmy skromnie)");
 			res.add("Imieniny Żyrosława");
@@ -2127,7 +2127,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1989 wyemitowano premierowy odcinek amerykańskiego serialu animowanego Simpsonowie");
 			break;
 
-			case 1218:
+		case 1218:
 			res.add("Imieniny Gościmiara (pijmy tłumnie i zbiorowo)");
 			res.add("W 1942 otwarto Kanał Ulga w Raciborz");
 			res.add("W 1849 Amerykanin William Cranch Bond wykonał pierwsze teleskopowe zdjęcie Księżyca");
@@ -2135,14 +2135,14 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2009 miała miejsce światowa premiera filmu Avatar (pijemy wielowymiarowo)");
 			break;
 
-			case 1219:
+		case 1219:
 			res.add("Imieniny Protazji");
 			res.add("W 1989 w Tarnowie odnotowano krajowy rekord temperatury w grudniu (+19 °C)");
 			res.add("W 1909 założono niemiecki klub piłkarski Borussia Dortmund");
 			res.add("W 1951 urodził się Zbigniew Hołdys, były lider grupy Perfect (Pepe wróć, też mieli pragnienie)");
 			break;
 
-			case 1220:
+		case 1220:
 			res.add("Imieniny Zefiryna");
 			res.add("Dzień Ryby (Polska)");
 			res.add("Reunion – Rocznica Zniesienia Niewolnictwa (kto wie, gdzie to jest?)");
@@ -2153,7 +2153,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2008 Boliwia zadeklarowała, że jest wolna od analfabetyzmu");
 			break;
 
-			case 1221:
+		case 1221:
 			res.add("Święto Godowe (etniczne słowiańskie, pijemy miody)");
 			res.add("W 1969 w Warszawie odnotowano najniższy grudniowy rekord temperatury w tym mieście (-24,8°C)");
 			res.add("W 2009 w Kwidzynie oddano do użytku tysięcznego Orlika (ciekawe, kto grał na inauguracji...)");
@@ -2162,7 +2162,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 2012 udało nam się przejść przez koniec świata");
 			break;
 
-			case 1222:
+		case 1222:
 			res.add("Imieniny Dobrosułka i Dziwisława");
 			res.add("Loteria Świąteczna w Hiszpanii");
 			res.add("W 1965 podpisano umowę licencyjną z Fiatem na produkcję w kraju modelu 125p");
@@ -2170,7 +2170,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1944 zmierzono najniższą temperaturę w historii Los Angeles (-4 °C)");
 			break;
 
-			case 1223:
+		case 1223:
 			res.add("Imieniny Bazylidesa i Serwula");
 			res.add("Dzień Zwycięstwa w Egipcie");
 			res.add("Światowy Dzień Snowboardu");
@@ -2180,7 +2180,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1966 miała miejsce premiera filmu \"Dobry, zły i brzydki\"");
 			break;
 
-			case 1224:
+		case 1224:
 			res.add("W 1777 James Cook odkrył Wyspę Bożego Narodzenia");
 			res.add("W 1934 w Davos (Szwajcaria) uruchomiono pierwszy wyciąg narciarski na świecie");
 			res.add("W 1798 urodził się Adam Mickiewicz, polski poeta, wieszcz narodowy");
@@ -2188,14 +2188,14 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1945 urodził się Lemmy Kilmister, brytyjski wokalista i basista zespołu Motörhead");
 			break;
 
-			case 1225:
+		case 1225:
 			res.add("W 1025 Mieszko II został koronowany na króla Polski");
 			res.add("W 1974 odbyła się premiera komedii filmowej Nie ma róży bez ognia");
 			res.add("W 1975 Steve Harris założył w Londynie zespół Iron Maiden");
 			res.add("W 1895 urodził się Stefan Rowecki ps. Grot, polski dowódca wojskowy, generał, komendant główny AK");
 			break;
 
-			case 1226:
+		case 1226:
 			res.add("Imieniny Szczepana");
 			res.add("W 1929 w pierwszy rejs wypłynął żaglowiec Pomorze (późniejszy Dar Pomorza)");
 			res.add("W 1978 wystartował pierwszy Rajd Paryż-Dakar");
@@ -2204,7 +2204,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1963 urodził się Lars Ulrich, duński perkusista zespołu Metallica");
 			break;
 
-			case 1227:
+		case 1227:
 			res.add("W 1529 Zygmunt I Stary przyłączył Mazowsze do Polski");
 			res.add("W 1856 w Warszawie zapalono pierwsze 92 latarnie gazowe (łatwiej było wrócić do domu...)");
 			res.add("W 1995 Marek Kamiński jako pierwszy Polak zdobył biegun południowy");
@@ -2213,7 +2213,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1971 urodzi się Artur Andrus, polski satyryk, prezenter radiowy");
 			break;
 
-			case 1228:
+		case 1228:
 			res.add("Imieniny Dobrowieścia");
 			res.add("Dzień Świętych Niewiniątek (Hiszpania, Meksyk)");
 			res.add("Międzynarodowy Dzień Całowania");
@@ -2221,14 +2221,14 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1969 urodził się Linus Torvalds, fiński informatyk, twórca Linux-a");
 			break;
 
-			case 1229:
+		case 1229:
 			res.add("W 1962 wydano pierwszy tom Wielkiej Encyklopedii Powszechnej PWN");
 			res.add("W 1982 poczta Jamajki wydała specjalny znaczek ku czci Boba Marleya");
 			res.add("Może lekki trening przed Sylwestrem?");
 			break;
-			
+
 			//== 1.5.7 ==
-			case 1230:
+		case 1230:
 			res.add("Imieniny Perpetuusa");
 			res.add("W 1907 Jerzy Maślanka dokonał pierwszego zimowego wejścia na Świnicę w Tatrach Wysokich");
 			res.add("W 1988 wyemitowano 1. odcinek telenoweli W labiryncie");
@@ -2236,7 +2236,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1975 urodził się Tiger Woods, amerykański golfista (zaliczamy kolejne dołki!)");
 			break;
 
-			case 1231:
+		case 1231:
 			res.add("Sylwester");
 			res.add("Imieniny Barbacjana");
 			res.add("W 1953 zaprezentowano pierwszy przedprototypowy egzemplarz Syreny");
@@ -2246,7 +2246,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1991 Formalnie przestał istnieć ZSRR (za flotę radziecką do dna!)");
 			break;
 
-			case 101:
+		case 101:
 			res.add("Imieniny Fulgentego i Almachiusza");
 			res.add("W 1860 w Królestwie Polskim wyszedł pierwszy polski znaczek pocztowy");
 			res.add("W 1973 wprowadzono system kodów pocztowych");
@@ -2258,14 +2258,14 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1878 urodził się Agner Krarup Erlang, duński matematyk"); //[http://pl.wikipedia.org/wiki/Agner_Krarup_Erlang]");
 			break;
 
-			case 102:
+		case 102:
 			res.add("W 1929 rozpoczęła się działalność przewozowa PLL LOT");
 			res.add("W 1978 Program I Polskiego Radia nadał premierowe wydanie audycji Cztery Pory Roku");
 			res.add("W 1978 uruchomiono produkcję w Browarze Leżajsk");
 			res.add("W 1920 urodził się Isaac Asimov, amerykański biochemik, pisarz fantastyki naukowej"); //[http://pl.wikipedia.org/wiki/Isaac_Asimov]");
 			break;
 
-			case 103:
+		case 103:
 			res.add("W 1887 w szczecińskiej stoczni AG Vulcan zwodowano chiński krążownik pancerny Jingyuan");
 			res.add("W 1965 założono zespół Czerwone Gitary");
 			res.add("W 1993 odbył się 1. finał Wielkiej Orkiestry Świątecznej Pomocy");
@@ -2273,7 +2273,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1969 urodził się Michael Schumacher, niemiecki kierowca wyścigowy Formuły 1");
 			break;
 
-			case 104:
+		case 104:
 			res.add("Imieniny Fereola");
 			res.add("Mjanma – Święto Niepodległości");
 			res.add("W 1927 masowiec SS Wilno jako pierwszy polski statek wszedł do portu w Gdyni");
@@ -2284,7 +2284,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1963 urodził się Till Lindemann, niemiecki wokalista zespołu Rammstein (pijemy do chrypki)");
 			break;
 
-			case 105:
+		case 105:
 			res.add("Imieniny Armaty");
 			res.add("W 1393 hospodar mołdawski Roman I złożył akt hołdowniczy wobec Jadwigi i Władysława Jagiełły");
 			res.add("W 1972 Polska uznała niepodległość Bangladeszu");
@@ -2295,7 +2295,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1949 urodził się Andrzej Mleczko, polski rysownik, malarz, satyryk (pijemy do krzywego zwierciadła)");
 			break;
 
-			case 106:
+		case 106:
 			res.add("Imieniny Bolemira i Manomira");
 			res.add("Święto Armii w Iraku");
 			res.add("Dzień Filatelisty");
@@ -2304,7 +2304,7 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1945 Tadeusz Baranowski, polski rysownik, twórca komiksów (pijemy wodę+sodę)");
 			break;
 
-			case 107:
+		case 107:
 			res.add("Imieniny Nicetasa");
 			res.add("Dzień Flagi Narodowej we Włoszech");
 			res.add("W 1785 Jean-Pierre Blanchard i John Jeffries dokonali pierwszego przelotu balonem nad kanałem La Manche");
@@ -2313,119 +2313,248 @@ public class OccasionsDataPL implements OccasionsData{
 			res.add("W 1927 Amerykański zespół koszykarski Harlem Globetrotters rozegrał swój pierwszy mecz");
 			break;
 
-			case 108:
+		case 108:
 			res.add("Imieniny Mroczysława");
 			res.add("W 1549 Kozienice otrzymały prawa miejskie");
 			res.add("W 1993 Sejm przyjął ustawę o podatku od towarów i usług oraz o podatku akcyzowym (nic, tylko się upić)");
 			res.add("Nuda, zatem można z nudy");
 			break;
 
-			case 109:
-				res.add("Dzień Ligi Ochrony Przyrody");
-				res.add("W 1838 w Gdańsku otwarto pierwsze publiczne przedszkole");
-				res.add("W 1493 Krzysztof Kolumb jako pierwszy Europejczyk ujrzał manaty, biorąc je za syreny (raczej Rubensowskie)");
-				res.add("W 1969 w Wielkiej Brytanii odbył się 1. lot prototypu pasażerskiego samolotu naddźwiękowego Concorde");
-				res.add("W 1992 czasopismo Nature poinformowało o odkryciu trzech pierwszych planet pozasłonecznych przez Aleksandra Wolszczana");
-				res.add("W 1944 urodził się Jimmy Page, angielski gitarzysta zespołu Led Zeppelin");
-				break;
-			case 110:
-				res.add("Imieniny Agatona");
-				res.add("Benin – Święto Suwerenności Ludowej");
-				res.add("W 1989 reaktywowano towarzystwo gimnastyczne „Sokół”");
-				res.add("W 1863 w Londynie otwarto pierwszą na świecie linię metra");
-				res.add("W 1992 podczas sztormu na Pacyfiku z pokładu statku zostały zmyte 3 kontenery z 30 tysiącami gumowych kaczek");
-				res.add("W 1938 urodził się Donald Ervin Knuth, amerykański matematyk, informatyk (kto nie czytał ten nie wie)");
-				break;
-			case 111:
-				res.add("Imieniny Hygina i Odona");
-				res.add("Imieniny Palemona i Małomira");
-				res.add("Polska – Dzień Wegetarian (pijemy pod cebulkę)");
-				res.add("W 1906 otwarto konsulat USA w Toruniu (proroczo)");
-				res.add("W 1940 w Siedlcach zanotowano najniższą temperaturę w historii Polski (-41 °C)");
-				res.add("W 1986 Jerzy Kukuczka i Krzysztof Wielicki dokonali 1. zimowego wejścia na ośmiotysięcznik Kanczendzonga");
-				break;
-			case 112:
-				res.add("Imieniny Aelreda i Stomira");
-				res.add("Tanzania – Uroczystość Upamiętnienia Rewolucji Zanzibaru");
-				res.add("W 1969 ukazał się debiutancki album grupy Led Zeppelin");
-				res.add("W 1729 urodził się Edmund Burke, brytyjski polityk, filozof, twórca konserwatyzmu");
-				res.add("W 1957 urodziła się Anna Fotyga (pijemy z gracją, taktem i arcydyplomatycznie)");
-				break;
-			case 113:
-				res.add("Imieniny Bogusąda");
-				res.add("Imieniny Glafiry");
-				res.add("W 1888 powstało Towarzystwo National Geographic (pijemy trunki świata)");
-				res.add("W oczekiwaniu na okazje dnia kolejnego za cokolwiek");
-				break;
-			case 114:
-				res.add("Imieniny Mściwuja");
-				res.add("W 1392 Władysław Jagiełło nadał prawa miejskie Chełmowi");
-				res.add("W 1956 utworzono Ojcowski Park Narodowy");
-				res.add("W 1761 armia afgańska pokonała Marathów w trzeciej bitwie pod Panipatem");
-				res.add("W 1897 Szwajcar Matthias Zurbriggen zdobył Aconcaguę w Andach, najwyższy szczyt półkuli południowej");
-				res.add("W 1887 urodził się Hugo Steinhaus, polski matematyk i aforysta");
-				res.add("W 1976 urodził się Owal, polski raper");
-				break;
-			case 115:
-				res.add("Imieniny Habakuka");
-				res.add("Dzień Alfabetu Koreańskiego");
-				res.add("Dzień Wikipedii (poczytajmy co pijemy)");
-				res.add("W 1797 w Londynie po raz pierwszy na głowach panów pojawił się cylinder");
-				res.add("W 1885 Amerykanin Wilson Bentley wykonał pierwsze mikroskopowe zdjęcia płatków śniegu");
-				res.add("W 1622 urodził się Molier, francuski pisarz (świętoszki piją skrycie!)");
-				res.add("W 1869 urodził się Stanisław Wyspiański, polski pisarz i malarz");
-				break;
-			case 116:
-				res.add("Imieniny Gonsalwego i Furzeusza");
-				res.add("Imieniny Trzebowita");
-				res.add("W 1959 powstały Kampinoski i Karkonoski Park Narodowy");
-				res.add("W 1944 urodził się Andrzej Niemczyk, polski siatkarz, trener siatkówki");
-				res.add("W 1957 otwarto The Cavern Club w Liverpoolu");
-				res.add("W 1961 na Wawel powróciły z Kanady skarby królewskie");
-				break;
-			case 117:
-				res.add("Imieniny Przemiła");
-				res.add("W 1784 w Krakowie w rozpoczęły się udane eksperymenty ze wzlotem balonu, których inicjatorami byli krakowscy uczeni");
-				res.add("W 1934 Ferdinand Porsche zaprezentował rządowi niemieckiemu projekt Garbusa, inaugurując historię marki Volkswagen");
-				res.add("W 1942 urodził się Muhammad Ali, amerykański bokser, mistrz świata");
-				res.add("W 1963 urodził się Kai Hansen, niemiecki gitarzysta i wokalista zespołu Helloween");
-				break;
-			case 118:
-				res.add("Imieniny Pryski");
-				res.add("Imieniny Woluzjana i Weneranda");
-				res.add("Dzień Kubusia Puchatka");
-				res.add("W 1778 James Cook jako pierwszy Europejczyk dotarł do archipelagu Hawajów, nadając im nazwę Wyspy Sandwich");
-				res.add("W 1969 radziecki kosmonauta Borys Wołynow stracił kilka zębów w wyniku twardego lądowania kapsuły Sojuz 5");
-				res.add("W 1928 urodził się Franciszek Pieczka, polski aktor");
-				break;
-			case 119:
-				res.add("Imieniny Pii");
-				res.add("Święto Armii w Laosie");
-				res.add("W 1354 Rzeszów otrzymał prawa miejskie od króla Kazimierza III Wielkiego");
-				res.add("W 1935 amerykańska kompania Coopers Inc. (dzisiaj Jockey International) wprowadziła do sprzedaży pierwsze slipy");
-				res.add("W 1983 premiera handlowa komputera osobistego Lisa przedsiębiorstwa Apple Computer");
-				res.add("W 1736 urodził się James Watt, szkocki inżynier, wynalazca, konstruktor maszyny parowej");
-				break;
-			case 120:
-				res.add("Imieniny Dobrożyźni");
-				res.add("Imieniny Maura");
-				res.add("W 1991 założono Polski Związek Radioorientacji Sportowej");
-				res.add("W 1775 urodził się André Marie Ampère, francuski fizyk (pijemy z dużym natężeniem, ale małym napięciem)");
-				break;
-			case 121:
-				res.add("Dzień Babci (naleweczki?)");
-				res.add("W 1937 miała miejsce premiera filmu \"Pani minister tańczy\" (był remake!)");
-				res.add("W 1959 w Gdyni doszło rzekomo do katastrofy UFO");
-				res.add("W 1924 urodził się Benny Hill, brytyjski aktor, komik");
-			
+		case 109:
+			res.add("Dzień Ligi Ochrony Przyrody");
+			res.add("W 1838 w Gdańsku otwarto pierwsze publiczne przedszkole");
+			res.add("W 1493 Krzysztof Kolumb jako pierwszy Europejczyk ujrzał manaty, biorąc je za syreny (raczej Rubensowskie)");
+			res.add("W 1969 w Wielkiej Brytanii odbył się 1. lot prototypu pasażerskiego samolotu naddźwiękowego Concorde");
+			res.add("W 1992 czasopismo Nature poinformowało o odkryciu trzech pierwszych planet pozasłonecznych przez Aleksandra Wolszczana");
+			res.add("W 1944 urodził się Jimmy Page, angielski gitarzysta zespołu Led Zeppelin");
+			break;
+		case 110:
+			res.add("Imieniny Agatona");
+			res.add("Benin – Święto Suwerenności Ludowej");
+			res.add("W 1989 reaktywowano towarzystwo gimnastyczne „Sokół”");
+			res.add("W 1863 w Londynie otwarto pierwszą na świecie linię metra");
+			res.add("W 1992 podczas sztormu na Pacyfiku z pokładu statku zostały zmyte 3 kontenery z 30 tysiącami gumowych kaczek");
+			res.add("W 1938 urodził się Donald Ervin Knuth, amerykański matematyk, informatyk (kto nie czytał ten nie wie)");
+			break;
+		case 111:
+			res.add("Imieniny Hygina i Odona");
+			res.add("Imieniny Palemona i Małomira");
+			res.add("Polska – Dzień Wegetarian (pijemy pod cebulkę)");
+			res.add("W 1906 otwarto konsulat USA w Toruniu (proroczo)");
+			res.add("W 1940 w Siedlcach zanotowano najniższą temperaturę w historii Polski (-41 °C)");
+			res.add("W 1986 Jerzy Kukuczka i Krzysztof Wielicki dokonali 1. zimowego wejścia na ośmiotysięcznik Kanczendzonga");
+			break;
+		case 112:
+			res.add("Imieniny Aelreda i Stomira");
+			res.add("Tanzania – Uroczystość Upamiętnienia Rewolucji Zanzibaru");
+			res.add("W 1969 ukazał się debiutancki album grupy Led Zeppelin");
+			res.add("W 1729 urodził się Edmund Burke, brytyjski polityk, filozof, twórca konserwatyzmu");
+			res.add("W 1957 urodziła się Anna Fotyga (pijemy z gracją, taktem i arcydyplomatycznie)");
+			break;
+		case 113:
+			res.add("Imieniny Bogusąda");
+			res.add("Imieniny Glafiry");
+			res.add("W 1888 powstało Towarzystwo National Geographic (pijemy trunki świata)");
+			res.add("W oczekiwaniu na okazje dnia kolejnego za cokolwiek");
+			break;
+		case 114:
+			res.add("Imieniny Mściwuja");
+			res.add("W 1392 Władysław Jagiełło nadał prawa miejskie Chełmowi");
+			res.add("W 1956 utworzono Ojcowski Park Narodowy");
+			res.add("W 1761 armia afgańska pokonała Marathów w trzeciej bitwie pod Panipatem");
+			res.add("W 1897 Szwajcar Matthias Zurbriggen zdobył Aconcaguę w Andach, najwyższy szczyt półkuli południowej");
+			res.add("W 1887 urodził się Hugo Steinhaus, polski matematyk i aforysta");
+			res.add("W 1976 urodził się Owal, polski raper");
+			break;
+		case 115:
+			res.add("Imieniny Habakuka");
+			res.add("Dzień Alfabetu Koreańskiego");
+			res.add("Dzień Wikipedii (poczytajmy co pijemy)");
+			res.add("W 1797 w Londynie po raz pierwszy na głowach panów pojawił się cylinder");
+			res.add("W 1885 Amerykanin Wilson Bentley wykonał pierwsze mikroskopowe zdjęcia płatków śniegu");
+			res.add("W 1622 urodził się Molier, francuski pisarz (świętoszki piją skrycie!)");
+			res.add("W 1869 urodził się Stanisław Wyspiański, polski pisarz i malarz");
+			break;
+		case 116:
+			res.add("Imieniny Gonsalwego i Furzeusza");
+			res.add("Imieniny Trzebowita");
+			res.add("W 1959 powstały Kampinoski i Karkonoski Park Narodowy");
+			res.add("W 1944 urodził się Andrzej Niemczyk, polski siatkarz, trener siatkówki");
+			res.add("W 1957 otwarto The Cavern Club w Liverpoolu");
+			res.add("W 1961 na Wawel powróciły z Kanady skarby królewskie");
+			break;
+		case 117:
+			res.add("Imieniny Przemiła");
+			res.add("W 1784 w Krakowie w rozpoczęły się pierwsze udane eksperymenty ze wzlotem balonu");
+			res.add("W 1934 Ferdinand Porsche zaprezentował rządowi niemieckiemu projekt Garbusa");
+			res.add("W 1942 urodził się Muhammad Ali, amerykański bokser, mistrz świata");
+			res.add("W 1963 urodził się Kai Hansen, niemiecki gitarzysta i wokalista zespołu Helloween");
+			break;
+		case 118:
+			res.add("Imieniny Pryski");
+			res.add("Imieniny Woluzjana i Weneranda");
+			res.add("Dzień Kubusia Puchatka");
+			res.add("W 1778 James Cook jako pierwszy Europejczyk dotarł do archipelagu Hawajów, nadając im nazwę Wyspy Sandwich");
+			res.add("W 1969 radziecki kosmonauta Borys Wołynow stracił kilka zębów w wyniku twardego lądowania kapsuły Sojuz 5");
+			res.add("W 1928 urodził się Franciszek Pieczka, polski aktor");
+			break;
+		case 119:
+			res.add("Imieniny Pii");
+			res.add("Święto Armii w Laosie");
+			res.add("W 1354 Rzeszów otrzymał prawa miejskie od króla Kazimierza III Wielkiego");
+			res.add("W 1935 amerykańska kompania Coopers Inc. (dzisiaj Jockey International) wprowadziła do sprzedaży pierwsze slipy");
+			res.add("W 1983 premiera handlowa komputera osobistego Lisa przedsiębiorstwa Apple Computer");
+			res.add("W 1736 urodził się James Watt, szkocki inżynier, wynalazca, konstruktor maszyny parowej");
+			break;
+		case 120:
+			res.add("Imieniny Dobrożyźni");
+			res.add("Imieniny Maura");
+			res.add("W 1991 założono Polski Związek Radioorientacji Sportowej");
+			res.add("W 1775 urodził się André Marie Ampère, francuski fizyk (pijemy z dużym natężeniem, ale małym napięciem)");
+			break;
+		case 121:
+			res.add("Dzień Babci (naleweczki?)");
+			res.add("W 1937 miała miejsce premiera filmu \"Pani minister tańczy\" (był remake!)");
+			res.add("W 1959 w Gdyni doszło rzekomo do katastrofy UFO");
+			res.add("W 1924 urodził się Benny Hill, brytyjski aktor, komik");
+			break;
+		case 122:
+			res.add("Dzień Dziadka");
+			res.add("Dzień Jedności Ukrainy");
+			res.add("W 1261 Wołczyn otrzymał prawa miejskie");
+			res.add("W 1863 wybuchło Powstanie Styczniowe");
+			res.add("W 2006 Kobe Bryant ustanowił drugi w historii NBA wynik pod względem ilości punktów zdobytych w jednym meczu (81)");
+			res.add("W 1788 urodził się George Gordon Byron, angielski poeta");
+			break;
+		case 123:
+			res.add("Imieniny Agatangela (pijmy za dobre wieści)");
+			res.add("Imieniny Emerencji (pijmy za zasłużonych)");
+			res.add("W 1843 Czech Jakub Kryštof Rad opatentował cukier w kostkach");
+			res.add("W 1983 stacja NBC wyemitowała premierowy odcinek serialu Drużyna A");
+			res.add("W 1974 urodził się Sampsa Astala, perkusista fińskiego zespołu Lordi");
+			break;
+		case 124:
+			res.add("Imieniny Babilasa");
+			res.add("Dzień Gospodarczego Wyzwolenia Togo");
+			res.add("W 1843 została założona Politechnika Lwowska");
+			res.add("W 1974 otwarto Hotel Forum w Warszawie");
+			res.add("W 1521 Ferdynand Magellan odkrył atol Puka Puka na Pacyfiku");
+			res.add("W 1935 w Newark Gottfried Krueger Brewing Company wypuściła na rynek pierwsze piwo w puszce aluminiowej");
+			res.add("W 1979 Coca-Cola weszła na rynek chiński.");
+			break;
+		case 125:
+			res.add("Imieniny Miłobora i Pęcisława");
+			res.add("Dzień Sekretarki i Asystentki (tutaj ostrożnie z trunkami)");
+			res.add("Dzień Kryptologii (pijmy sekretnie)");
+			res.add("Szkocja i Irlandia Północna – Noc Burnsa (pijemy whisky przed pomnikiem)");
+			res.add("W 2005 TVN24 wyemitowała premierowe wydanie programu Szkło kontaktowe");
+			res.add("W 1967 Leonid Teliga wypłynął z Casablanki w rejs dookoła świata na jachcie Opty");
+			res.add("W 1688 urodził się Juraj Jánošík, słowacki zbójnik (zm. 1713)");
+			break;
+		case 126:
+			res.add("Imieniny Ksenofonta i Małostryja");
+			res.add("Światowy Dzień Celnictwa");
+			res.add("Dzień Australii (pijemy karnie i w duchu odnowy)");
+			res.add("W 1521 Olsztyn pod wodzą Mikołaja Kopernika odparł atak wojsk krzyżackich");
+			break;
+		case 127:
+			res.add("Imieniny Ninomysła");
+			res.add("W 1957 odbyło się pierwsze losowanie Toto-Lotka");
+			res.add("W 1888 w USA założono National Geographic Society");
+			res.add("W 2010 w San Francisco został zaprezentowany iPad");
+			res.add("W 1832 urodził się Lewis Carroll, brytyjski pisarz i matematyk z fantazją");
+			res.add("W 1948 urodził się Stanisław Tymiński, polski polityk, biznesmen, omc prezydent");
+			break;
+		case 128:
+			res.add("Imieniny Krzesąda");
+			res.add("Dzień Wojska w Armenii, a Demokracji w Rwandzie");
+			res.add("W 1990 – Ukazało się ostatnie wydanie Trybuny Ludu");
+			res.add("W 1820 rosyjska wyprawa dopłynęła jako pierwsza do Antarktydy (pijemy z lodem)");
+			res.add("W 1958 w Danii opatentowano klocki LEGO");
+			res.add("W 1611 urodził się Jan Heweliusz, polski astronom (pijemy gdańskie piwa, w 1416 było tam 378 browarów)");
+			res.add("W 1986 urodził się Grubson, polski raper");
+			break;
+		case 129:
+			res.add("W 2012 miało miejsce otwarcie Stadionu Narodowego w Warszawie");
+			res.add("W 1258 Mongołowie rozpoczęli oblężenie Bagdadu (gdyby im się udało, mogłoby być inaczej...)");
+			res.add("W 1616 Holender Willem Corneliszoon Schouten po raz pierwszy opłynął Przylądek Horn");
+			res.add("W 1595 miała miejsce premiera sztuki Romeo i Julia Williama Shakespeare'a");
+			res.add("W 1886 Karl Benz opatentował swój pierwszy automobil");
+			break;
+		case 130:
+			res.add("W 1868 spadł meteoryt Pułtusk");
+			res.add("W 1984 miała miejsce premiera filmu Akademia Pana Kleksa.");
+			res.add("W 1847 osada Yerba Buena zmieniła nazwę na San Francisco");
+			res.add("W 2007 odbyła się premiera Microsoft Windows Vista (wio)");
+			res.add("W 1909 urodził się Henryk Magnuski, polski inżynier, twórca walkie-talkie");
+			res.add("W 1925 urodził się Douglas Engelbart, amerykański naukowiec, informatyk i wynalazca (pijemy tę na myszach)");
+			break;
+		case 131:
+			res.add("Imieniny Spycigniewa");
+			res.add("W 1925 w Kurierze Warszawskim ukazała się pierwsza polska krzyżówka");
+			res.add("W 1964 urodził się Jeff Hanneman, amerykański gitarzysta grupy Slayer");
+			res.add("W oczekiwaniu na Luty");
+			break;
+		case 201:
+			res.add("Imieniny Dziadumiły");
+			res.add("W 2009 Polska wywalczyła brązowy medal na rozgrywanych w Chorwacji Mistrzostwach Świata w Piłce Ręcznej");
+			res.add("W 1968 w Rzeszowie został założony zespół bluesrockowy Breakout");
+			break;
+		case 202:
+			res.add("Imieniny Ermentrudy");
+			res.add("Dzień Świszcza w USA i Kanadzie");
+			res.add("Światowy Dzień Obszarów Wodno-Błotnych");
+			res.add("W 1386 podczas zjazdu walnego szlachty wybrano księcia litewskiego Władysława II Jagiełłę na króla Polski");
+			res.add("W 1676 w katedrze na Wawelu zostali koronowani Jan III Sobieski i Maria Kazimiera");
+			res.add("W 1921 Polska podpisała układ sojuszniczy z Francją (też wybór)");
+			res.add("W 2007 Oscypek jako drugi polski produkt regionalny uzyskał status Chronionej Nazwy Pochodzenia UE");
+			res.add("W 1709 na bezludnej wyspie na Pacyfiku odnaleziony został Alexander Selkirk, protoplastuś Robinsona Cruzoe");
+			res.add("W 2009 przeprowadzono kolejną denominację dolara Zimbabwe w stosunku 1 000 000 000 000:1");
+			break;
+		case 203:
+			res.add("Mozambik – Dzień Bohaterów");
+			res.add("W 1815 w Szwajcarii powstała pierwsza na świecie fabryka serów");
+			res.add("W 1976 urodził się Stéphane Antiga, francuski siatkarz, trener Reprezentacji Polski");
+			res.add("W 1987 Artur Hajzer i Jerzy Kukuczka dokonali pierwszego zimowego wejścia na Annapurnę");
+			break;
+		case 204:
+			res.add("Imieniny Częstogoja");
+			res.add("Sri Lanka – Święto Niepodległości");
+			res.add("Międzynarodowe – Światowy Dzień Walki z Rakiem");
+			res.add("W 2004 uruchomiono serwis społecznościowy Facebook");
+			res.add("W 2007 Polscy piłkarze ręczni zdobyli srebrne medale na rozgrywanych w Niemczech Mistrzostwach Świata");
+			res.add("W 1746 urodził się Tadeusz Kościuszko");
+			break;
+		case 205:
+			res.add("Imieniny Elpina i Indrachta");
+			res.add("Imieniny Strzeżysława");
+			res.add("Tanzania – Dzień Chama Cha Mapinduzi");
+			res.add("W 1869 w Moliagul w Australii znaleziono największy na świecie samorodek złota (62,5 kg)");
+			res.add("W 1952 w Nowym Jorku na przejściach dla pieszych zamontowano sygnalizatory z napisem Don't Walk");
+			res.add("W 1985 urodził się Cristiano Ronaldo, portugalski piłkarz (drybling po wypiciu obowiązkowo!)");
+			break;
+		case 206:
+			res.add("Jamajka – święto narodowe (Dzień Boba Marleya)");
+			res.add("W 1989 rozpoczęły się obrady Okrągłego Stołu, trwające do 5 kwietnia (na sucho by się nie dogadali)");
+			res.add("W 1959 inżynier przedsiębiorstwa Texas Instruments Jack Kilby opatentował pierwszy układ scalony");
+			res.add("W 2001 Papież Jan Paweł II ustanowił św. Izydora z Sewilli patronem internautów i informatyków");
+			break;
+		case 207:
+			res.add("W 1949 ukazał się pierwszy numer czasopisma młodzieżowego Świat Młodych");
+			res.add("W 1977 urodził się Mariusz Pudzianowski, polski strongman (pijemy mocne trunki)");
+			res.add("W 1974 miała miejsce premiera filmu Płonące siodła");
+			res.add("W 1812 urodził się Karol Dickens, angielski pisarz (zm. 1870)");
+			res.add("W 1954 urodził się Dieter Bohlen, niemiecki muzyk zespołu Modern Talking");
+			break;
+
 		default:
 			res.add("Za update aplikacji!");
 			res.add("Za autora aplikacji, żeby zaktualizował okazje!");
 			break;
 		}
-		
+
 		return res;
 	}
-	
+
 }
 
