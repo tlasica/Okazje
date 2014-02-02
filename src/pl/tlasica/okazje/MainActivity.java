@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
 	private ShareActionProvider mShareActionProvider;
 	private GestureDetectorCompat 	mDetector;
 
+	private static final String UPDATE_SITE = "http://okazjedowypicia.herokuapp.com/assets/data/";	
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +46,12 @@ public class MainActivity extends Activity {
         
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
-            
-        
-        occasionsDict = new Occasions( new OccasionsDataPL() );
+                    
+        //occasionsDict = new Occasions( new OccasionsDataPL() );
+        occasionsDict = new Occasions( new OccasionsDataFromDb(getApplicationContext()) );
+    
+        //TODO: aktualizacja w przypadku wczytania => zapisać na event
+        new DataUpdater(UPDATE_SITE, getApplicationContext()).execute();
     }
 
 	@Override
