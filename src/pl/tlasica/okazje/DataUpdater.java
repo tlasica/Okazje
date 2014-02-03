@@ -6,6 +6,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -43,18 +44,18 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 		for(int month=1; month<=12; month++) {
 	        log("UPDATE", "Updating month " + month );
 	        boolean updated = updateMonth(month);
-	        log("UPDATE", "Updating month " + month + (updated?" succeeded":" failed") );
 			anyUpdated |= updated;
 		}
 		return anyUpdated;
 	}
 
 	public  boolean updateMonth(int month) {
-		String url = urlForChecksum(month);
-		log("UPDATE", url);
 		try {			
 			// get md5 from update site
-			String md5 = getChecksumFromURL(urlForChecksum(month));
+			String urlChecksum = urlForChecksum(month);
+			log("UPDATE", urlChecksum);
+			String md5 = getChecksumFromURL( urlChecksum );
+			log("UPDATE", "md5: "+md5);
 			// check if update is needed
 			DatabaseHelper db = DatabaseHelper.getInstance(context);
 			if (db.isUpdateNeeded(month, md5)) {
@@ -66,8 +67,11 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 				// store new checksum
 				db.storeMD5(month, md5);
 				return true;
-			}			
-			return false;
+			}
+			else {
+				log("UPDATE", "update for month " + month + " is not needed");
+				return false;
+			}
 		} catch (Exception e){
 			log("UPDATE", "Exception:" + e);
 			return false;
@@ -80,12 +84,14 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 		DatabaseHelper db = DatabaseHelper.getInstance(context);
 		for(Integer daynum: update.keySet()) {
 			db.cleanDay(daynum);
+			List<OneOccasion> forDay = new LinkedList<OneOccasion>(); 
 			for(String text: update.get(daynum)) {
 				OneOccasion in = new OneOccasion();
 				in.dayNum = daynum;
 				in.text = text;
-				db.addOccasion(in);
+				forDay.add( in );
 			}
+			db.addOccasions(forDay);
 		}
 	}
 
@@ -98,7 +104,6 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 	}
 
 	private List<String> geTextFileFromURL(String url) throws Exception {
-		log("UPDATE", "url=" + url);
 		URL web = new URL(url);
 		URLConnection connection = web.openConnection();	
         BufferedReader in = new BufferedReader( new InputStreamReader(connection.getInputStream()));        

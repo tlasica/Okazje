@@ -69,7 +69,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     		values.put(DatabaseSchema.Occasion.OCC, in.text);
     		if (in.link != null) values.put(DatabaseSchema.Occasion.LINK, in.link);
     		if (in.extra != null) values.put(DatabaseSchema.Occasion.EXTRA, in.extra);    	
-    		db.insert(DatabaseSchema.Occasion.TABLENAME, "null", values);
+    		long id = db.insert(DatabaseSchema.Occasion.TABLENAME, "null", values);
     	}
     }
     
@@ -97,12 +97,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //FIXME: nie działa wczytywanie tego update
     public boolean isUpdateNeeded(int month, String md5) {
     	SQLiteDatabase db = getReadableDatabase();
-    	String[] whereArgs = new String[] {String.valueOf(month)};
-    	Cursor cur = db.rawQuery("select md5 from updates where month=?", whereArgs);
+    	String[] whereArgs = new String[] {String.valueOf(month), md5};
+    	Cursor cur = db.rawQuery("select count(1) from updates where month=? and md5=?", whereArgs);
     	if (cur.moveToFirst()) {
-    		String old = cur.getString(0);
+    		int res = cur.getInt(0);
     		cur.close();
-    		return ! old.equalsIgnoreCase(md5);
+    		return (0==res);
     	}
     	else return true;	// now checksum stored	
     }
@@ -111,9 +111,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	SQLiteDatabase db = getWritableDatabase();
 		ContentValues values = new ContentValues();
 		values.put(DatabaseSchema.Update.MD5, md5);
-		String whereClause = "month=?";								
-    	String[] whereArgs = new String[] {String.valueOf(month)};    	
-    	int res = db.update("updates", values, whereClause, whereArgs);
+		values.put(DatabaseSchema.Update.MONTH, month);
+		long id = (int) db.insertWithOnConflict("updates", null, values, SQLiteDatabase.CONFLICT_REPLACE);		
+		//String whereClause = "month=?";								
+    	//String[] whereArgs = new String[] {String.valueOf(month)};    	
+    	//int res = db.update("updates", values, whereClause, whereArgs);
     }
     
 }
