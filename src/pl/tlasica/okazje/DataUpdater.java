@@ -13,6 +13,7 @@ import java.util.Map;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 /**
  * Aktualizuje dane wczytując je z URL dostepnego w okazjedowypicia.pl
@@ -22,14 +23,32 @@ import android.util.Log;
  */
 public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 
-	private String 		baseUrl;
-	private Context		context;
+	private String 			baseUrl;
+	private Context			context;
+	private Occasions		occDict;
 	
-	public DataUpdater(String aBaseUrl, Context aContext) {
+	public DataUpdater(String aBaseUrl, Context aContext, Occasions aOccDict) {
 		baseUrl = aBaseUrl;
 		context = aContext;
+		occDict = aOccDict;
 	}
-	
+
+	/* (non-Javadoc)
+	 * @see android.os.AsyncTask#onPostExecute(java.lang.Object)
+	 */
+	@Override
+	protected void onPostExecute(Boolean updated) {
+		if (updated) {
+			Toast.makeText(context, "Dane zaktualizowane.\nPuknij aby zmienić okazję.", Toast.LENGTH_SHORT).show();
+			if (occDict!=null) occDict.enforceReload();
+			
+		}
+		// TODO Auto-generated method stub
+		super.onPostExecute(updated);
+	}
+
+
+
 	@Override
 	protected Boolean doInBackground(Void... arg0) {
 		return updateAll();

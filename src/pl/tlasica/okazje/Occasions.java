@@ -16,17 +16,23 @@ public class Occasions {
 	Random									random;
 	private int 							lastOccasionIndex = 0;
 	private OccasionsData					dataProvider;
+	boolean									enforceReload = false;
 	
 	public Occasions(OccasionsData data) {
 		dataProvider = data;
 		random = new Random( Calendar.getInstance().getTimeInMillis() );
 	}
 	
+	public void enforceReload() {
+		enforceReload = true;
+	}
+	
 	public String getRandomOccasion(Calendar cal) {
 		int num = Occasions.dateToDayNum(cal);
-		if (todayNum != num) {
+		if (enforceReload || (todayNum != num)) {
 			prepareDayForBrowsing( num );
 			lastOccasionIndex = 0;
+			enforceReload = false;
 		}
 		String occ = todayOccasions.get( lastOccasionIndex );
 		nextOccasion();

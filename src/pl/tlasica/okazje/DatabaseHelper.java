@@ -113,9 +113,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		values.put(DatabaseSchema.Update.MD5, md5);
 		values.put(DatabaseSchema.Update.MONTH, month);
 		long id = (int) db.insertWithOnConflict("updates", null, values, SQLiteDatabase.CONFLICT_REPLACE);		
-		//String whereClause = "month=?";								
-    	//String[] whereArgs = new String[] {String.valueOf(month)};    	
-    	//int res = db.update("updates", values, whereClause, whereArgs);
     }
     
 }

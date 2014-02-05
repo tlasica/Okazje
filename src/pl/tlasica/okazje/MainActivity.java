@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
         occasionsDict = new Occasions( new OccasionsDataFromDb(getApplicationContext()) );
     
         //TODO: aktualizacja w przypadku wczytania => zapisać na event
-        new DataUpdater(UPDATE_SITE, getApplicationContext()).execute();
+        new DataUpdater(UPDATE_SITE, getApplicationContext(), occasionsDict).execute();
     }
 
 	@Override
@@ -149,7 +149,7 @@ public class MainActivity extends Activity {
 		mCurrDateTextView.setText( dateStr );		
 	}
 
-	private void updateOccasion() {
+	void updateOccasion() {
 		currOccasion = occasionsDict.getRandomOccasion( currDate );
 		mOccasionTextView.setText( currOccasion );
 		updateShareIntent( currOccasion );
