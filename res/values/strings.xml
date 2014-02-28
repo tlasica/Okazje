@@ -5,5 +5,19 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="okazje_do_wypicia">Okazje do wypicia na dziś</string>
+    <string name="menu_item_add_occasion">Dodaj...</string>
+    <string name="add_occasion_text">
+        Możesz dodać okazję od siebie!
+        Zobaczą ją wszyscy użytkownicy aplikacji!
+        \n\n
+        Wystarczy wysłać do tomek@3kawki.pl email z datą i treścią okazji.
+        \n\n
+        Jeśli okazja będzie fajna i ciekawa to ją dodam.
+        Nie miej mi za złe, jeśli ją odrzucę :-(
+        \n\n
+        Czy chcesz wysłać teraz?
+    </string>
+    <string name="add_occasion_bttn_yes">Tak!</string>
+    <string name="add_occasion_bttn_no">Nie</string>
 
 </resources>

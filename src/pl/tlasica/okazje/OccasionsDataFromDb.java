@@ -24,9 +24,8 @@ public class OccasionsDataFromDb implements OccasionsData {
 			res.add( o.text );
 		}
 		if (res.isEmpty()) {
-			res.add("Za dostęp do Internetu!");
-			res.add("Za update danych aplikacji!");
-			res.add("Za autora aplikacji, żeby zaktualizował dane!");			
+			res.add("Za dostęp do Internetu! (to się dane ściągną)");
+			res.add("Za autora aplikacji (w oczekiwaniu na pobranie danych)");
 		}
 		return res;
 	}

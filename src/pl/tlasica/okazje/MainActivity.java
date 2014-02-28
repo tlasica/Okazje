@@ -3,8 +3,11 @@ package pl.tlasica.okazje;
 import java.util.Calendar;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.text.format.DateFormat;
@@ -142,11 +145,16 @@ public class MainActivity extends Activity {
     	textLabel.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
     	textOccasion.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);                		
 	}
-	
+
+    private String currentDateStr() {
+        String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
+        return dateStr;
+
+    }
+
 	private void updateCurrentDate(Calendar day) {
 		currDate = day;
-		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
-		mCurrDateTextView.setText( dateStr );		
+		mCurrDateTextView.setText( currentDateStr() );
 	}
 
 	void updateOccasion() {
@@ -188,8 +196,41 @@ public class MainActivity extends Activity {
 	        mShareActionProvider.setShareIntent(intent);
 	    }
 	}
-	
-	class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+
+    public void addNewOccasion(MenuItem item) {
+        Log.d("MENU", "addNewOccation()");
+        // open dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(getString(R.string.add_occasion_text));
+        builder.setCancelable(true);
+        builder.setPositiveButton(getString(R.string.add_occasion_bttn_yes), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.d("ADD", "yes!");
+                // Przygotowanie tekstu emaila
+                String text = "Data: " + currentDateStr() + "\n" + "Tekst okazji:";
+                // open to send email
+                Intent email = new Intent(Intent.ACTION_VIEW);
+                email.setData(Uri.parse("mailto:"));
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"tomek@3kawki.pl"});
+                email.putExtra(Intent.EXTRA_SUBJECT, "[OKAZJE] Propozycja okazji");
+                email.putExtra(Intent.EXTRA_TEXT, text);
+                startActivity(email);
+            }
+        });
+        builder.setNegativeButton(getString(R.string.add_occasion_bttn_no), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.d("ADD", "cancelled");
+                dialog.cancel();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+
+
+    }
+
+    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
 	       
         @Override
         public boolean onFling(MotionEvent event1, MotionEvent event2, 
