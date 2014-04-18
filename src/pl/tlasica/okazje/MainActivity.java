@@ -4,9 +4,10 @@ import java.util.Calendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
+import android.content.*;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
@@ -22,6 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -37,6 +39,8 @@ public class MainActivity extends Activity {
 	private ShareActionProvider mShareActionProvider;
 	private GestureDetectorCompat 	mDetector;
 
+    private long lastUpdateMillis = 0;
+
 	private static final String UPDATE_SITE = "http://okazjedowypicia.herokuapp.com/assets/data/";	
 	
     @Override
@@ -50,11 +54,13 @@ public class MainActivity extends Activity {
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
                     
-        //occasionsDict = new Occasions( new OccasionsDataPL() );
         occasionsDict = new Occasions( new OccasionsDataFromDb(getApplicationContext()) );
-    
-        //TODO: aktualizacja w przypadku wczytania => zapisać na event
-        new DataUpdater(UPDATE_SITE, getApplicationContext(), occasionsDict).execute();
+
+        // register to see connectivity changes
+        registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+
+        AppRater rater = new AppRater(this);
+        rater.appLaunched();
     }
 
 	@Override
@@ -246,5 +252,33 @@ public class MainActivity extends Activity {
         	}
             return true;
         }
-    }	
+    }
+
+
+
+    private BroadcastReceiver mConnReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            ConnectivityManager connManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            NetworkInfo netInfo = connManager.getActiveNetworkInfo();
+            if (netInfo!=null && netInfo.isConnected()) {
+                Log.d("NETWORK", "network is connected");
+
+                long curr = System.currentTimeMillis();
+                if (curr - lastUpdateMillis > 5 * 60 * 1000) {
+                    Log.d("NETWORK", "starting data updater");
+                    lastUpdateMillis = curr;
+                    Toast.makeText(context, "Aktualizuję okazje...", Toast.LENGTH_SHORT).show();
+                    new DataUpdater(UPDATE_SITE, getApplicationContext(), occasionsDict).execute();
+                }
+            }
+            else {
+                Log.d("NETWORK", "network is disconnected");
+            }
+
+        }
+    };
+
 }
