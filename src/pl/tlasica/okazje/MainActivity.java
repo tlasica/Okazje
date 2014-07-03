@@ -24,12 +24,13 @@ import android.view.ViewGroup;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.facebook.*;
+import com.facebook.widget.FacebookDialog;
+import com.facebook.widget.WebDialog;
 
 public class MainActivity extends Activity {
 
-	//private static final String LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=pl.tlasica.okazje";
-	private static final String LINK_BITLY="http://bit.ly/19b02vz";
-	//private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp"; 
+	//private static final String LINK_FACEBOOK = "http://facebook.com/okazjeapp";
 	
 	private TextView	mCurrDateTextView;
 	private TextView	mOccasionTextView;
@@ -39,9 +40,14 @@ public class MainActivity extends Activity {
 	private ShareActionProvider mShareActionProvider;
 	private GestureDetectorCompat 	mDetector;
 
+    private UiLifecycleHelper uiHelper;
+
     private long lastUpdateMillis = 0;
 
-	private static final String UPDATE_SITE = "http://okazjedowypicia.herokuapp.com/assets/data/";	
+	private static final String UPDATE_SITE = "http://okazjedowypicia.herokuapp.com/assets/data/";
+
+    final String    APP_URL = "http://bit.ly/okazjeapp";
+    final String    PIC_URL = "https://raw.githubusercontent.com/tlasica/Okazje/master/icon-64.png";
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,10 @@ public class MainActivity extends Activity {
 
         // register to see connectivity changes
         registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+
+        // configure facebook
+        uiHelper = new UiLifecycleHelper(this, null);
+        uiHelper.onCreate(savedInstanceState);
 
         AppRater rater = new AppRater(this);
         rater.appLaunched();
@@ -93,8 +103,29 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+        uiHelper.onResume();
 		adjustDisplay();
 	}
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        uiHelper.onSaveInstanceState(outState);
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        uiHelper.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        uiHelper.onDestroy();
+    }
+
 
     @Override 
     public boolean onTouchEvent(MotionEvent event){ 
@@ -158,6 +189,12 @@ public class MainActivity extends Activity {
 
     }
 
+    private String currentDateStrNoYear() {
+        String dateStr = DateFormat.format("E d.M",currDate).toString();
+        return dateStr;
+
+    }
+
 	private void updateCurrentDate(Calendar day) {
 		currDate = day;
 		mCurrDateTextView.setText( currentDateStr() );
@@ -178,18 +215,17 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	private String createShareContentText(String occ, String dateStr) {
-		String content = String.format("Dobra okazja na %s:\n%s\n\n" +
-				"Okazje Android App: %s\n", dateStr, occ, LINK_BITLY);
+	private String createShareContentText(String occ) {
+		String content = String.format("Okazja na %s:\n%s\n\n" +
+				"Okazje Android App: %s\n", currentDateStr(), occ, APP_URL);
 		return content;
 	}
-		
+
+
 	// Call to update the share intent
 	private void updateShareIntent(String occ) {
-		String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());				
-				
-		String subject = "Dobra okazja na " + dateStr;
-		String content = createShareContentText(occ, dateStr);
+		String subject = "Okazja na " + currentDateStr();
+		String content = createShareContentText(occ);
 		Log.d("SHARE", content);
 						
 		Intent intent = new Intent(Intent.ACTION_SEND);
@@ -273,12 +309,87 @@ public class MainActivity extends Activity {
                     Toast.makeText(context, "Aktualizuję okazje...", Toast.LENGTH_SHORT).show();
                     new DataUpdater(UPDATE_SITE, getApplicationContext(), occasionsDict).execute();
                 }
+
+                // show fb share button
+                findViewById(R.id.facebookShareButton).setVisibility(View.VISIBLE);
             }
             else {
                 Log.d("NETWORK", "network is disconnected");
+                // hide fb share button
+                findViewById(R.id.facebookShareButton).setVisibility(View.INVISIBLE);
             }
 
         }
     };
+
+
+    public void facebookLoginAndShare(View view) {
+        if (Session.getActiveSession() != null && Session.getActiveSession().isOpened()) {
+            facebookShareWithFeedDialog();
+        }
+        else {
+            Session.openActiveSession(this, true, new Session.StatusCallback() {
+
+                // callback when session changes state
+                @Override
+                public void call(Session session, SessionState state, Exception exception) {
+                    if (state == SessionState.OPENED) {
+                        facebookShareWithFeedDialog();
+                    }
+
+                }
+            });
+        }
+
+    }
+
+
+    public void facebookShareWithFeedDialog() {
+        String msg = String.format("%s: %s", currentDateStrNoYear(), currOccasion);
+
+        Bundle params = new Bundle();
+        //params.putString("caption", "Okazje do wypicia");
+        params.putString("description", "Niecodzienne okazje co dzień!");
+        params.putString("link", APP_URL);
+        params.putString("picture", PIC_URL);
+        params.putString("name", msg);
+
+        WebDialog feedDialog = (
+                new WebDialog.FeedDialogBuilder(this, Session.getActiveSession(), params))
+                .setOnCompleteListener(new WebDialog.OnCompleteListener() {
+
+                    @Override
+                    public void onComplete(Bundle values, FacebookException error) {
+                        if (error == null) {
+                            final String postId = values.getString("post_id");
+                            if (postId != null) Log.d("FB", "posted");
+                        } else if (error instanceof FacebookOperationCanceledException) {
+                            Log.i("FB", "Publish cancelled");
+                        } else {
+                            Log.w("FB", "Error posting story");
+                        }
+                    }
+
+                })
+                .build();
+        feedDialog.show();
+    }
+
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
+        uiHelper.onActivityResult(requestCode, resultCode, data, new FacebookDialog.Callback() {
+            @Override
+            public void onError(FacebookDialog.PendingCall pendingCall, Exception error, Bundle data) {
+                Log.e("Activity", String.format("Error: %s", error.toString()));
+            }
+
+            @Override
+            public void onComplete(FacebookDialog.PendingCall pendingCall, Bundle data) {
+                Log.i("Activity", "Success!");
+            }
+        });
+    }//onActivityResult
 
 }

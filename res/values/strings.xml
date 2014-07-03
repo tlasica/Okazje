@@ -19,5 +19,6 @@
     </string>
     <string name="add_occasion_bttn_yes">Tak!</string>
     <string name="add_occasion_bttn_no">Nie</string>
-
+    <!-- FACEBOOK APP ID -->
+    <string name="fb_app_id">532537796853015"</string>
 </resources>

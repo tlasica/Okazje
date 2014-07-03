@@ -61,6 +61,20 @@
         android:onClick="onClickOccasion"
 	/>
 
+
+    <ImageButton
+            android:id="@+id/facebookShareButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="facebookLoginAndShare"
+            android:background="@drawable/facebook"
+            />
+
     <!--
     <TextView
         android:id="@+id/textview_link"
