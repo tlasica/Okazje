@@ -53,18 +53,31 @@
         android:clickable="true"
         android:onClick="onClickOccasion"
 	/>
-            
+
+    <ImageButton
+            android:id="@+id/facebookShareButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="facebookLoginAndShare"
+            android:background="@drawable/facebook"
+            />
+
     </LinearLayout>
     </LinearLayout>
-    
-	<com.google.ads.AdView android:id="@+id/adView"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		ads:adUnitId="a151dc40dba3360"
-		ads:adSize="BANNER"		
-		ads:loadAdOnCreate="true"
-		ads:testDevices="A9A32839D5C3A3E567C5D00C21437288"
-	/>
+
+    <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-6316552100242193/3783784460"
+            ads:adSize="SMART_BANNER"
+            />
 		
 </RelativeLayout>

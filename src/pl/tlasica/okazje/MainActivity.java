@@ -27,6 +27,8 @@ import android.widget.Toast;
 import com.facebook.*;
 import com.facebook.widget.FacebookDialog;
 import com.facebook.widget.WebDialog;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
 
@@ -39,6 +41,8 @@ public class MainActivity extends Activity {
 	private Occasions	occasionsDict;
 	private ShareActionProvider mShareActionProvider;
 	private GestureDetectorCompat 	mDetector;
+
+    private AdView      adView;
 
     private UiLifecycleHelper uiHelper;
 
@@ -68,6 +72,15 @@ public class MainActivity extends Activity {
         // configure facebook
         uiHelper = new UiLifecycleHelper(this, null);
         uiHelper.onCreate(savedInstanceState);
+
+        // configure google admob
+        adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("A9A32839D5C3A3E567C5D00C21437288")
+                .build();
+        adView.loadAd(adRequest);
+
 
         AppRater rater = new AppRater(this);
         rater.appLaunched();
@@ -105,6 +118,7 @@ public class MainActivity extends Activity {
 		super.onResume();
         uiHelper.onResume();
 		adjustDisplay();
+        adView.resume();
 	}
 
     @Override
@@ -116,12 +130,14 @@ public class MainActivity extends Activity {
 
     @Override
     public void onPause() {
+        adView.pause();
         super.onPause();
         uiHelper.onPause();
     }
 
     @Override
     public void onDestroy() {
+        adView.destroy();
         super.onDestroy();
         uiHelper.onDestroy();
     }
@@ -167,7 +183,7 @@ public class MainActivity extends Activity {
 
         // adjust card size to 50% of min(width,height)
         ViewGroup layout = (ViewGroup) findViewById(R.id.layout_card);
-        ViewGroup.LayoutParams p = (ViewGroup.LayoutParams) layout.getLayoutParams();
+        ViewGroup.LayoutParams p = layout.getLayoutParams();
         int cardHeight = Math.round( ySize * 0.56f ); 
         p.height = cardHeight;
         layout.requestLayout();
@@ -184,14 +200,12 @@ public class MainActivity extends Activity {
 	}
 
     private String currentDateStr() {
-        String dateStr = DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
-        return dateStr;
+        return DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
 
     }
 
     private String currentDateStrNoYear() {
-        String dateStr = DateFormat.format("E d.M",currDate).toString();
-        return dateStr;
+        return DateFormat.format("E d.M",currDate).toString();
 
     }
 

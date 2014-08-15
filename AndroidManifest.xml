@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.tlasica.okazje"
-    android:versionCode="18"
-    android:versionName="1.8.0" >
+    android:versionCode="19"
+    android:versionName="1.8.1" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -21,6 +21,9 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId"
                    android:value="@string/fb_app_id" />
 
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version"/>
+
         <activity
             android:name="pl.tlasica.okazje.MainActivity"
             android:label="@string/app_name"
@@ -35,8 +38,8 @@
         <!-- facebook -->
         <activity android:name="com.facebook.LoginActivity"/>
 
-        <!-- AdMobActivity definition -->
-		<activity android:name="com.google.ads.AdActivity" 
+        <!-- Google Play Services AdActivity -->
+		<activity android:name="com.google.android.gms.ads.AdActivity"
    			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
    		/>
         

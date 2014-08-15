@@ -4,11 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -51,7 +47,7 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 
 	@Override
 	protected Boolean doInBackground(Void... arg0) {
-		return updateAll();
+        return updateTwoMonths();
 	}
 
 	private void log(String tag, String msg) {
@@ -67,6 +63,16 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 		}
 		return anyUpdated;
 	}
+
+    public boolean updateTwoMonths() {
+        int month = 1+Calendar.getInstance().get(Calendar.MONTH);
+        log("UPDATE", "Updating month " + month );
+        boolean anyUpdated = updateMonth(month);
+        month++;
+        log("UPDATE", "Updating month " + month );
+        anyUpdated |= updateMonth(month);
+        return anyUpdated;
+    }
 
 	public  boolean updateMonth(int month) {
 		try {			
@@ -151,7 +157,7 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 				map.put(day, curr);
 			}
 			else {
-				if (!s.isEmpty()) curr.add(s);
+				if (!s.isEmpty() && curr!=null) curr.add(s);
 			}
 		}
 		return map;
