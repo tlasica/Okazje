@@ -24,8 +24,8 @@ public class OccasionsDataFromDb implements OccasionsData {
 			res.add( o.text );
 		}
 		if (res.isEmpty()) {
-			res.add("Za dostęp do Internetu! (aby się okazje zaktualizowały)");
-			res.add("Za autora aplikacji!)");
+			res.add(context.getString(R.string.celebration_internet));
+			res.add(context.getString(R.string.celebration_author));
 		}
 		return res;
 	}

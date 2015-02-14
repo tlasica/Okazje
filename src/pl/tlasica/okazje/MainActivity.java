@@ -1,6 +1,7 @@
 package pl.tlasica.okazje;
 
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -48,10 +49,8 @@ public class MainActivity extends Activity {
 
     private long lastUpdateMillis = 0;
 
-	private static final String UPDATE_SITE = "http://okazjedowypicia.herokuapp.com/assets/data/";
-
     final String    APP_URL = "http://bit.ly/okazjeapp";
-    final String    PIC_URL = "https://raw.githubusercontent.com/tlasica/Okazje/master/icon-64.png";
+    final String    PIC_URL = "https://raw.githubusercontent.com/tlasica/Okazje/master/icon-128.png";
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -320,8 +319,9 @@ public class MainActivity extends Activity {
                 if (curr - lastUpdateMillis > 5 * 60 * 1000) {
                     Log.d("NETWORK", "starting data updater");
                     lastUpdateMillis = curr;
-                    Toast.makeText(context, "Aktualizuję okazje...", Toast.LENGTH_SHORT).show();
-                    new DataUpdater(UPDATE_SITE, getApplicationContext(), occasionsDict).execute();
+                    String msg = getString(R.string.updater_msg_inprogress);
+                    Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
+                    new DataUpdater(updateSite(), getApplicationContext(), occasionsDict).execute();
                 }
 
                 // show fb share button
@@ -362,8 +362,7 @@ public class MainActivity extends Activity {
         String msg = String.format("%s: %s", currentDateStrNoYear(), currOccasion);
 
         Bundle params = new Bundle();
-        //params.putString("caption", "Okazje do wypicia");
-        params.putString("description", "Niecodzienne okazje co dzień!");
+        params.putString("description", getString(R.string.fb_share_description));
         params.putString("link", APP_URL);
         params.putString("picture", PIC_URL);
         params.putString("name", msg);
@@ -405,5 +404,15 @@ public class MainActivity extends Activity {
             }
         });
     }//onActivityResult
+
+
+    protected String updateSite() {
+        Locale locale = Locale.getDefault();
+        String language = locale.getLanguage();
+        String site = "http://okazjedowypicia.herokuapp.com/assets/data/";
+        if (language.equals("en")) return site + "en/";
+        if (language.equals("pl")) return site;
+        else return site;
+    }
 
 }

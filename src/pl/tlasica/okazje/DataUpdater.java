@@ -12,8 +12,9 @@ import android.util.Log;
 import android.widget.Toast;
 
 /**
- * Aktualizuje dane wczytując je z URL dostepnego w okazjedowypicia.pl
- * Parametrów nie ma, Progress co 1 m-c, Result True: udało się / False: nie udało się
+ * Downloads data and updates celebrations database from URL in okazjedowypicia.pl
+ * Progress is reported for each month.
+ * Result: True - success, False - something went wrong, not updated
  * @author tomek
  *
  */
@@ -27,6 +28,7 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 		baseUrl = aBaseUrl;
 		context = aContext;
 		occDict = aOccDict;
+        log("UPDATE", baseUrl );
 	}
 
 	/* (non-Javadoc)

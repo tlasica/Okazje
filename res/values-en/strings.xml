@@ -21,5 +21,9 @@
     <string name="apprater_btn_rate">"Rate now"</string>
     <string name="apprater_btn_later">"Later"</string>
     <string name="apprater_title_btn_no">"No, thanks"</string>
-    <string name="update_msg_updated">Dane zaktualizowane.\nPuknij aby zmienić okazję.</string>
+    <string name="update_msg_updated">Celebrations updated.\nClick to see.</string>
+    <string name="updater_msg_inprogress">Downloading celebrations...</string>
+    <string name="celebration_internet">For Internet connection!</string>
+    <string name="celebration_author">For the author of this application!</string>
+    <string name="fb_share_description">Let's celebrate!</string>
 </resources>
