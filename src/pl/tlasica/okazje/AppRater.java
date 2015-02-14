@@ -15,7 +15,6 @@ import android.widget.TextView;
  * http://www.androidsnippets.com/prompt-engaged-users-to-rate-your-app-in-the-android-market-appirater
  */
 public class AppRater {
-    private final static String APP_TITLE = "Okazje";
     private final static String APP_PNAME = "pl.tlasica.okazje";
 
     private final static int DAYS_UNTIL_PROMPT = 3;
@@ -36,7 +35,7 @@ public class AppRater {
         long count = prefs.getLong("launch_count", 0) + 1;
         SharedPreferences.Editor editor = prefs.edit();
         editor.putLong("launch_count", count);
-        editor.commit();
+        editor.apply();
         return count;
     }
 
@@ -46,7 +45,7 @@ public class AppRater {
             SharedPreferences.Editor editor = prefs.edit();
             dateFirstLaunch = System.currentTimeMillis();
             editor.putLong("date_firstlaunch", dateFirstLaunch);
-            editor.commit();
+            editor.apply();
         }
         return dateFirstLaunch;
     }
@@ -70,16 +69,14 @@ public class AppRater {
 
     public void showRateDialog() {
         final Dialog dialog = new Dialog(mContext);
-        dialog.setTitle("Oceń " + APP_TITLE);
+        dialog.setTitle(mContext.getString(R.string.apprater_title));
 
         LinearLayout ll = new LinearLayout(mContext);
         ll.setOrientation(LinearLayout.VERTICAL);
 
         TextView tv = new TextView(mContext);
 
-        String msg = "Dziękuję za korzystanie z Okazji!\n" +
-                "Możesz dodawać własne okazje (taki niebieski plusik).\n" +
-                "Oceń aplikację i wspomóż kulturę, sztukę, sport i historię. Dzięki! Twoje Zdrowie!";
+        String msg = mContext.getString(R.string.apprater_text);
 
         tv.setText(msg);
         tv.setWidth(240);
@@ -87,7 +84,7 @@ public class AppRater {
         ll.addView(tv);
 
         Button bRate = new Button(mContext);
-        bRate.setText("Oceń " + APP_TITLE);
+        bRate.setText(mContext.getString(R.string.apprater_btn_rate));
         bRate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 storeDoNotShowAgain();
@@ -99,7 +96,7 @@ public class AppRater {
         ll.addView(bRate);
 
         Button bLater = new Button(mContext);
-        bLater.setText("Później");
+        bLater.setText(mContext.getString(R.string.apprater_btn_later));
         bLater.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 reset();
@@ -109,7 +106,7 @@ public class AppRater {
         ll.addView(bLater);
 
         Button b3 = new Button(mContext);
-        b3.setText("Nie, dziękuję");
+        b3.setText(mContext.getString(R.string.apprater_title_btn_no));
         b3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 storeDoNotShowAgain();
@@ -125,14 +122,14 @@ public class AppRater {
     private void storeDoNotShowAgain() {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("dontshowagain", true);
-        editor.commit();
+        editor.apply();
     }
 
     private void reset() {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putLong("launch_count", 0);
         editor.putLong("date_firstlaunch", System.currentTimeMillis());
-        editor.commit();
+        editor.apply();
     }
 
 }

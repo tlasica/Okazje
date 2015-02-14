@@ -35,7 +35,8 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 	@Override
 	protected void onPostExecute(Boolean updated) {
 		if (updated) {
-			Toast.makeText(context, "Dane zaktualizowane.\nPuknij aby zmienić okazję.", Toast.LENGTH_SHORT).show();
+            String msg = context.getString(R.string.update_msg_updated);
+			Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
 			if (occDict!=null) occDict.enforceReload();
 			
 		}

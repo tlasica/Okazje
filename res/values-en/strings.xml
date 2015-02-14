@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Let\'s celebrate</string>
+    <string name="okazje_do_wypicia">Today\'s celebrations</string>
+    <string name="menu_item_add_occasion">Add...</string>
+    <string name="add_occasion_text">
+        Propose new celebration!
+        \n\n
+        Send date and text of the celebration fact to us
+        and all the users of the application will get it!
+    </string>
+    <string name="add_occasion_bttn_yes">Yes!</string>
+    <string name="add_occasion_bttn_no">No</string>
+    <!-- APP RATER -->
+    <string name="apprater_title">"Rate application"</string>
+    <string name="apprater_text">
+        If you like the celebrations please rate this application.
+        Remember that you can propose new celebrations!
+    </string>
+    <string name="apprater_btn_rate">"Rate now"</string>
+    <string name="apprater_btn_later">"Later"</string>
+    <string name="apprater_title_btn_no">"No, thanks"</string>
+    <string name="update_msg_updated">Dane zaktualizowane.\nPuknij aby zmienić okazję.</string>
+</resources>
