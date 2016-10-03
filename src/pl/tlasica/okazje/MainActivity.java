@@ -56,9 +56,6 @@ public class MainActivity extends Activity {
                     
         occasionsDict = new Occasions( new OccasionsDataFromDb(getApplicationContext()) );
 
-        // register to see connectivity changes
-        registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
-
         AppRater rater = new AppRater(this);
         rater.appLaunched();
     }
@@ -94,6 +91,7 @@ public class MainActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 		adjustDisplay();
+        registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
 	}
 
     @Override
@@ -105,6 +103,7 @@ public class MainActivity extends Activity {
     @Override
     public void onPause() {
         super.onPause();
+        unregisterReceiver(mConnReceiver);
     }
 
     @Override
@@ -316,8 +315,8 @@ public class MainActivity extends Activity {
     protected String updateSite() {
         Locale locale = Locale.getDefault();
         String language = locale.getLanguage();
-        String site = "http://okazjedowypicia.herokuapp.com/assets/data/";
-        if (language.equals("en")) return site + "en/";
+        String site = "http://okazjedowypicia.herokuapp.com/assets/data";
+        if (language.equals("en")) return site + "/en";
         if (language.equals("pl")) return site;
         else return site;
     }

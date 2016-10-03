@@ -42,7 +42,6 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 			if (occDict!=null) occDict.enforceReload();
 			
 		}
-		// TODO Auto-generated method stub
 		super.onPostExecute(updated);
 	}
 
@@ -68,17 +67,17 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 	}
 
     public boolean updateTwoMonths() {
-        int month = 1+Calendar.getInstance().get(Calendar.MONTH);
-        log("UPDATE", "Updating month " + month );
-        boolean anyUpdated = updateMonth(month);
-        month++;
-        log("UPDATE", "Updating month " + month );
-        anyUpdated |= updateMonth(month);
-        return anyUpdated;
+		int month = 1 + Calendar.getInstance().get(Calendar.MONTH);
+		boolean currUpdated = updateMonth(month);
+		int nextMonth = month + 1;
+		if (nextMonth>12) nextMonth=1;
+		boolean nextUpdated= updateMonth(nextMonth);
+		return currUpdated || nextUpdated;
     }
 
 	public  boolean updateMonth(int month) {
-		try {			
+		log("UPDATE", "Updating month " + month );
+		try {
 			// get md5 from update site
 			String urlChecksum = urlForChecksum(month);
 			log("UPDATE", urlChecksum);
@@ -124,11 +123,11 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 	}
 
 	private String urlForData(int month) {
-		return String.format("%s%02d.txt", baseUrl, month);
+		return String.format("%s/%02d.txt", baseUrl, month);
 	}
 
 	private String urlForChecksum(int month) {
-		return String.format("%s%02d.txt.md5", baseUrl, month);
+		return String.format("%s/md5/%02d.txt.md5", baseUrl, month);
 	}
 
 	private List<String> geTextFileFromURL(String url) throws Exception {
@@ -150,13 +149,13 @@ public class DataUpdater extends AsyncTask<Void, Integer, Boolean > {
 	}
 	
 	private Map<Integer, List<String> > occasionsFileToMap(List<String> file) {
-		Map<Integer, List<String> > map = new HashMap<Integer, List<String>>();
+		Map<Integer, List<String> > map = new HashMap<>();
 		List<String> curr = null;
 		for(String line: file) {
 			String s = line.trim();
 			if (s.length()>=3 && s.length()<=4 && android.text.TextUtils.isDigitsOnly(s)) {
 				Integer day = Integer.valueOf(s);
-				curr = new ArrayList<String>();
+				curr = new ArrayList<>();
 				map.put(day, curr);
 			}
 			else {
