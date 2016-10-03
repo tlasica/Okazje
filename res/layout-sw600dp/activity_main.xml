@@ -70,6 +70,7 @@
     </LinearLayout>
     </LinearLayout>
 
+    <!--
     <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
@@ -79,5 +80,6 @@
             ads:adUnitId="ca-app-pub-6316552100242193/3783784460"
             ads:adSize="SMART_BANNER"
             />
+            -->
 		
 </RelativeLayout>

@@ -25,5 +25,5 @@
     <string name="updater_msg_inprogress">Downloading celebrations...</string>
     <string name="celebration_internet">For Internet connection!</string>
     <string name="celebration_author">For the author of this application!</string>
-    <string name="fb_share_description">Let's celebrate!</string>
+    <string name="fb_share_description">Let\'s celebrate!</string>
 </resources>

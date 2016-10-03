@@ -25,11 +25,6 @@ import android.view.ViewGroup;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.facebook.*;
-import com.facebook.widget.FacebookDialog;
-import com.facebook.widget.WebDialog;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
 
@@ -42,10 +37,6 @@ public class MainActivity extends Activity {
 	private Occasions	occasionsDict;
 	private ShareActionProvider mShareActionProvider;
 	private GestureDetectorCompat 	mDetector;
-
-    private AdView      adView;
-
-    private UiLifecycleHelper uiHelper;
 
     private long lastUpdateMillis = 0;
 
@@ -67,19 +58,6 @@ public class MainActivity extends Activity {
 
         // register to see connectivity changes
         registerReceiver(mConnReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
-
-        // configure facebook
-        uiHelper = new UiLifecycleHelper(this, null);
-        uiHelper.onCreate(savedInstanceState);
-
-        // configure google admob
-        adView = (AdView)this.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("A9A32839D5C3A3E567C5D00C21437288")
-                .build();
-        adView.loadAd(adRequest);
-
 
         AppRater rater = new AppRater(this);
         rater.appLaunched();
@@ -115,30 +93,23 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-        uiHelper.onResume();
 		adjustDisplay();
-        adView.resume();
 	}
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        uiHelper.onSaveInstanceState(outState);
     }
 
 
     @Override
     public void onPause() {
-        adView.pause();
         super.onPause();
-        uiHelper.onPause();
     }
 
     @Override
     public void onDestroy() {
-        adView.destroy();
         super.onDestroy();
-        uiHelper.onDestroy();
     }
 
 
@@ -337,72 +308,8 @@ public class MainActivity extends Activity {
     };
 
 
-    public void facebookLoginAndShare(View view) {
-        if (Session.getActiveSession() != null && Session.getActiveSession().isOpened()) {
-            facebookShareWithFeedDialog();
-        }
-        else {
-            Session.openActiveSession(this, true, new Session.StatusCallback() {
-
-                // callback when session changes state
-                @Override
-                public void call(Session session, SessionState state, Exception exception) {
-                    if (state == SessionState.OPENED) {
-                        facebookShareWithFeedDialog();
-                    }
-
-                }
-            });
-        }
-
-    }
-
-
-    public void facebookShareWithFeedDialog() {
-        String msg = String.format("%s: %s", currentDateStrNoYear(), currOccasion);
-
-        Bundle params = new Bundle();
-        params.putString("description", getString(R.string.fb_share_description));
-        params.putString("link", APP_URL);
-        params.putString("picture", PIC_URL);
-        params.putString("name", msg);
-
-        WebDialog feedDialog = (
-                new WebDialog.FeedDialogBuilder(this, Session.getActiveSession(), params))
-                .setOnCompleteListener(new WebDialog.OnCompleteListener() {
-
-                    @Override
-                    public void onComplete(Bundle values, FacebookException error) {
-                        if (error == null) {
-                            final String postId = values.getString("post_id");
-                            if (postId != null) Log.d("FB", "posted");
-                        } else if (error instanceof FacebookOperationCanceledException) {
-                            Log.i("FB", "Publish cancelled");
-                        } else {
-                            Log.w("FB", "Error posting story");
-                        }
-                    }
-
-                })
-                .build();
-        feedDialog.show();
-    }
-
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
-        uiHelper.onActivityResult(requestCode, resultCode, data, new FacebookDialog.Callback() {
-            @Override
-            public void onError(FacebookDialog.PendingCall pendingCall, Exception error, Bundle data) {
-                Log.e("Activity", String.format("Error: %s", error.toString()));
-            }
-
-            @Override
-            public void onComplete(FacebookDialog.PendingCall pendingCall, Bundle data) {
-                Log.i("Activity", "Success!");
-            }
-        });
     }//onActivityResult
 
 
