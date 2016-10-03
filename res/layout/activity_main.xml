@@ -71,9 +71,17 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="15dp"
 		android:padding="10dp"
-        android:background="@drawable/yellow_post_it"
+        android:background="@color/yellow"
     >
-       
+
+		<ImageView
+			android:id="@+id/icon"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:src="@drawable/ic_launcher"
+			/>
     <TextView
         android:id="@+id/textview_occasion"
         android:layout_gravity="center"

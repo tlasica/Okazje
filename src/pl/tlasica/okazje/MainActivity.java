@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.*;
 import android.content.pm.ActivityInfo;
+import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -19,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -143,7 +145,14 @@ public class MainActivity extends Activity {
         int cardHeight = Math.round( ySize * 0.66f );
         p.height = cardHeight;
         layout.requestLayout();
-        
+
+        // adjust icon size
+        ImageView icon = (ImageView) findViewById(R.id.icon);
+        ViewGroup.LayoutParams ilp = icon.getLayoutParams();
+        ilp.height = Math.round(xSize / 6.0f);
+        ilp.width = Math.round(xSize / 6.0f);
+        layout.requestLayout();
+
         //adjust font size
         float fontSize = ySize/24;
         Log.d("DISPLAY", "fontSize=" + fontSize);
