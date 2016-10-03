@@ -11,15 +11,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.view.GestureDetectorCompat;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ShareActionProvider;
@@ -36,7 +33,6 @@ public class MainActivity extends Activity {
 	private String		currOccasion;
 	private Occasions	occasionsDict;
 	private ShareActionProvider mShareActionProvider;
-	private GestureDetectorCompat 	mDetector;
 
     private long lastUpdateMillis = 0;
 
@@ -48,9 +44,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
-        
-		mDetector = new GestureDetectorCompat(this, new MyGestureListener() );
-        
+
         mCurrDateTextView = (TextView) findViewById( R.id.textview_current_date);
         mOccasionTextView = (TextView) findViewById( R.id.textview_occasion);
                     
@@ -112,12 +106,6 @@ public class MainActivity extends Activity {
     }
 
 
-    @Override 
-    public boolean onTouchEvent(MotionEvent event){ 
-        this.mDetector.onTouchEvent(event);
-        return super.onTouchEvent(event);
-    }	
-	
     public void today(View view) {
     	today();
     }
@@ -127,15 +115,15 @@ public class MainActivity extends Activity {
 		updateOccasion();
 	}
 
-	private void prevDay() {
-		Calendar prev = currDate;		
+	public void prevDay(View view) {
+		Calendar prev = (Calendar)currDate.clone();
 		prev.add(Calendar.DAY_OF_YEAR, -1);			
 		updateCurrentDate(prev);
 		updateOccasion();		
 	}
 	
-	private void nextDay() {
-		Calendar next = currDate;		
+	public void nextDay(View view) {
+		Calendar next = (Calendar)currDate.clone();
 		next.add(Calendar.DAY_OF_YEAR, +1);			
 		updateCurrentDate(next);
 		updateOccasion();
@@ -150,27 +138,27 @@ public class MainActivity extends Activity {
         Log.d("DISPLAY", "xSize=" + xSize);
         Log.d("DISPLAY", "ySize=" + ySize);
 
-        // adjust card size to 50% of min(width,height)
         ViewGroup layout = (ViewGroup) findViewById(R.id.layout_card);
         ViewGroup.LayoutParams p = layout.getLayoutParams();
-        int cardHeight = Math.round( ySize * 0.56f ); 
+        int cardHeight = Math.round( ySize * 0.66f );
         p.height = cardHeight;
         layout.requestLayout();
         
         //adjust font size
-        TextView textLabel = (TextView) findViewById(R.id.textview_label);
-        TextView textOccasion = (TextView) findViewById( R.id.textview_occasion);
-
         float fontSize = ySize/24;
-
         Log.d("DISPLAY", "fontSize=" + fontSize);
-    	textLabel.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
-    	textOccasion.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);                		
+    	findTextView(R.id.textview_occasion).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
+        findTextView(R.id.textview_current_date).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
+        findTextView(R.id.textview_prev_day).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize * 0.6f);
+        findTextView(R.id.textview_next_day).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize * 0.6f);
 	}
 
-    private String currentDateStr() {
-        return DateFormat.getDateFormat(getApplicationContext()).format( currDate.getTime());
+    private TextView findTextView(int resId) {
+        return (TextView) findViewById(resId);
+    }
 
+    private String formatDate(Calendar cal) {
+        return DateFormat.getDateFormat(getApplicationContext()).format(cal.getTime());
     }
 
     private String currentDateStrNoYear() {
@@ -180,8 +168,16 @@ public class MainActivity extends Activity {
 
 	private void updateCurrentDate(Calendar day) {
 		currDate = day;
-		mCurrDateTextView.setText( currentDateStr() );
-	}
+		mCurrDateTextView.setText( formatDate(currDate) );
+        // update prev day
+        Calendar prev = (Calendar)currDate.clone();
+        prev.add(Calendar.DAY_OF_YEAR, -1);
+        ((TextView) findViewById( R.id.textview_prev_day)).setText(formatDate(prev));
+        // update next day
+        Calendar next = (Calendar)currDate.clone();
+        next.add(Calendar.DAY_OF_YEAR, +1);
+        ((TextView) findViewById( R.id.textview_next_day)).setText(formatDate(next));
+    }
 
 	void updateOccasion() {
 		currOccasion = occasionsDict.getRandomOccasion( currDate );
@@ -200,14 +196,14 @@ public class MainActivity extends Activity {
 
 	private String createShareContentText(String occ) {
 		String content = String.format("Okazja na %s:\n%s\n\n" +
-				"Okazje Android App: %s\n", currentDateStr(), occ, APP_URL);
+				"Okazje Android App: %s\n", formatDate(currDate), occ, APP_URL);
 		return content;
 	}
 
 
 	// Call to update the share intent
 	private void updateShareIntent(String occ) {
-		String subject = "Okazja na " + currentDateStr();
+		String subject = formatDate(currDate);
 		String content = createShareContentText(occ);
 		Log.d("SHARE", content);
 						
@@ -232,7 +228,7 @@ public class MainActivity extends Activity {
             public void onClick(DialogInterface dialog, int id) {
                 Log.d("ADD", "yes!");
                 // Przygotowanie tekstu emaila
-                String text = "Data: " + currentDateStr() + "\n" + "Tekst okazji:";
+                String text = "Data: " + formatDate(currDate) + "\n" + "Text:";
                 // open to send email
                 Intent email = new Intent(Intent.ACTION_VIEW);
                 email.setData(Uri.parse("mailto:"));
@@ -255,26 +251,6 @@ public class MainActivity extends Activity {
 
     }
 
-    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
-	       
-        @Override
-        public boolean onFling(MotionEvent event1, MotionEvent event2, 
-                float velocityX, float velocityY) {
-        	float x1 = event1.getX();
-        	float x2 = event2.getX();
-        	
-        	if (x2 - x1 > 150.0) {
-        		prevDay();
-        	}
-        	if (x2 - x1 < -150.0) {
-        		nextDay();
-        	}
-            return true;
-        }
-    }
-
-
-
     private BroadcastReceiver mConnReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -293,14 +269,9 @@ public class MainActivity extends Activity {
                     Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
                     new DataUpdater(updateSite(), getApplicationContext(), occasionsDict).execute();
                 }
-
-                // show fb share button
-                findViewById(R.id.facebookShareButton).setVisibility(View.VISIBLE);
             }
             else {
                 Log.d("NETWORK", "network is disconnected");
-                // hide fb share button
-                findViewById(R.id.facebookShareButton).setVisibility(View.INVISIBLE);
             }
 
         }
