@@ -12,6 +12,8 @@
     </string>
     <string name="add_occasion_bttn_yes">Yes!</string>
     <string name="add_occasion_bttn_no">No</string>
+    <!-- FACEBOOK APP ID -->
+    <string name="fb_app_id">532537796853015"</string>
     <!-- APP RATER -->
     <string name="apprater_title">"Rate application"</string>
     <string name="apprater_text">
@@ -26,4 +28,5 @@
     <string name="celebration_internet">For Internet connection!</string>
     <string name="celebration_author">For the author of this application!</string>
     <string name="fb_share_description">Let\'s celebrate!</string>
+    <string name="date_format">MMM d</string>
 </resources>

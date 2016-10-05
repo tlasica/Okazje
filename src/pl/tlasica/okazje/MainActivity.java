@@ -157,7 +157,7 @@ public class MainActivity extends Activity {
         float fontSize = ySize/24;
         Log.d("DISPLAY", "fontSize=" + fontSize);
     	findTextView(R.id.textview_occasion).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
-        findTextView(R.id.textview_current_date).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize);
+        findTextView(R.id.textview_current_date).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize * 0.8f);
         findTextView(R.id.textview_prev_day).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize * 0.6f);
         findTextView(R.id.textview_next_day).setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize * 0.6f);
 	}
@@ -167,7 +167,8 @@ public class MainActivity extends Activity {
     }
 
     private String formatDate(Calendar cal) {
-        return DateFormat.getDateFormat(getApplicationContext()).format(cal.getTime());
+        return DateFormat.format(getString(R.string.date_format), cal).toString();
+        //return DateFormat.getDateFormat(getApplicationContext()).format(cal.getTime());
     }
 
     private String currentDateStrNoYear() {
