@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "676396847609",
+    "firebase_url": "https://okazje-75eee.firebaseio.com",
+    "project_id": "okazje-75eee",
+    "storage_bucket": "okazje-75eee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676396847609:android:b847a1c80f4d477e",
+        "android_client_info": {
+          "package_name": "pl.tlasica.okazje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676396847609-ttmfgukpmifpfu38gcj68jokm9ivsurq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp0sWXC6V09iWmGFqrBJOgG7YYJ_CAF0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

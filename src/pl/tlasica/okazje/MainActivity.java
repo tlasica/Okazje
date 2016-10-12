@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.*;
 import android.content.pm.ActivityInfo;
-import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -24,6 +23,7 @@ import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.gms.ads.*;
 
 public class MainActivity extends Activity {
 
@@ -35,6 +35,10 @@ public class MainActivity extends Activity {
 	private String		currOccasion;
 	private Occasions	occasionsDict;
 	private ShareActionProvider mShareActionProvider;
+
+    InterstitialAd      mInterstitialAd;
+    private String      adAppId = "ca-app-pub-6316552100242193~5400118465";
+    private String      adUnitId = "ca-app-pub-6316552100242193/3783784460";
 
     private long lastUpdateMillis = 0;
 
@@ -54,6 +58,26 @@ public class MainActivity extends Activity {
 
         AppRater rater = new AppRater(this);
         rater.appLaunched();
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(adUnitId);
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                requestNewInterstitial();
+                updateOccasion();
+            }
+        });
+
+        requestNewInterstitial();
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+        mInterstitialAd.loadAd(adRequest);
     }
 
 	@Override
@@ -196,7 +220,11 @@ public class MainActivity extends Activity {
 	}
 
 	public void onClickOccasion(View view) {
-		updateOccasion();
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            updateOccasion();
+        }
 	}
 
 	@Override
