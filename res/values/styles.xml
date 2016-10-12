@@ -2,7 +2,7 @@
 
 	<color name="blue">#1565C0</color>
     <color name="indigo">#3F51B5</color>
-    <color name="yellow">#FFFF8D</color>
+    <color name="yellow">#FDFD96</color>
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
