@@ -39,8 +39,10 @@ public class MainActivity extends Activity {
     InterstitialAd      mInterstitialAd;
     private String      adAppId = "ca-app-pub-6316552100242193~5400118465";
     private String      adUnitId = "ca-app-pub-6316552100242193/3783784460";
+    private int         occasionsShown = 0;
+    private boolean     adShown = false;
 
-    private long lastUpdateMillis = 0;
+    private long        lastUpdateMillis = 0;
 
     final String    APP_URL = "http://bit.ly/okazjeapp";
     final String    PIC_URL = "https://raw.githubusercontent.com/tlasica/Okazje/master/icon-128.png";
@@ -220,12 +222,20 @@ public class MainActivity extends Activity {
 	}
 
 	public void onClickOccasion(View view) {
-        if (mInterstitialAd.isLoaded()) {
+        if (mInterstitialAd.isLoaded() && shouldShowAd()) {
+            occasionsShown = 0;
+            adShown = true;
             mInterstitialAd.show();
         } else {
             updateOccasion();
+            occasionsShown += 1;
         }
 	}
+
+    private boolean shouldShowAd() {
+        if (adShown) return false;
+        return (occasionsDict.size()>4) && (occasionsShown == occasionsDict.size()-1);
+    }
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -284,9 +294,6 @@ public class MainActivity extends Activity {
         });
         AlertDialog dialog = builder.create();
         dialog.show();
-
-
-
     }
 
     private BroadcastReceiver mConnReceiver = new BroadcastReceiver() {

@@ -61,5 +61,8 @@ public class Occasions {
 		int month = cal.get(Calendar.MONTH);
 		return 100 * (month+1) + day;
 	}
-		
+
+	public int size() {
+		return todayOccasions.size();
+	}
 }
